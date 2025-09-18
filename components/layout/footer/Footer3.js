@@ -47,35 +47,16 @@ export default function Footer3() {
 	return (
 		<>
 
-			<footer className="tf-footer style-4 style-3">
+			<footer className="tf-footer style-3" style={{borderRadius:"20px 20px 0px 0px"}}>
 				<div className="tf-container">
 					<div className="row">
-						<div className="col-lg-12">
-							<div className="footer-top">
-								<p className="s-title text-white text-anime-wave">
-									Contact Us Today Get a Free
-									<span>
-										Consultations?
-									</span>
-								</p>
-								<Link href="/our-service" className="tf-btn style-15 text-anime-style-1 type-2">
-									Get Free Consultation
-									<i className="icon-chevron-right" />
-								</Link>
-							</div>
-						</div>
 						<div className="col-lg-12">
 							<div className="footer-inner">
 								<div className="footer-inner-wrap">
 									<div className="logo-site">
 										<Link href="/">
-											<Image
-												width="0"
-												height="0"
-												sizes="100vw"
-												style={{ width: "100%", height: "auto" }}
-												id="logo_footer" data-retina="./images/logo/logo-3@2x.png" src="/images/logo/logo-3.png" alt="" />
-										</Link>
+										LOGO
+											</Link>
 									</div>
 									<p className="text mb-70">
 										Consulting agency serves strategic businesses looking
@@ -104,6 +85,39 @@ export default function Footer3() {
 										</li>
 									</ul>
 								</div>
+								<div className={`footer-inner-wrap footer-col-block ${isAccordion3 === 1 ? 'open' : ''}`}>
+									<h5 className="footer-title footer-title-desktop">Services</h5>
+									<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion3(1)}>Services</h5>
+									<ul className="list tf-collapse-content" style={{ display: getDisplayStyle3(1) }}>
+										<li>
+											<Link href="/service-details">Annual Accounts & Filings</Link>
+										</li>
+										<li>
+											<Link href="/service-details">Corporation Tax Returns</Link>
+										</li>
+										<li>
+											<Link href="/service-details">Monthly Financial Statements</Link>
+										</li>
+										<li>
+											<Link href="/service-details">Quarterly Management Reports</Link>
+										</li>
+										<li>
+											<Link href="/service-details">Business Activity Statements</Link>
+										</li>
+										<li>
+											<Link href="/service-details">Payroll Accounting</Link>
+										</li>
+										<li>
+											<Link href="/service-details">Accounts Payables and Receivables</Link>
+										</li>
+										<li>
+											<Link href="/service-details">Book Keeping And Credit Control</Link>
+										</li>
+										<li>
+											<Link href="/service-details">Software Migration Services</Link>
+										</li>
+									</ul>
+								</div>
 								<div className="footer-inner-wrap s1">
 									<div className={`wrap footer-col-block  ${isAccordion1 === 1 ? 'open' : ''}`}>
 										<h5 className="footer-title footer-title-desktop">Address Business</h5>
@@ -116,33 +130,13 @@ export default function Footer3() {
 										<h5 className="footer-title footer-title-desktop">Contact Us</h5>
 										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion2(1)}>Contact Us</h5>
 										<p className="text tf-collapse-content" style={{ display: getDisplayStyle2(1) }}>
-											themesflat@gmail.com <br />
+											info@bisways.com <br />
 											+000 (123) 456 88
 										</p>
 									</div>
 								</div>
-								<div className={`footer-inner-wrap footer-col-block ${isAccordion3 === 1 ? 'open' : ''}`}>
-									<h5 className="footer-title footer-title-desktop">Services</h5>
-									<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion3(1)}>Services</h5>
-									<ul className="list tf-collapse-content" style={{ display: getDisplayStyle3(1) }}>
-										<li>
-											<Link href="/service-details">Financial Analysis</Link>
-										</li>
-										<li>
-											<Link href="/service-details">Market Research</Link>
-										</li>
-										<li>
-											<Link href="/service-details">Competitive Analysis</Link>
-										</li>
-										<li>
-											<Link href="/service-details">HR Management</Link>
-										</li>
-										<li>
-											<Link href="/service-details">Business Consulting</Link>
-										</li>
-									</ul>
-								</div>
-								<div className="footer-inner-wrap form-wrap">
+								
+								{/* <div className="footer-inner-wrap form-wrap">
 									<h5 className="footer-title">Newsletter</h5>
 									<p className="text mb-30">
 										Stay us subscribing to our newsletter
@@ -151,8 +145,8 @@ export default function Footer3() {
 										<fieldset className="mb-20">
 											<input type="text" placeholder="Email Address" required />
 										</fieldset>
-										<button type="submit" className="tf-btn style-12">
-											<i className="icon-envelope color-white" />
+										<button type="submit" className="tf-btn style-11">
+											<i className="icon-envelope" />
 										</button>
 										<div className="checkbox-item mb-30 style-2">
 											<label>
@@ -162,7 +156,7 @@ export default function Footer3() {
 											</label>
 										</div>
 									</form>
-								</div>
+								</div> */}
 							</div>
 						</div>
 						<div className="col-lg-12">
@@ -171,9 +165,9 @@ export default function Footer3() {
 									<i className="icon-arrow-top fs-8" />
 								</Link>
 								<p className="no-copy style-2">
-									Copyright © {new Date().getFullYear()} <span> Saylo </span> by
-									<Link href="https://themeforest.net/user/themesflat" target="_blank">
-										Themesflat
+									Copyright © {new Date().getFullYear()} <span> Bisways</span> by
+									<Link href="/" target="_blank">
+										......
 									</Link>
 									, All Rights Reserved.
 								</p>

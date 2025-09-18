@@ -45,13 +45,20 @@ export default function Menu() {
 			<li className={`item ${isActive("/about-us")}`}><Link href="/about-us"><span>About</span></Link></li>
 			<li className={`item has-child ${isParentActive(["/our-service", "/our-service-02", "/service-details"])}`}>
 				<Link href="#"><span>Services</span></Link>
-				<ul className="sub-nav">
-					<li className={isActive("/our-service")}><Link href="/our-service"><span> Our Service </span></Link></li>
-					<li className={isActive("/our-service-02")}><Link href="/our-service-02"><span> Our Service 02 </span></Link></li>
-					<li className={isActive("/service-details")}><Link href="/service-details"><span> Service Details </span></Link></li>
+				<ul className="sub-nav" style={{width:"300px"}}>
+					
+					<li className={isActive("/our-service-02")}><Link href="/our-service"><span> Annual Accounts & Filings </span></Link></li>
+					<li className={isActive("/our-service-02")}><Link href="/our-service-02"><span> Corporation Tax Returns </span></Link></li>
+					<li className={isActive("/service-details")}><Link href="/service-details"><span> Monthly Financial Statements </span></Link></li>
+					<li className={isActive("/our-service-02")}><Link href="/our-service-02"><span> Quarterly Management Reports </span></Link></li>
+					<li className={isActive("/our-service-02")}><Link href="/our-service-02"><span> Business Activity Statements </span></Link></li>
+					<li className={isActive("/service-details")}><Link href="/service-details"><span> Payroll Accounting </span></Link></li>
+					<li className={isActive("/our-service-02")}><Link href="/our-service-02"><span> Accounts Payables and Receivables </span></Link></li>
+					<li className={isActive("/our-service-02")}><Link href="/our-service-02"><span> Book Keeping And Credit Control </span></Link></li>
+					<li className={isActive("/service-details")}><Link href="/service-details"><span> Software Migration Services </span></Link></li>
 				</ul>
 			</li>
-			<li className={`item has-child ${isParentActive(["/case-study-01", "/case-study-02", "/case-details"])}`}>
+			<li className={`item has-child ${isParentActive(["/case-study-01", "/case-study-02", "/case-details"])}`} >
 				<Link href="#"><span>Case</span></Link>
 				<ul className="sub-nav">
 					<li className={isActive("/case-study-01")}><Link href="/case-study-01"><span> Case Study 01 </span></Link></li>

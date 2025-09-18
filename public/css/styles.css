@@ -4104,7 +4104,7 @@ fieldset {
 	top: unset;
 	z-index: 0;
 	height: 210px;
-	background-color: var(--Main-black);
+	background-color: var(--Bg-2);
 }
 
 .slider-testimonial-thumb .image {
@@ -5581,6 +5581,15 @@ a.mapboxgl-ctrl-logo {
 
 .tf-hover .hover-14 {
 	position: relative;
+}
+.card-service-2 {
+	position: relative;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+/* 🔥 Mild #0b1972 shadow on hover */
+.card-service-2.tf-hover:hover {
+	box-shadow: 0 8px 20px rgba(11, 25, 114, 0.25); /* #0b1972 with transparency */
 }
 
 .tf-hover .hover-14::before {

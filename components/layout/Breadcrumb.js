@@ -24,7 +24,7 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt }) {
 									sizes="100vw"
 									style={{ width: "100%", height: "auto" }}
 
-									src="/images/page-title/page-title.jpg"
+									src="/images/section/home-3.jpg"
 									alt={""}
 								/>
 							</div>
@@ -49,18 +49,8 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt }) {
 							</div>
 						</div>
 					</div>
-					<div className="tf-marquee slider-saylo mt-65">
-						<div className="wrap-marquee">
-							{Array(10)
-								.fill("Saylo Consulting")
-								.map((text, index) => (
-									<div className="marquee-item" key={index}>
-										<p className="font-main-2 text">{text}</p>
-									</div>
-								))}
-						</div>
-					</div>
-				</div>
+					
+				</div>	
 			}
 
 			{breadcrumbAlt === 1 &&
@@ -121,60 +111,7 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt }) {
 							</div>
 						</div>
 					</div>
-					<div className="tf-marquee slider-saylo">
-						<div className="wrap-marquee">
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-						</div>
-					</div>
+				
 				</div>
 
 			}
@@ -219,60 +156,7 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt }) {
 							</div>
 						</div>
 					</div>
-					<div className="tf-marquee slider-saylo">
-						<div className="wrap-marquee">
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-							<div className="marquee-item">
-								<p className="font-main-2 text">
-									Saylo Consulting
-								</p>
-							</div>
-						</div>
-					</div>
+
 				</div>
 
 			}

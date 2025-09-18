@@ -3,10 +3,11 @@ import { sliderTestimonial2 } from '@/utils/swiperOptions'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Swiper, SwiperSlide } from "swiper/react"
+import { motion } from "framer-motion"
+
 export default function Section4() {
 	return (
 		<>
-
 			<section className="s-process-2 tf-spacing-1">
 				<div className="bg-image">
 					<div className="rellax" data-rellax-speed="0.5" data-bleed={5}>
@@ -24,22 +25,44 @@ export default function Section4() {
 						<div className="row">
 							<div className="col-lg-5">
 								<div className="content">
-									<p className="s-sub-title text-white mb-15">
+
+									{/* 🔥 Subtitle slides in first */}
+									<motion.p
+										className="s-sub-title text-white mb-15"
+										style={{ color: "#0b1972" }}
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{ duration: 0.8, ease: "easeOut" }}
+										viewport={{ amount: 0.3 }}
+									>
 										<i className="icon-angles-right moveLeftToRight" />
 										working process
-									</p>
-									<p className="s-title text-white mb-40 text-anime-wave">
+									</motion.p>
+
+									{/* 🔥 Title slides in after subtitle */}
+									<motion.p
+										className="s-title text-white mb-40"
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+										viewport={{ amount: 0.3 }}
+									>
 										What Our Clients
-										Say
-										<span>
-											about Us
-										</span>
-									</p>
-									<p className="text text-white mb-40">
+										Say <span style={{ color: "#e6ac41" }}> about Us </span>
+									</motion.p>
+
+									{/* 🔥 Paragraph slides in last */}
+									<motion.p
+										className="text text-white mb-40"
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+										viewport={{ amount: 0.3 }}
+									>
 										Helping businesses develop clear, actionable strategies to achieve long-term
-										goals
-										and sustainable growth.
-									</p>
+										goals and sustainable growth.
+									</motion.p>
+
 									<div className="bot">
 										<div className="btn-slider-tesimonial btn-slide btn-prev style-4">
 											<i className="icon-arrow-left" />
@@ -50,6 +73,7 @@ export default function Section4() {
 									</div>
 								</div>
 							</div>
+
 							<div className="col-lg-7">
 								<Swiper {...sliderTestimonial2} className="swiper-container slider-testimonial-2 overflow-hidden">
 									<div className="swiper-wrapper">
@@ -69,6 +93,7 @@ export default function Section4() {
 												</div>
 											</div>
 										</SwiperSlide>
+
 										<SwiperSlide>
 											<div className="wg-testimonial bg-white">
 												<div className="icon style-circle mb-40">
@@ -92,7 +117,6 @@ export default function Section4() {
 					</div>
 				</div>
 			</section>
-
 		</>
 	)
 }

@@ -47,7 +47,7 @@ export default function Footer2() {
 	return (
 		<>
 
-			<footer className="tf-footer style-3">
+			<footer className="tf-footer style-3" style={{borderRadius:"20px 20px 0px 0px"}}>
 				<div className="tf-container">
 					<div className="row">
 						<div className="col-lg-12">
@@ -55,13 +55,8 @@ export default function Footer2() {
 								<div className="footer-inner-wrap">
 									<div className="logo-site">
 										<Link href="/">
-											<Image
-												width="0"
-												height="0"
-												sizes="100vw"
-												style={{ width: "100%", height: "auto" }}
-												id="logo_footer" data-retina="./images/logo/logo@2x.png" src="/images/logo/logo.png" alt="" />
-										</Link>
+										LOGO
+											</Link>
 									</div>
 									<p className="text mb-70">
 										Consulting agency serves strategic businesses looking
@@ -89,23 +84,6 @@ export default function Footer2() {
 											</Link>
 										</li>
 									</ul>
-								</div>
-								<div className="footer-inner-wrap s1">
-									<div className={`wrap footer-col-block  ${isAccordion1 === 1 ? 'open' : ''}`}>
-										<h5 className="footer-title footer-title-desktop">Address Business</h5>
-										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion1(1)}>Address Business</h5>
-										<p className="text tf-collapse-content" style={{ display: getDisplayStyle1(1) }}>
-											55 East 10th Street, New York, NY 10003, United States
-										</p>
-									</div>
-									<div className={`wrap footer-col-block  ${isAccordion2 === 1 ? 'open' : ''}`}>
-										<h5 className="footer-title footer-title-desktop">Contact Us</h5>
-										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion2(1)}>Contact Us</h5>
-										<p className="text tf-collapse-content" style={{ display: getDisplayStyle2(1) }}>
-											info@bisways.com <br />
-											+000 (123) 456 88
-										</p>
-									</div>
 								</div>
 								<div className={`footer-inner-wrap footer-col-block ${isAccordion3 === 1 ? 'open' : ''}`}>
 									<h5 className="footer-title footer-title-desktop">Services</h5>
@@ -140,7 +118,25 @@ export default function Footer2() {
 										</li>
 									</ul>
 								</div>
-								<div className="footer-inner-wrap form-wrap">
+								<div className="footer-inner-wrap s1">
+									<div className={`wrap footer-col-block  ${isAccordion1 === 1 ? 'open' : ''}`}>
+										<h5 className="footer-title footer-title-desktop">Address Business</h5>
+										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion1(1)}>Address Business</h5>
+										<p className="text tf-collapse-content" style={{ display: getDisplayStyle1(1) }}>
+											55 East 10th Street, New York, NY 10003, United States
+										</p>
+									</div>
+									<div className={`wrap footer-col-block  ${isAccordion2 === 1 ? 'open' : ''}`}>
+										<h5 className="footer-title footer-title-desktop">Contact Us</h5>
+										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion2(1)}>Contact Us</h5>
+										<p className="text tf-collapse-content" style={{ display: getDisplayStyle2(1) }}>
+											info@bisways.com <br />
+											+000 (123) 456 88
+										</p>
+									</div>
+								</div>
+								
+								{/* <div className="footer-inner-wrap form-wrap">
 									<h5 className="footer-title">Newsletter</h5>
 									<p className="text mb-30">
 										Stay us subscribing to our newsletter
@@ -160,7 +156,7 @@ export default function Footer2() {
 											</label>
 										</div>
 									</form>
-								</div>
+								</div> */}
 							</div>
 						</div>
 						<div className="col-lg-12">

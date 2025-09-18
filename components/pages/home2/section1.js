@@ -14,7 +14,7 @@ export default function Section1() {
 
   const circleVariants = {
     rest: { x: 0, transition: syncTransition },
-    hover: { x: 7, transition: syncTransition }, 
+    hover: { x: 7, transition: syncTransition },
   }
 
   const arrowVariants = {
@@ -45,7 +45,7 @@ export default function Section1() {
 
                 <p className="s-title text-main-green-3 mb-70 text-anime-wave">
                   A Consulting Partner <br />
-                  You Can <span style={{color:"#e6ac41"}}>Trust</span>
+                  You Can <span style={{ color: "#e6ac41" }}>Trust</span>
                 </p>
 
                 {/* Left Image */}
@@ -58,8 +58,8 @@ export default function Section1() {
                       style={{ width: "100%", height: "auto" }}
                       src="/images/section/home-2.jpg"
                       alt=""
-                      className={`lazyload ${inView ? 'tf-animate-1' : ''}`} 
-                      // 👆 add animation class only when in view
+                      className={`lazyload ${inView ? 'tf-animate-1' : ''}`}
+                    // 👆 add animation class only when in view
                     />
                   </div>
                 </div>
@@ -75,8 +75,8 @@ export default function Section1() {
                     style={{ width: "100%", height: "auto" }}
                     src="/images/section/home-4.jpg"
                     alt=""
-                    className={`lazyload ${inView ? 'tf-animate-2' : ''}`} 
-                    // 👆 same logic for second image
+                    className={`lazyload ${inView ? 'tf-animate-2' : ''}`}
+                  // 👆 same logic for second image
                   />
                 </div>
               </div>
@@ -97,90 +97,90 @@ export default function Section1() {
                 tailored solutions that drive growth and operational excellence consultants,
               </p>
               <Link href="/our-service">
-                        
-                      
-      <div
-        style={{
-          display: 'flex',
-          gap: '36px', // gap between button+circle pairs
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-          marginTop: '50px',
-        }}
-      >
-        {['Get Started'].map((label, idx) => (
-          // parent group: hovering either button or circle triggers variants
-          <motion.div
-            key={idx}
-            initial="rest"
-            whileHover="hover"
-            animate="rest"
-            style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
-          >
-            {/* Button (fixed, doesn't move) */}
-            <button
-              style={{
-                padding: '16px 36px',
-                borderRadius: '50px',
-                // border: '2px solid #ffffff',
-                background: '#e6ac41',
-                color: '#ffffff',
-                fontSize: '18px',
-                fontWeight: '600',
-                cursor: 'pointer',
-                // ensure no gap: right margin zero
-                marginRight: 0,
-              }}
-            >
-              {label}
-            </button>
 
-            {/* Circle (separate element touching edge) */}
-            <motion.div
-              variants={circleVariants}
-              transition={syncTransition}
-              style={{
-                width: '50px',
-                height: '50px',
-                borderRadius: '50%',
-                // border: '2px solid #ffffff',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                // edges touch: no margin between elements
-                marginLeft: 0,
-                background: '#e6ac41',
-                // keep pointer events so hovering circle also triggers parent hover
-                pointerEvents: 'auto',
-              }}
-            >
-              {/* Right-pointing arrow base; rotate from center */}
-              <motion.svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                variants={arrowVariants}
-                style={{
-                  transformOrigin: '50% 50%',
-                  transformBox: 'fill-box', // make transform-origin work reliably for SVG
-                }}
-              >
-                {/* horizontal shaft */}
-                <line x1="5" y1="12" x2="19" y2="12" />
-                {/* arrow head pointing right */}
-                <polyline points="12 5 19 12 12 19" />
-              </motion.svg>
-            </motion.div>
-          </motion.div>
-        ))}
-      </div>
-      </Link>
+
+                <div
+                  style={{
+                    display: 'flex',
+                    gap: '36px', // gap between button+circle pairs
+                    flexWrap: 'wrap',
+                    justifyContent: 'center',
+                    marginTop: '50px',
+                  }}
+                >
+                  {['Get Started'].map((label, idx) => (
+                    // parent group: hovering either button or circle triggers variants
+                    <motion.div
+                      key={idx}
+                      initial="rest"
+                      whileHover="hover"
+                      animate="rest"
+                      style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
+                    >
+                      {/* Button (fixed, doesn't move) */}
+                      <button
+                        style={{
+                          padding: '16px 36px',
+                          borderRadius: '50px',
+                          // border: '2px solid #ffffff',
+                          background: '#e6ac41',
+                          color: '#ffffff',
+                          fontSize: '18px',
+                          fontWeight: '600',
+                          cursor: 'pointer',
+                          // ensure no gap: right margin zero
+                          marginRight: 0,
+                        }}
+                      >
+                        {label}
+                      </button>
+
+                      {/* Circle (separate element touching edge) */}
+                      <motion.div
+                        variants={circleVariants}
+                        transition={syncTransition}
+                        style={{
+                          width: '50px',
+                          height: '50px',
+                          borderRadius: '50%',
+                          // border: '2px solid #ffffff',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          // edges touch: no margin between elements
+                          marginLeft: 0,
+                          background: '#e6ac41',
+                          // keep pointer events so hovering circle also triggers parent hover
+                          pointerEvents: 'auto',
+                        }}
+                      >
+                        {/* Right-pointing arrow base; rotate from center */}
+                        <motion.svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="white"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          variants={arrowVariants}
+                          style={{
+                            transformOrigin: '50% 50%',
+                            transformBox: 'fill-box', // make transform-origin work reliably for SVG
+                          }}
+                        >
+                          {/* horizontal shaft */}
+                          <line x1="5" y1="12" x2="19" y2="12" />
+                          {/* arrow head pointing right */}
+                          <polyline points="12 5 19 12 12 19" />
+                        </motion.svg>
+                      </motion.div>
+                    </motion.div>
+                  ))}
+                </div>
+              </Link>
             </div>
           </div>
         </div>
