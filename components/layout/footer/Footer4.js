@@ -55,7 +55,13 @@ export default function Footer4() {
 								<div className="footer-inner-wrap">
 									<div className="logo-site">
 										<Link href="/">
-										LOGO
+										<Image
+																						width="139"
+																						height="39"
+																						sizes="100vw"
+																						style={{ width: "100%", height: "auto",paddingBottom:"20px" }}
+																						id="logo_header" src="/images/Bisways-logo/Bisways-logo/svg/bisways-logo/bisways-logo-white.svg" data-retina="./images/Bisways-logo/Bisways-logo/svg/bisways-logo/bisways-logo-white.svg" alt="" />
+																				
 											</Link>
 									</div>
 									<p className="text mb-70">

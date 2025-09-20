@@ -15,13 +15,12 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, handle
 								<div className="header-left">
 									<div className="logo-site">
 										<Link href="/">
-											{/* <Image
+											<Image
 												width="139"
 												height="39"
-												// sizes="100vw"
-												// style={{ width: "100%", height: "auto" }}
-												id="logo_header" src="/images/logo/logo-2.png" data-retina="./images/logo/logo-2@2x.png" alt="" /> */}
-										</Link>
+												sizes="100vw"
+												style={{ width: "100%", height: "auto" }}
+												id="logo_header" src="/images/Bisways-logo/Bisways-logo/svg/bisways-logo/biswayslogo-main.svg" data-retina="./images/Bisways-logo/Bisways-logo/svg/bisways-logo/biswayslogo-main.svg" alt="" />										</Link>
 									</div>
 								</div>
 								<div className="header-center">
@@ -33,9 +32,9 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, handle
 
 								</div>
 							</div>
-							<div className={isMobileMenu ? "mobile-nav-wrap active" : "	mobile-nav-wrap"} style={{color:"#0b1972"}}>
-								
-								
+							<div className={isMobileMenu ? "mobile-nav-wrap active" : "	mobile-nav-wrap"} style={{ color: "#0b1972" }}>
+
+
 							</div>
 						</div>
 					</div>
