@@ -16335,3 +16335,44 @@ a.mapboxgl-ctrl-logo {
 
 
 /*# sourceMappingURL=styles.css.map */
+
+
+/* Default number circle */
+.list .number {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f0f0f0; /* light background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.list .number p {
+  margin: 0;
+  font-weight: 600;
+  color: #000; /* default black */
+  transition: all 0.3s ease;
+}
+
+/* Default text */
+.list li .title,
+.list li p {
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.list li:hover .number {
+  background: #000; /* circle bg to black */
+}
+
+.list li:hover .number p {
+  color: #fff; /* number to white */
+}
+
+.list li:hover .title,
+.list li:hover p {
+  transform: scale(1.05); /* enlarge text slightly */
+  color: #0b1972; /* optional highlight color */
+}

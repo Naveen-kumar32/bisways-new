@@ -60,7 +60,7 @@ export default function Footer4() {
 																						height="39"
 																						sizes="100vw"
 																						style={{ width: "100%", height: "auto",paddingBottom:"20px" }}
-																						id="logo_header" src="/images/Bisways-logo/Bisways-logo/svg/bisways-logo/bisways-logo-white.svg" data-retina="./images/Bisways-logo/Bisways-logo/svg/bisways-logo/bisways-logo-white.svg" alt="" />
+																						id="logo_header" src="/images/Bisways-logo/Bisways-logo/1200-ppi/bisways-consulting-group-footer/bisways-consulting-group-footer-white.png" data-retina="./images/Bisways-logo/Bisways-logo/1200-ppi/bisways-logo/bisways-logo-white.png" alt="" />
 																				
 											</Link>
 									</div>

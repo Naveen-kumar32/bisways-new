@@ -5,17 +5,17 @@ export default function Section3() {
 	return (
 		<>
 
-			<section className="s-service-4 tf-spacing-1">
+			<section className="s-service-4 tf-spacing-1" style={{ backgroundColor: "#0b1972" }}>
 				<div className="tf-overlay" />
 				<div className="bg-image">
-					<div className="rellax" data-rellax-speed="0.4">
+					{/* <div className="rellax" data-rellax-speed="0.4">
 						<Image
 							width="0"
 							height="0"
 							sizes="100vw"
 							style={{ width: "100%", height: "auto" }}
 							src="/images/section/bg-service.jpg" alt="" />
-					</div>
+					</div> */}
 				</div>
 				<div className="relative z-5">
 					<div className="tf-container">
@@ -28,10 +28,7 @@ export default function Section3() {
 									</p>
 									<p className="s-title text-center text-white text-anime-wave">
 										The Quality Consulting Service to <br />
-										grow your business
-										<span>
-											and sales
-										</span>
+										grow your business<span style={{ color: "#e6ac41" }}> and sales</span>
 									</p>
 								</div>
 								<div className="grid-layout-3">

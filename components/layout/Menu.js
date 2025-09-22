@@ -29,7 +29,8 @@ export default function Menu() {
 					</li>
 				</ul>
 			</li> */}
-			<li className={`item has-child ${isParentActive(["/team-member", "/team-details", "/pricing-table", "/career", "/awards", "/mission-vision", "/faqs", "/404"])}`}>
+			<li className={`item ${isActive("/mission-vision")}`}><Link href="/mission-vision"><span>Mission vision</span></Link></li>
+			{/* <li className={`item has-child ${isParentActive(["/team-member", "/team-details", "/pricing-table", "/career", "/awards", "/mission-vision", "/faqs", "/404"])}`}>
 				<Link href="#"><span>Pages</span></Link>
 				<ul className="sub-nav">
 					<li className={isActive("/team-member")}><Link href="/team-member"><span> Team Member </span></Link></li>
@@ -41,38 +42,38 @@ export default function Menu() {
 					<li className={isActive("/faqs")}><Link href="/faqs"><span> FAQs </span></Link></li>
 					<li className={isActive("/404")}><Link href="/404"><span> 404 </span></Link></li>
 				</ul>
-			</li>
+			</li> */}
 			<li className={`item ${isActive("/about-us")}`}><Link href="/about-us"><span>About</span></Link></li>
 			<li className={`item has-child ${isParentActive(["/our-service", "/our-service-02", "/service-details"])}`}>
 				<Link href="#"><span>Services</span></Link>
 				<ul className="sub-nav" style={{width:"300px"}}>
 					
-					<li className={isActive("/our-service-02")}><Link href="/our-service"><span> Annual Accounts & Filings </span></Link></li>
+					<li className={isActive("/our-service")}><Link href="/our-service"><span> Annual Accounts & Filings </span></Link></li>
 					<li className={isActive("/our-service-02")}><Link href="/our-service-02"><span> Corporation Tax Returns </span></Link></li>
-					<li className={isActive("/service-details")}><Link href="/service-details"><span> Monthly Financial Statements </span></Link></li>
-					<li className={isActive("/our-service-02")}><Link href="/our-service-02"><span> Quarterly Management Reports </span></Link></li>
+					{/* <li className={isActive("/service-details")}><Link href="/service-details"><span> Monthly Financial Statements </span></Link></li> */}
+					{/* <li className={isActive("/our-service-02")}><Link href="/our-service-02"><span> Quarterly Management Reports </span></Link></li>
 					<li className={isActive("/our-service-02")}><Link href="/our-service-02"><span> Business Activity Statements </span></Link></li>
 					<li className={isActive("/service-details")}><Link href="/service-details"><span> Payroll Accounting </span></Link></li>
 					<li className={isActive("/our-service-02")}><Link href="/our-service-02"><span> Accounts Payables and Receivables </span></Link></li>
 					<li className={isActive("/our-service-02")}><Link href="/our-service-02"><span> Book Keeping And Credit Control </span></Link></li>
-					<li className={isActive("/service-details")}><Link href="/service-details"><span> Software Migration Services </span></Link></li>
+					<li className={isActive("/service-details")}><Link href="/service-details"><span> Software Migration Services </span></Link></li> */}
 				</ul>
 			</li>
-			<li className={`item has-child ${isParentActive(["/case-study-01", "/case-study-02", "/case-details"])}`} >
+			{/* <li className={`item has-child ${isParentActive(["/case-study-01", "/case-study-02", "/case-details"])}`} >
 				<Link href="#"><span>Case</span></Link>
 				<ul className="sub-nav">
 					<li className={isActive("/case-study-01")}><Link href="/case-study-01"><span> Case Study 01 </span></Link></li>
 					<li className={isActive("/case-study-02")}><Link href="/case-study-02"><span> Case Study 02 </span></Link></li>
 					<li className={isActive("/case-details")}><Link href="/case-details"><span> Case Details </span></Link></li>
 				</ul>
-			</li>
-			<li className={`item has-child ${isParentActive(["/blog-standard", "/blog-details"])}`}>
+			</li> */}
+			{/* <li className={`item has-child ${isParentActive(["/blog-standard", "/blog-details"])}`}>
 				<Link href="#"><span>Blog</span></Link>
 				<ul className="sub-nav">
 					<li className={isActive("/blog-standard")}><Link href="/blog-standard"><span> Blog Standard </span></Link></li>
 					<li className={isActive("/blog-details")}><Link href="/blog-details"><span> Blog Details </span></Link></li>
 				</ul>
-			</li>
+			</li> */}
 			<li className={`item ${isActive("/contact")}`}><Link href="/contact"><span>Contact</span></Link></li>
 		</ul>
 	)

@@ -16,7 +16,7 @@ export default function Section2() {
 									backgroundAttachment: "fixed", 
 									backgroundPosition: "center", 
 									backgroundSize: "cover", 
-									backgroundImage: "url(/images/section/mission-2.jpg)",
+									backgroundImage: "url(/images/section/home-6.jpg)",
 									width: "100%",
 									height: "100%",
 									}}>

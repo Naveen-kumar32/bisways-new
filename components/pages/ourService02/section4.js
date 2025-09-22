@@ -17,15 +17,12 @@ export default function Section4() {
 					<div className="row">
 						<div className="col-lg-5">
 							<div className="content">
-								<p className="s-sub-title">
-									<i className="icon-angles-right moveLeftToRight" />
+								<p className="s-sub-title" style={{ color: "#0b1972" }}>
+									<i className="icon-angles-right moveLeftToRight" style={{ color: "#0b1972" }} />
 									FAQs
 								</p>
-								<p className="s-title mb-40 text-anime-wave">
-									Asked
-									<span>
-										Questions
-									</span>
+								<p className="s-title mb-40 text-anime-wave" style={{ color: "#0b1972" }}>
+									Asked<span style={{ color: "#e6ac41" }}>	Questions	</span>
 								</p>
 								<div className="tf-accordion style-3 accordion" id="accordionExample">
 									<div className="accordion-item">
@@ -95,10 +92,10 @@ export default function Section4() {
 										height="0"
 										sizes="100vw"
 										style={{ width: "100%", height: "auto" }}
-										src="/images/section/faq-2.jpg" data-src="/images/section/faq-2.jpg" alt="" className="lazyload" />
+										src="/images/section/home-3.jpg" data-src="/images/section/home-2.jpg" alt="" className="lazyload" />
 								</div>
-								<div className="item-customer style-3 rellax default" data-rellax-speed="0.3">
-									<Link href="/#" className="mb-15">10m+ Customer</Link>
+								<div className="item-customer style-3 rellax default" data-rellax-speed="0.3" style={{ backgroundColor: "#0b1972" }}>
+									<Link href="/#" className="mb-15 text-white">10m+ Customer</Link>
 									<ul className="list-author mb-40">
 										<li>
 											<Image
@@ -135,10 +132,10 @@ export default function Section4() {
 									</ul>
 									<span className="line mb-30" />
 									<div className="wg-counter style-6">
-										<div className="odometer style-6"><CounterUp count={10} /></div>
-										<span className="sub-odo">%</span>
+										<div className="odometer style-6 text-white"  >100</div>
+										<span className="sub-odo text-white">%</span>
 									</div>
-									<p>
+									<p className='text-white'>
 										Customers are Satisfied with the Services
 									</p>
 								</div>
