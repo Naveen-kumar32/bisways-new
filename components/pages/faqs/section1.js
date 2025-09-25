@@ -16,18 +16,15 @@ export default function Section1() {
 					<div className="row">
 						<div className="col-lg-8">
 							<div className="content">
-								<p className="s-sub-title">
-									<i className="icon-angles-right moveLeftToRight" />
+								<p className="s-sub-title" style={{ color: "#0b1972" }}>
+									<i className="icon-angles-right moveLeftToRight" style={{ color: "#0b1972" }} />
 									faqs
 								</p>
-								<p className="s-title mb-50 text-anime-wave">
-									Frequently Asked
-									<span>
-										Questions
-									</span>
+								<p className="s-title mb-50 text-anime-wave" style={{ color: "#0b1972" }}>
+									Frequently Asked<span style={{ color: "#e6ac41" }}> Questions	</span>
 								</p>
 								<span className="line" />
-								<p className="title text-anime-style-2">
+								<p className="title text-anime-style-2" style={{ color: "#0b1972" }}>
 									General Questions
 								</p>
 								<div className="tf-accordion style-4 style-2 accordion mb-70" id="accordionExample">
@@ -103,7 +100,7 @@ export default function Section1() {
 									</div>
 								</div>
 								<span className="line" />
-								<p className="title text-anime-style-2">
+								<p className="title text-anime-style-2" style={{ color: "#0b1972" }}>
 									Privacy Policy
 								</p>
 								<div className="tf-accordion style-4 style-2 accordion" id="accordionExample2">
@@ -184,9 +181,9 @@ export default function Section1() {
 							<div className="tf-sidebar">
 								<div className="sb-item sb-contact mb-30">
 									<div className="sb-content">
-										<p className="s-title style-2 mb-30 text-anime-wave">
+										<p className="s-title style-2 mb-30 text-anime-wave" style={{ color: "#0b1972" }}>
 											Have Any Questions <br />
-											<span>
+											<span style={{ color: "#e6ac41" }}>
 												On your Minds!
 											</span>
 										</p>
@@ -226,7 +223,7 @@ export default function Section1() {
 											height="0"
 											sizes="100vw"
 											style={{ width: "100%", height: "auto" }}
-											src="/images/blog/service-sidebar.jpg" alt="" />
+											src="/images/section/home-1.jpg" alt="" />
 									</div>
 									<div className="content">
 										<p className="font-main-2 text-anime-wave">

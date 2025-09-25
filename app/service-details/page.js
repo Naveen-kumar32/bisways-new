@@ -5,7 +5,7 @@ export default function Home() {
 
 	return (
 		<>
-			<Layout breadcrumbAlt={2}>
+			<Layout breadcrumbTitle="Monthly Financial Statements">
 				<ServiceDetails />
 			</Layout>
 		</>
