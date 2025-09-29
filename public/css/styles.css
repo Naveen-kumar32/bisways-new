@@ -10029,7 +10029,7 @@ a.mapboxgl-ctrl-logo {
 
 .page-title-home-2 .tf-overlay {
 	background-color: var(--Bg-2);
-	/* opacity: 0.4; */
+	opacity: 0.4;
 }
 
 .page-title-home-2 .content-wrap {

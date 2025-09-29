@@ -37,8 +37,8 @@ export default function Section1() {
                   animate={inView ? { x: 0, y: 0, opacity: 1 } : { x: 100, y: 50, opacity: 0 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                  <p className="s-sub-title mb-15">
-                    <i className="icon-angles-right moveLeftToRight" />
+                  <p className="s-sub-title mb-15" style={{color:"#0b1972"}}>
+                    <i className="icon-angles-right moveLeftToRight" style={{color:"#0b1972"}}/>
                     WHO WE ARE
                   </p>
                 </motion.p>

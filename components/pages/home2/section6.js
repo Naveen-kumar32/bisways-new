@@ -90,7 +90,7 @@ export default function Section6() {
 										</div>
 									</SwiperSlide>
 									<SwiperSlide>
-										<div className="wg-testimonial style-2 tf-hover">
+										<div className="wg-testimonial style-2 tf-hover" style={{backgroundColor:"#e6ac41"}}>
 											<div className="top">
 												<div className="author-wrap">
 													<div className="avatar hover-1">
@@ -117,7 +117,7 @@ export default function Section6() {
 										</div>
 									</SwiperSlide>
 									<SwiperSlide>
-										<div className="wg-testimonial style-2 tf-hover">
+										<div className="wg-testimonial style-2 tf-hover" style={{backgroundColor:"#e6ac41"}}>
 											<div className="top">
 												<div className="author-wrap">
 													<div className="avatar hover-1">
