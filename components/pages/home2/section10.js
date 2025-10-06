@@ -19,7 +19,7 @@ export default function Section10() {
 											height="0"
 											sizes="100vw"
 											style={{ width: "100%", height: "auto" }}
-											src="/images/section/home-5.jpg" data-src="/images/section/home-5.jpg" alt="" className="lazyload" />
+											src="/images/section/section-10.svg" data-src="/images/section/section/section-10.svg" alt="" className="lazyload" />
 									</div>
 								</div>
 								<div className="content">

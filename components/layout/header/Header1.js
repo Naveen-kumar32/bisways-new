@@ -20,7 +20,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 												height="39"
 												sizes="100vw"
 												style={{ width: "100%", height: "auto",paddingBottom:"20px" }}
-												id="logo_header" src="/images/Bisways-logo/Bisways-logo/svg/bisways-logo/biswayslogo-main.svg" data-retina="./images/Bisways-logo/Bisways-logo/svg/bisways-logo/biswayslogo-main.svg" alt="" />
+												id="logo_header" src="/images/section/Headder-logo-2.svg" data-retina="./images/section/Headder-logo-2.svg" alt="" />
 										</Link>
 									</div>
 								</div>

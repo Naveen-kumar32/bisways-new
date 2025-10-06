@@ -68,8 +68,9 @@ export default function Section7() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={inView ? { x: 0, opacity: 1 } : {}}
                     transition={{ duration: 0.6, ease: "easeOut" }}
+                    style={{color:"#0b1972"}}
                   >
-                    <i className="icon-angles-right moveLeftToRight" />
+                    <i className="icon-angles-right moveLeftToRight" style={{color:"#0b1972"}} />
                     business benefit
                   </motion.p>
 
@@ -103,7 +104,7 @@ export default function Section7() {
       </div>
 
       {/* 4 boxes */}
-      <div className="wrap-2">
+      <div className="wrap-2" style={{marginTop:"-70px"}}>
         <div className="tf-container">
           <div className="row">
             {boxes.map((box, index) => (

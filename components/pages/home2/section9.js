@@ -35,8 +35,9 @@ export default function Section9() {
 								initial={{ x: -80, opacity: 0 }}
 								animate={inView ? { x: 0, opacity: 1 } : { x: -80, opacity: 0 }}
 								transition={{ duration: 0.6, ease: "easeOut" }}
+								style={{color:"#0b1972"}}
 							>
-								<i className="icon-angles-right moveLeftToRight" />
+								<i className="icon-angles-right moveLeftToRight" style={{color:"#0b1972"}} />
 								our partners
 							</motion.p>
 
@@ -132,15 +133,15 @@ export default function Section9() {
 					{/* Partner logos (unchanged) */}
 					<div className="col-lg-8">
 						<div className="wg-partner">
-							<Link href="/#"><img className="img1" src="/images/partner/quora.png" alt="Partner" /><img className="img2" src="/images/partner/quora.png" alt="Partner" /></Link>
-							<Link href="/#"><img className="img1" src="/images/partner/rakuten.png" alt="Partner" /><img className="img2" src="/images/partner/rakuten.png" alt="Partner" /></Link>
-							<Link href="/#"><img className="img1" src="/images/partner/consumer_reports.png" alt="Partner" /><img className="img2" src="/images/partner/consumer_reports.png" alt="Partner" /></Link>
-							<Link href="/#"><img className="img1" src="/images/partner/forbes.png" alt="Partner" /><img className="img2" src="/images/partner/forbes.png" alt="Partner" /></Link>
-							<Link href="/#"><img className="img1" src="/images/partner/hubspot.png" alt="Partner" /><img className="img2" src="/images/partner/hubspot.png" alt="Partner" /></Link>
-							<Link href="/#"><img className="img1" src="/images/partner/roku.png" alt="Partner" /><img className="img2" src="/images/partner/roku.png" alt="Partner" /></Link>
-							<Link href="/#"><img className="img1" src="/images/partner/forbes.png" alt="Partner" /><img className="img2" src="/images/partner/forbes.png" alt="Partner" /></Link>
-							<Link href="/#"><img className="img1" src="/images/partner/hubspot.png" alt="Partner" /><img className="img2" src="/images/partner/hubspot.png" alt="Partner" /></Link>
-							<Link href="/#"><img className="img1" src="/images/partner/roku.png" alt="Partner" /><img className="img2" src="/images/partner/roku.png" alt="Partner" /></Link>
+							<Link href="/#"><img className="img1" src="/images/partner/zoho.png" alt="Partner" /><img className="img2" src="/images/partner/zoho.png" alt="Partner" /></Link>
+							<Link href="/#"><img className="img1" src="/images/partner/paybook.png" alt="Partner" /><img className="img2" src="/images/partner/paybook.png" alt="Partner" /></Link>
+							<Link href="/#"><img className="img1" src="/images/partner/bitrix.png" alt="Partner" /><img className="img2" src="/images/partner/bitrix.png" alt="Partner" /></Link>
+							<Link href="/#"><img className="img1" src="/images/partner/computax.png" alt="Partner" /><img className="img2" src="/images/partner/computax.png" alt="Partner" /></Link>
+							<Link href="/#"><img className="img1" src="/images/partner/riota.png" alt="Partner" /><img className="img2" src="/images/partner/riota.png" alt="Partner" /></Link>
+							<Link href="/#"><img className="img1" src="/images/partner/Saasu.png" alt="Partner" /><img className="img2" src="/images/partner/Saasu.png" alt="Partner" /></Link>
+							<Link href="/#"><img className="img1" src="/images/partner/Tally.png" alt="Partner" /><img className="img2" src="/images/partner/Tally.png" alt="Partner" /></Link>
+							<Link href="/#"><img className="img1" src="/images/partner/TSheets.png" alt="Partner" /><img className="img2" src="/images/partner/TSheets.png" alt="Partner" /></Link>
+							<Link href="/#"><img className="img1" src="/images/partner/vendolite.webp" alt="Partner" /><img className="img2" src="/images/partner/vendolite.webp" alt="Partner" /></Link>
 
 						</div>
 					</div>

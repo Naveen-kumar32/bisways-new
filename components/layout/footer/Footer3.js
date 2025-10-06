@@ -2,8 +2,10 @@
 import Image from "next/image"
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
-export default function Footer3() {
+
+export default function Footer4() {
 	const [isAccordion1, setIsAccordion1] = useState(0)
 	const [isAccordion2, setIsAccordion2] = useState(0)
 	const [isAccordion3, setIsAccordion3] = useState(0)
@@ -47,7 +49,7 @@ export default function Footer3() {
 	return (
 		<>
 
-			<footer className="tf-footer style-3" style={{borderRadius:"20px 20px 0px 0px"}}>
+			<footer className="tf-footer style-3" style={{ borderRadius: "20px 20px 0px 0px" }}>
 				<div className="tf-container">
 					<div className="row">
 						<div className="col-lg-12">
@@ -55,14 +57,14 @@ export default function Footer3() {
 								<div className="footer-inner-wrap">
 									<div className="logo-site">
 										<Link href="/">
-										<Image
-																						width="139"
-																						height="39"
-																						sizes="100vw"
-																						style={{ width: "100%", height: "auto",paddingBottom:"20px" }}
-																						id="logo_header" src="/images/Bisways-logo/Bisways-logo/300-ppi/bisways-consulting-group-footer/bisways-consulting-group-footer-white.svg" data-retina="./images/Bisways-logo/Bisways-logo/300-ppi 	/bisways-logo/bisways-logo-white.svg" alt="" />
-																				
-											</Link>
+											<Image
+												width="139"
+												height="39"
+												sizes="100vw"
+												style={{ width: "100%", height: "auto", paddingBottom: "20px" }}
+												id="logo_header" src="/images/section/footer-logo.png" data-retina="./images/section/footer-logo.png" alt="" />
+
+										</Link>
 									</div>
 									<p className="text mb-70">
 										Consulting agency serves strategic businesses looking
@@ -70,22 +72,22 @@ export default function Footer3() {
 									</p>
 									<ul className="social-list">
 										<li>
-											<Link href="/#">
+											<Link href="https://www.facebook.com/profile.php?id=100081860504520">
 												<i className="icon-facebook" />
 											</Link>
 										</li>
 										<li>
-											<Link href="/#">
+											<Link href="https://x.com/BiswaysG">
 												<i className="icon-twitter" />
 											</Link>
 										</li>
 										<li>
-											<Link href="/#">
-												<i className="icon-linkedin" />
+											<Link href="https://www.instagram.com/biswaysconsultinggroup/">
+												<i className="fab fa-instagram" style={{size:"42px"}} />
 											</Link>
 										</li>
 										<li>
-											<Link href="/#">
+											<Link href="https://www.youtube.com/channel/UCU7bc30DWlFt-stqjuUCGWA">
 												<i className="icon-youtube" />
 											</Link>
 										</li>
@@ -129,7 +131,11 @@ export default function Footer3() {
 										<h5 className="footer-title footer-title-desktop">Address Business</h5>
 										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion1(1)}>Address Business</h5>
 										<p className="text tf-collapse-content" style={{ display: getDisplayStyle1(1) }}>
-											55 East 10th Street, New York, NY 10003, United States
+											Plot no. 31,
+											Lisa Ponnammal St, 3rd
+											Floor, Golden George Nagar,
+											Nerkundram, Chennai,
+											Tamil Nadu 600107
 										</p>
 									</div>
 									<div className={`wrap footer-col-block  ${isAccordion2 === 1 ? 'open' : ''}`}>
@@ -137,11 +143,11 @@ export default function Footer3() {
 										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion2(1)}>Contact Us</h5>
 										<p className="text tf-collapse-content" style={{ display: getDisplayStyle2(1) }}>
 											info@bisways.com <br />
-											+000 (123) 456 88
+											+91 99403 44774
 										</p>
 									</div>
 								</div>
-								
+
 								{/* <div className="footer-inner-wrap form-wrap">
 									<h5 className="footer-title">Newsletter</h5>
 									<p className="text mb-30">
@@ -171,9 +177,9 @@ export default function Footer3() {
 									<i className="icon-arrow-top fs-8" />
 								</Link>
 								<p className="no-copy style-2">
-									Copyright © {new Date().getFullYear()} <span> Bisways</span> by
+									Copyright © {new Date().getFullYear()} <span> Bisways</span> Designed by
 									<Link href="/" target="_blank">
-										......
+										Ligiotec
 									</Link>
 									, All Rights Reserved.
 								</p>

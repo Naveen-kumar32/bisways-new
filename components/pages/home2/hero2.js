@@ -1,24 +1,46 @@
 'use client'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import ModalVideo from 'react-modal-video'
 import { TypeAnimation } from "react-type-animation"
+
 export default function Hero2() {
   const [isOpen, setOpen] = useState(false)
+
   return (
     <>
+      <div
+        className="page-title-home-1 relative"
+        style={{
+          position: "relative",
+          overflow: "hidden",
+          backgroundColor: "#0b1972", // base blue background
+        }}
+      >
+        {/* Background Image with only 50% opacity */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            backgroundImage: `url('/images/section/hero-2.svg')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: 0.5, // ✅ opacity only for image
+            zIndex: 0,
+          }}
+        ></div>
 
-      <div className="page-title-home-1" style={{backgroundColor:"#0b1972"}}>
-        <div className="mb-50">
+        {/* Actual content */}
+        <div className="mb-50 relative z-10">
           <div className="tf-container w-1780">
             <div className="row">
-              <div className="col-lg-6" style={{background:"none"}}>
-                <div className="content" style={{background:"none",border:"none"}}>
-                  <p className="s-sub-title text-white ">
+              <div className="col-lg-7">
+                <div className="content" style={{ background: "none", border: "none" }}>
+                  <p className="s-sub-title text-white">
                     <i className="icon-angles-right moveLeftToRight" />
                     consulting agency
                   </p>
+
                   <p className="s-title text-white-yellow mb-70 text-fs-70">
                     Modern Business <br />
                     Consulting
@@ -37,45 +59,39 @@ export default function Hero2() {
                         speed={50}
                         style={{ display: 'inline-block', marginLeft: "15px" }}
                         repeat={Infinity}
-                        className="cd-words-wrapper ms-3">
-                      </TypeAnimation>
+                        className="cd-words-wrapper ms-3"
+                      />
                     </span>
                   </p>
+
                   <span className="line mb-75" />
-                  <p className="text font-main-2 fw-5 mb-40">
-                    We provide expert guidance across various business functions, <br /> including
-                    strategy
-                    development, process organizational.
+
+                  <p className="text font-main-2 fw-5 mb-40 text-white">
+                    We provide expert guidance across various business functions, <br />
+                    including strategy development and organizational process improvement.
                   </p>
+
                   <div className="bot">
                     <Link href="/our-service" className="tf-btn">
                       Explore Services
                       <i className="icon-chevron-right" />
                     </Link>
-                    
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6">
-                <div className="image-wrap">
-                  <div className="image">
-                    <Image
-                      width="0"
-                      height="0"
-                      sizes="100vw"
-                      style={{ width: "100%", height: "auto" }}
-                      src="/images/section/home-4.jpg" data-src="/images/section/page-title-home-1.jpg" alt="" className="lazyload" />
-                  </div>
-                  
-                </div>
-              </div>
+              {/* Image removed completely */}
             </div>
           </div>
         </div>
-        
       </div>
-      <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="JXMWOmuR1hU" onClose={() => setOpen(false)} />
 
+      <ModalVideo
+        channel='youtube'
+        autoplay
+        isOpen={isOpen}
+        videoId="JXMWOmuR1hU"
+        onClose={() => setOpen(false)}
+      />
     </>
   )
 }
