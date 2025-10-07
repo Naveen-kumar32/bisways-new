@@ -25,7 +25,7 @@ export default function Section10() {
 								<div className="content">
 									<p className="s-title text-white mb-40 text-clamp-4 text-anime-wave">
 										Transforming Challenges <br /> into Opportunities for Your <br />
-										<span>
+										<span style={{ color: "#e6ac41" }}>
 											Business Growth
 										</span>
 									</p>

@@ -177,9 +177,7 @@ export default function Footer4() {
 									<i className="icon-arrow-top fs-8" />
 								</Link>
 								<p className="no-copy style-2">
-									Copyright © {new Date().getFullYear()} <span> Bisways</span> Designed by
-									<Link href="/" target="_blank">
-										Ligiotec
+									Copyright © {new Date().getFullYear()} <span> Bisways</span> Designed by <Link href="/" target="_blank"> Ligiotec
 									</Link>
 									, All Rights Reserved.
 								</p>

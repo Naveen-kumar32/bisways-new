@@ -8217,7 +8217,7 @@ a.mapboxgl-ctrl-logo {
 	width: max-content;
 	margin: 0;
 	background-color: transparent;
-	animation: rotate 10s linear infinite;
+	animation: rotate 10s linear infinite reverse;
 }
 
 .text-rotate .circle {
@@ -16297,7 +16297,7 @@ a.mapboxgl-ctrl-logo {
 /* Title and text base style */
 .title-box,
 .text-box {
-  background: rgba(127, 127, 127, 0.15);
+  background: rgba(127, 127, 127);
   backdrop-filter: blur(6px);
   border-radius: 16px;
   padding: 12px 16px;
@@ -16305,6 +16305,11 @@ a.mapboxgl-ctrl-logo {
   text-align: center;
   transition: all 0.6s ease;
 }
+/* .title-b0x,
+.text-box:hover{
+	  background: rgba(127, 127, 127, 0.85);
+  backdrop-filter: blur(6px);
+} */
 
 /* Title box */
 .title-box {

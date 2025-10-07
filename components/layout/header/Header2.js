@@ -16,11 +16,11 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, handle
 									<div className="logo-site">
 										<Link href="/">
 											<Image
-												width="139"
+												width="139"s
 												height="39"
 												sizes="100vw"
 												style={{ width: "100%", height: "auto" }}
-												id="logo_header" src="/images/section/Headder-logo-2.svg" data-retina="./images/section/Headder-logo-2.svg" alt="" />
+												id="logo_header" src="/images/section/header-logo.svg" data-retina="./images/section/header-logo.svg" alt="" />
 										</Link>
 									</div>
 								</div>
