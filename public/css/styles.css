@@ -16261,7 +16261,7 @@ a.mapboxgl-ctrl-logo {
   background-size: cover;
   background-position: center;
   cursor: pointer;
-  transition: transform 0.4s ease, border 0.3s ease;
+  transition: transform 0.8s ease, border 0.3s ease;
 }
 
 /* Subtle scale effect on hover */
@@ -16277,7 +16277,7 @@ a.mapboxgl-ctrl-logo {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.25);
   opacity: 0.6;
-  transition: opacity 0.6s ease;
+  transition: opacity 0.8s ease;
   z-index: 0;
 }
 
@@ -16293,7 +16293,7 @@ a.mapboxgl-ctrl-logo {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  transition: all 0.6s ease;
+  transition: all 0.8s ease;
   z-index: 1; /* keeps text above overlay */
 }
 
@@ -16306,7 +16306,7 @@ a.mapboxgl-ctrl-logo {
   padding: 12px 16px;
   color: #0b1972;
   text-align: center;
-  transition: all 0.6s ease;
+  transition: all 0.8s ease;
 }
 /* .title-b0x,
 .text-box:hover{
