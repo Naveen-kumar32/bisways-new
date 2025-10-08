@@ -8664,6 +8664,7 @@ a.mapboxgl-ctrl-logo {
 .wg-partner a img.img1 {
 	clip-path: inset(0% 0 0 0);
 	transform: translateX(50%);
+	max-width: 160px !important;
 }
 
 .wg-partner a img.img2 {
@@ -8672,6 +8673,7 @@ a.mapboxgl-ctrl-logo {
 	left: 0;
 	opacity: 1;
 	transform: translateX(-50%);
+	max-width: 160px !important;
 }
 
 .wg-partner a:hover img.img1 {
@@ -8680,6 +8682,7 @@ a.mapboxgl-ctrl-logo {
 
 .wg-partner a:hover img.img2 {
 	clip-path: inset(0 0 0% 0);
+	max-width: 160px !important;
 }
 
 .wg-partner.style-2 img {
@@ -16274,7 +16277,7 @@ a.mapboxgl-ctrl-logo {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.25);
   opacity: 0.6;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.6s ease;
   z-index: 0;
 }
 
@@ -16297,7 +16300,7 @@ a.mapboxgl-ctrl-logo {
 /* Title and text base style */
 .title-box,
 .text-box {
-  background: rgba(127, 127, 127);
+  background: rgba(127, 127, 127,0.25);
   backdrop-filter: blur(6px);
   border-radius: 16px;
   padding: 12px 16px;
@@ -16416,6 +16419,8 @@ a.mapboxgl-ctrl-logo {
 
 .list li:hover .title,
 .list li:hover p {
-  transform: scale(1.05); /* enlarge text slightly */
+  transform: scale(1.05); 
   color: #0b1972; /* optional highlight color */
 }
+
+

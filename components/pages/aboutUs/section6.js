@@ -48,8 +48,11 @@ export default function Section6() {
                     >
                       <p className="cap" style={{ color: "#0b1972" }}>Address Business</p>
                       <p className="infor">
-                        55 East 10th Street, New York,
-                        NY 10003, United States
+                        Plot no. 31,
+                        Lisa Ponnammal St, 3rd
+                        Floor, Golden George Nagar,
+                        Nerkundram, Chennai,
+                        Tamil Nadu 600107
                       </p>
                     </li>
                     <li
@@ -64,8 +67,8 @@ export default function Section6() {
                     >
                       <p className="cap" style={{ color: "#0b1972" }}>Contact Us</p>
                       <p className="infor">
-                        themesflat@gmail.com
-                        +000 (123) 456 88
+                        info@bisways.com
+                        +91 99403 44774
                       </p>
                     </li>
                   </ul>

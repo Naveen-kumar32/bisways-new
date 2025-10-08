@@ -32,15 +32,16 @@ export default function Section1() {
               <div>
                 {/* Heading Animation */}
                 <motion.p
-                  className="s-sub-title"
+                  className="s-sub-title mb-15"
                   initial={{ x: 100, y: 50, opacity: 0 }}
                   animate={inView ? { x: 0, y: 0, opacity: 1 } : { x: 100, y: 50, opacity: 0 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
+                  style={{color:"#0b1972"}}
                 >
-                  <p className="s-sub-title mb-15" style={{color:"#0b1972"}}>
+                 
                     <i className="icon-angles-right moveLeftToRight" style={{color:"#0b1972"}}/>
                     WHO WE ARE
-                  </p>
+                  
                 </motion.p>
 
                 <p className="s-title text-main-green-3 mb-70 text-anime-wave">
@@ -56,7 +57,7 @@ export default function Section1() {
                       height="0"
                       sizes="100vw"
                       style={{ width: "100%", height: "auto" }}
-                      src="/images/section/home-2.jpg"
+                      src="/images/section/consulting-small.svg"
                       alt=""
                       className={`lazyload ${inView ? 'tf-animate-1' : ''}`}
                     // 👆 add animation class only when in view
@@ -72,8 +73,8 @@ export default function Section1() {
                     width="0"
                     height="0"
                     sizes="100vw"
-                    style={{ width: "100%", height: "auto" }}
-                    src="/images/section/home-4.jpg"
+                    style={{ width: "100%", height: "auto",minWidth:"626.6px",minHeight:"418.22px" }}
+                    src="/images/section/consulting.svg"
                     alt=""
                     className={`lazyload ${inView ? 'tf-animate-2' : ''}`}
                   // 👆 same logic for second image
