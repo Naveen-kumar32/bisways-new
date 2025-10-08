@@ -3979,7 +3979,7 @@ fieldset {
 	font-weight: 800;
 	line-height: 300.52px;
 	white-space: nowrap;
-	color: var(--Bg-5);
+	color: var(--Bg-9);
 }
 
 .slider-saylo .marquee-item {
@@ -6825,6 +6825,8 @@ a.mapboxgl-ctrl-logo {
 	background-color: var(--White);
 	border-radius: 10px;
 	padding: 50px 65px 50px 70px;
+	height: 350px;
+	min-height: 350px;
 }
 
 .wg-testimonial.default {

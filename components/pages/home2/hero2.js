@@ -14,7 +14,7 @@ export default function Hero2() {
         style={{
           position: "relative",
           overflow: "hidden",
-          backgroundColor: "#0b1972", // base blue background
+          backgroundColor: "#0b1972", 
         }}
       >
         {/* Background Image with only 50% opacity */}
@@ -83,8 +83,62 @@ export default function Hero2() {
             </div>
           </div>
         </div>
+        
       </div>
-
+     {/* <div className="tf-marquee slider-saylo" style={{backgroundColor:"#1f1e21ff"}}>
+					<div className="wrap-marquee" >
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+					</div>
+				</div> */}
       <ModalVideo
         channel='youtube'
         autoplay

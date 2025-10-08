@@ -12,6 +12,7 @@ export default function Home2() {
 
 	return (
 		<>
+			<Section8 />
 			<Section1 />
 			<Section2 />
 			{/* <Section3 /> */}
@@ -19,7 +20,7 @@ export default function Home2() {
 			{/* <Section5 /> */}
 			<Section6 />
 			<Section7 />
-			{/* <Section8 /> */}
+			
 			<Section10 />
 			<Section9 />
 		</>
