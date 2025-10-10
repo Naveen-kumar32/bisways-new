@@ -36,6 +36,7 @@
 	--Main-yellow: #e6ac41;
 	--Main-yellow-2: #e6ac41;
 	--Main-gray: #ffffff;
+	--Main-gray-1: #0b1972;
 	--Main-gray-2: #ffffff;
 	--Main-gray-3: #ffffff;
 	--Main-gray-4: #ece8e0;
@@ -43,7 +44,10 @@
 	--Main-green-2: #1c5540;
 	--Main-green-3: #1d3e3e;
 	--Main-blue: #85a6a6;
+	/* --Main-golden: #b69974; */
 	--Main-golden: #b69974;
+	
+
 	--Border: rgb(255, 255, 255, 0.1);
 	--Border-2: rgba(27, 30, 35, 0.1);
 	--Border-3: rgba(3, 9, 23, 0.2);
@@ -4842,7 +4846,7 @@ fieldset {
 }
 
 .tf-accordion.style-4 .accordion-item {
-	background-color: var(--Main-gray);
+	background-color: var(--Main-gray-1);
 	border: unset;
 	margin-bottom: 11px;
 }
@@ -5068,7 +5072,7 @@ fieldset {
 }
 
 .tf-accordion-type-3 .accordion-item.active {
-	background-color: var(--Main-gray);
+	background-color: var(--Main-gray-1);
 }
 
 .tf-accordion-type-3 .accordion-item.active .image {
@@ -5107,11 +5111,11 @@ fieldset {
 	line-height: 16px;
 	letter-spacing: 0.5em;
 	text-transform: uppercase;
-	color: var(--Main-black);
+	color: var(--White);
 	display: block;
 	border-radius: 7px;
 	border: 1px solid var(--Border-2);
-	background-color: var(--Main-gray);
+	background-color: var(--Main-gray-1);
 	padding: 7px 9px 7px 15px;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -5582,6 +5586,7 @@ a.mapboxgl-ctrl-logo {
 .tf-hover .hover-14 {
 	position: relative;
 }
+
 .card-service-2 {
 	position: relative;
 	transition: box-shadow 0.3s ease-in-out;
@@ -5589,7 +5594,8 @@ a.mapboxgl-ctrl-logo {
 
 /* 🔥 Mild #0b1972 shadow on hover */
 .card-service-2.tf-hover:hover {
-	box-shadow: 0 8px 20px rgba(11, 25, 114, 0.25); /* #0b1972 with transparency */
+	box-shadow: 0 8px 20px rgba(11, 25, 114, 0.25);
+	/* #0b1972 with transparency */
 }
 
 .tf-hover .hover-14::before {
@@ -10837,7 +10843,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 .s-feedback .tf-overlay {
-	background-color: #ffffff ;
+	background-color: #ffffff;
 	z-index: 2;
 }
 
@@ -16229,87 +16235,90 @@ a.mapboxgl-ctrl-logo {
 
 
 .section5-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 80px 20px;
-  text-align: center;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 80px 20px;
+	text-align: center;
 }
 
 .section5-title {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 20px;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 20px;
 }
 
 .section5-sub {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 70px;
+	font-size: 18px;
+	color: #555;
+	margin-bottom: 70px;
 }
 
 /* Grid Layout */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
 }
 
 /* Each Box */
 .box {
-  position: relative;
-  height: 400px;
-  border-radius: 20px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  transition: transform 0.8s ease, border 0.3s ease;
+	position: relative;
+	height: 400px;
+	border-radius: 20px;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+	transition: transform 0.8s ease, border 0.3s ease;
 }
 
 /* Subtle scale effect on hover */
 .box:hover {
-  border-top: 8px solid #0b1972;
-  border-right: 8px solid #0b1972;
+	border-top: 8px solid #0b1972;
+	border-right: 8px solid #0b1972;
 }
 
 /* Overlay layer (for image opacity control) */
 .box::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.25);
-  opacity: 0.6;
-  transition: opacity 0.8s ease;
-  z-index: 0;
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.25);
+	opacity: 0.6;
+	transition: opacity 0.8s ease;
+	z-index: 0;
 }
 
 .box:hover::before {
-  opacity: 0.2; /* make background image lighter */
+	opacity: 0.2;
+	/* make background image lighter */
 }
 
 /* Inner content */
 .box-inner {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  transition: all 0.8s ease;
-  z-index: 1; /* keeps text above overlay */
+	position: absolute;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+	transition: all 0.8s ease;
+	z-index: 1;
+	/* keeps text above overlay */
 }
 
 /* Title and text base style */
 .title-box,
 .text-box {
-  background: rgba(127, 127, 127,0.25);
-  backdrop-filter: blur(6px);
-  border-radius: 16px;
-  padding: 12px 16px;
-  color: #0b1972;
-  text-align: center;
-  transition: all 0.8s ease;
+	background: rgba(127, 127, 127, 0.25);
+	backdrop-filter: blur(6px);
+	border-radius: 16px;
+	padding: 12px 16px;
+	color: #0b1972;
+	text-align: center;
+	transition: all 0.8s ease;
 }
+
 /* .title-b0x,
 .text-box:hover{
 	  background: rgba(127, 127, 127, 0.85);
@@ -16318,55 +16327,55 @@ a.mapboxgl-ctrl-logo {
 
 /* Title box */
 .title-box {
-  font-size: 20px;
-  font-weight: 600;
+	font-size: 20px;
+	font-weight: 600;
 }
 
 /* Text boxes (short + long versions) */
 .text-box {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
 }
 
 /* Short text visible by default */
 .text-box.short-text {
-  display: block;
-  max-height: 60px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+	display: block;
+	max-height: 60px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 /* Long text hidden initially */
 .text-box.long-text {
-  display: none;
-  text-align: left;
-  font-size: 16px;
-  font-weight: 500;
-  height: 400px;
+	display: none;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 500;
+	height: 400px;
 }
 
 /* Hover effects */
 .box:hover .box-inner {
-  justify-content: center;
-  /* padding: 30px; */
+	justify-content: center;
+	/* padding: 30px; */
 }
 
 .box:hover .title-box {
-  display: none;
+	display: none;
 }
 
 .box:hover .short-text {
-  display: none;
+	display: none;
 }
 
 .box:hover .long-text {
-  display: block;
+	display: block;
 }
 
 /* Smooth fade between short and long text */
 .text-box {
-  transition: opacity 0.6s ease, transform 0.6s ease;
+	transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 
@@ -16387,42 +16396,45 @@ a.mapboxgl-ctrl-logo {
 
 /* Default number circle */
 .list .number {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #f0f0f0; /* light background */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #f0f0f0;
+	/* light background */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
 }
 
 .list .number p {
-  margin: 0;
-  font-weight: 600;
-  color: #000; /* default black */
-  transition: all 0.3s ease;
+	margin: 0;
+	font-weight: 600;
+	color: #000;
+	/* default black */
+	transition: all 0.3s ease;
 }
 
 /* Default text */
 .list li .title,
 .list li p {
-  transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 /* Hover effect */
 .list li:hover .number {
-  background: #000; /* circle bg to black */
+	background: #000;
+	/* circle bg to black */
 }
 
 .list li:hover .number p {
-  color: #fff; /* number to white */
+	color: #fff;
+	/* number to white */
 }
 
 .list li:hover .title,
 .list li:hover p {
-  transform: scale(1.05); 
-  color: #0b1972; /* optional highlight color */
+	transform: scale(1.05);
+	color: #0b1972;
+	/* optional highlight color */
 }
-
-

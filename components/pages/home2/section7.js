@@ -67,7 +67,7 @@ export default function Section7() {
                     className="s-sub-title mb-17"
                     initial={{ x: -100, opacity: 0 }}
                     animate={inView ? { x: 0, opacity: 1 } : {}}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
                     style={{color:"#0b1972"}}
                   >
                     <i className="icon-angles-right moveLeftToRight" style={{color:"#0b1972"}} />

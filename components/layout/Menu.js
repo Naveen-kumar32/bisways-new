@@ -12,7 +12,7 @@ export default function Menu() {
 	return (
 		<ul className="nav-list">
 			<li className={`item ${isActive("/home-2")}`}><Link href="/home-2"><span>Home</span></Link></li>
-			{/* <li className={`item has-child ${isParentActive(["/home-2", "/home-3", "/home-4"])}`}>
+			<li className={`item has-child ${isParentActive(["/home-2", "/home-3", "/home-4"])}`}>
 				<Link href="#"><span>Home</span></Link>
 				<ul className="sub-nav">
 					<li className={isActive("/")}>
@@ -28,7 +28,7 @@ export default function Menu() {
 						<Link href="/home-4"><span> Marketing Consulting </span></Link>
 					</li>
 				</ul>
-			</li> */}
+			</li>
 			{/* <li className={`item ${isActive("/mission-vision")}`}><Link href="/mission-vision"><span>Mission vision</span></Link></li> */}
 			
 			<li className={`item ${isActive("/about-us")}`}><Link href="/about-us"><span>About</span></Link></li>

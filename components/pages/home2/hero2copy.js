@@ -1,176 +1,151 @@
-
 'use client'
-import { sliderHome2 } from "@/utils/swiperOptions"
-import Image from 'next/image'
 import Link from 'next/link'
-import { Swiper, SwiperSlide } from "swiper/react"
-export default function Hero2() {
-	return (
-		<>
+import { useState } from 'react'
+import ModalVideo from 'react-modal-video'
+import { TypeAnimation } from "react-type-animation"
 
-			<div className="page-title-home-2">
-				<div className="tf-container w-1780">
-					<div className="row">
-						<div className="col-lg-12">
-							<Swiper {...sliderHome2} className="swiper-container slider-home-2">
-								<div className="swiper-wrapper">
-									<SwiperSlide>
-										<div className="slide-home-2">
-											<div className="tf-overlay" />
-											<div className="image">
-												<img
-													width="0"
-													height="0"
-													sizes="100vw"
-													style={{ width: "100%", height: "auto" }}
-													src="/images/page-title/page-title-home-2-1.jpg" data-src="/images/page-title/page-title-home-2-1.jpg" alt="" className="tf-animate-zoom-in-out lazyload" />
-											</div>
-											<div className="content-wrap">
-												<div className="content">
-													<p className="s-sub-title text-white mb-20 tf-trainsition-draw-left access-trainsition">
-														<i className="icon-angles-right moveLeftToRight" />
-														consulting agency
-													</p>
-													<p className="s-title text-fs-75 text-white mb-50 tf-fade-right fade-item-2">
-														<span>
-															Next Generation
-														</span> <br />
-														Corporate &amp; Business <br />
-														Consulting
-														<span className="ps-3">
-															Agency
-														</span>
-													</p>
-													<div className="tf-fade-bottom fade-item-3">
-														<Link href="/our-service" className="tf-btn style-13">
-															Explore Services
-															<i className="icon-chevron-right" />
-														</Link>
-													</div>
-												</div>
-											</div>
-										</div>
-									</SwiperSlide>
-									<SwiperSlide>
-										<div className="slide-home-2">
-											<div className="tf-overlay" />
-											<div className="image">
-												<img
-													width="0"
-													height="0"
-													sizes="100vw"
-													style={{ width: "100%", height: "auto" }}
-													src="/images/page-title/page-title-home-2-2.jpg" data-src="/images/page-title/page-title-home-2-2.jpg" alt="" className="tf-animate-zoom-in-out lazyload" />
-											</div>
-											<div className="content-wrap">
-												<div className="content">
-													<p className="s-sub-title text-white mb-20 tf-trainsition-draw-left access-trainsition">
-														<i className="icon-angles-right moveLeftToRight" />
-														consulting agency
-													</p>
-													<p className="s-title text-fs-75 text-white mb-50 tf-fade-right fade-item-2">
-														<span>
-															Next Generation
-														</span> <br />
-														Corporate &amp; Business <br />
-														Consulting
-														<span className="ps-3">
-															Agency
-														</span>
-													</p>
-													<div className="tf-fade-bottom fade-item-3">
-														<Link href="/our-service" className="tf-btn style-13">
-															Explore Services
-															<i className="icon-chevron-right" />
-														</Link>
-													</div>
-												</div>
-											</div>
-										</div>
-									</SwiperSlide>
-									<SwiperSlide>
-										<div className="slide-home-2">
-											<div className="tf-overlay" />
-											<div className="image">
-												<img
-													width="0"
-													height="0"
-													sizes="100vw"
-													style={{ width: "100%", height: "auto" }}
-													src="/images/page-title/page-title-home-2-3.jpg" data-src="/images/page-title/page-title-home-2-3.jpg" alt="" className="tf-animate-zoom-in-out lazyload" />
-											</div>
-											<div className="content-wrap">
-												<div className="content">
-													<p className="s-sub-title text-white mb-20 tf-trainsition-draw-left access-trainsition">
-														<i className="icon-angles-right moveLeftToRight" />
-														consulting agency
-													</p>
-													<p className="s-title text-fs-75 text-white mb-50 tf-fade-right fade-item-2">
-														<span>
-															Next Generation
-														</span> <br />
-														Corporate &amp; Business <br />
-														Consulting
-														<span className="ps-3">
-															Agency
-														</span>
-													</p>
-													<div className="tf-fade-bottom fade-item-3">
-														<Link href="/our-service" className="tf-btn style-13">
-															Explore Services
-															<i className="icon-chevron-right" />
-														</Link>
-													</div>
-												</div>
-											</div>
-										</div>
-									</SwiperSlide>
-									<SwiperSlide>
-										<div className="slide-home-2">
-											<div className="tf-overlay" />
-											<div className="image">
-												<img
-													width="0"
-													height="0"
-													sizes="100vw"
-													style={{ width: "100%", height: "auto" }}
-													src="/images/page-title/page-title-home-2-4.jpg" data-src="/images/page-title/page-title-home-2-4.jpg" alt="" className="tf-animate-zoom-in-out lazyload" />
-											</div>
-											<div className="content-wrap">
-												<div className="content">
-													<p className="s-sub-title text-white mb-20 tf-trainsition-draw-left access-trainsition">
-														<i className="icon-angles-right moveLeftToRight" />
-														consulting agency
-													</p>
-													<p className="s-title text-fs-75 text-white mb-50 tf-fade-right fade-item-2">
-														<span>
-															Next Generation
-														</span> <br />
-														Corporate &amp; Business <br />
-														Consulting
-														<span className="ps-3">
-															Agency
-														</span>
-													</p>
-													<div className="tf-fade-bottom fade-item-3">
-														<Link href="/our-service" className="tf-btn style-13">
-															Explore Services
-															<i className="icon-chevron-right" />
-														</Link>
-													</div>
-												</div>
-											</div>
-										</div>
-									</SwiperSlide>
-								</div>
-								<div className="swiper-pagination tf-pagination style-3">
-								</div>
-							</Swiper>
+export default function Hero2() {
+  const [isOpen, setOpen] = useState(false)
+
+  return (
+	<>
+	  <div
+		className="page-title-home-1 relative"
+		style={{
+		  position: "relative",
+		  overflow: "hidden",
+		  backgroundColor: "#0b1972", 
+		}}
+	  >
+		{/* Background Image with only 50% opacity */}
+		<div
+		  style={{
+			position: "absolute",
+			inset: 0,
+			backgroundImage: `url('/images/section/hero-2.svg')`,
+			backgroundSize: "cover",
+			backgroundPosition: "center",
+			opacity: 0.5, // ✅ opacity only for image
+			zIndex: 0,
+		  }}
+		></div>
+
+		{/* Actual content */}
+		<div className="mb-50 relative z-10">
+		  <div className="tf-container w-1780">
+			<div className="row">
+			  <div className="col-lg-7">
+				<div className="content" style={{ background: "none", border: "none" }}>
+				  <p className="s-sub-title text-white">
+					<i className="icon-angles-right moveLeftToRight" />
+					consulting agency
+				  </p>
+
+				  <p className="s-title text-white-yellow mb-70 text-fs-70">
+					Modern Business <br />
+					Consulting
+					<br />
+					<span className="animationtext clip">
+					  <TypeAnimation
+						sequence={[
+						  ' Service',
+						  800,
+						  ' Firm',
+						  800,
+						  ' Office',
+						  800,
+						]}
+						wrapper="span"
+						speed={50}
+						style={{ display: 'inline-block', marginLeft: "15px" }}
+						repeat={Infinity}
+						className="cd-words-wrapper ms-3"
+					  />
+					</span>
+				  </p>
+
+				  <span className="line mb-75" />
+
+				  <p className="text font-main-2 fw-5 mb-40 text-white">
+					We provide expert guidance across various business functions, <br />
+					including strategy development and organizational process improvement.
+				  </p>
+
+				  <div className="bot">
+					<Link href="/our-service" className="tf-btn">
+					  Explore Services
+					  <i className="icon-chevron-right" />
+					</Link>
+				  </div>
+				</div>
+			  </div>
+			  {/* Image removed completely */}
+			</div>
+		  </div>
+		</div>
+		
+	  </div>
+	 {/* <div className="tf-marquee slider-saylo" style={{backgroundColor:"#1f1e21ff"}}>
+					<div className="wrap-marquee" >
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
+						</div>
+						<div className="marquee-item">
+							<p className="font-main-2 text">
+								Saylo Consulting
+							</p>
 						</div>
 					</div>
-				</div>
-			</div>
-
-		</>
-	)
+				</div> */}
+	  <ModalVideo
+		channel='youtube'
+		autoplay
+		isOpen={isOpen}
+		videoId="JXMWOmuR1hU"
+		onClose={() => setOpen(false)}
+	  />
+	</>
+  )
 }
