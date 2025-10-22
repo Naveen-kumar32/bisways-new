@@ -1665,7 +1665,8 @@ a.hover-text-main-golden:hover {
 }
 
 .header-inner .logo-site img {
-	max-width: 139px;
+	max-width: 304;
+	max-height: 60;
 }
 
 .header-inner .header-right {
@@ -2207,8 +2208,8 @@ a.hover-text-main-golden:hover {
 }
 
 .tf-footer .logo-site img {
-	max-width: 139px;
-	width: 100%;
+	max-width: 304px;
+	width: 60px;
 }
 
 .tf-footer .f-item {
@@ -2301,7 +2302,7 @@ a.hover-text-main-golden:hover {
 }
 
 .tf-footer.style-2 .logo-site {
-	margin-bottom: 48px;
+	margin-bottom: 15px;
 }
 
 .tf-footer.style-2 .footer-bottom {
@@ -2377,7 +2378,7 @@ a.hover-text-main-golden:hover {
 }
 
 .tf-footer.style-3 .logo-site {
-	margin-bottom: 38px;
+	margin-bottom: 15px;
 }
 
 .tf-footer.style-3 .social-list a {
@@ -10305,7 +10306,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 .half-circle.item-2 {
-	background-color: var(--Main-black);
+	background-color: var(--Bg-2);
 }
 
 .s-about-company {
@@ -14529,7 +14530,7 @@ a.mapboxgl-ctrl-logo {
 	}
 
 	.tf-footer.style-3 .logo-site {
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 	}
 
 	.tf-footer.style-3 .footer-inner-wrap {
@@ -14715,7 +14716,7 @@ a.mapboxgl-ctrl-logo {
 	}
 
 	.tf-footer.style-2 .logo-site {
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 	}
 
 	.tf-footer.style-2 .footer-top .row {

@@ -9,7 +9,7 @@ export default function Hero1() {
   return (
     <>
 
-      <div className="page-title-home-1" style={{backgroundColor:"#0b1972"}}>
+      <div className="page-title-home-1" style={{ backgroundColor: "#0b1972" }}>
         <div className="mb-50">
           <div className="tf-container w-1780">
             <div className="row">
@@ -20,16 +20,16 @@ export default function Hero1() {
                     consulting agency
                   </p>
                   <p className="s-title text-white-yellow mb-70 text-fs-70">
-                    Modern Business <br />
-                    Consulting <br />
+                    Empowering Business
+                    Through <br />
                     <span className="animationtext clip">
                       <TypeAnimation
                         sequence={[
-                          ' Service',
+                          'Finance',
                           1000,
-                          ' Firm',
+                          'Compliance',
                           1000,
-                          ' Office',
+                          'Audit',
                           1000,
                         ]}
                         wrapper="span"
@@ -42,16 +42,16 @@ export default function Hero1() {
                   </p>
                   <span className="line mb-75" />
                   <p className="text font-main-2 fw-5 mb-40">
-                    We provide expert guidance across various business functions, <br /> including
-                    strategy
-                    development, process organizational.
+                    From Virtual CFO to Complete Business
+                    Setup & Advisory — we’re your growth
+                    partner at every step.
                   </p>
                   <div className="bot">
                     <Link href="/our-service" className="tf-btn">
                       Explore Services
                       <i className="icon-chevron-right" />
                     </Link>
-                    
+
                   </div>
                 </div>
               </div>
@@ -63,11 +63,20 @@ export default function Hero1() {
                       height="0"
                       sizes="100vw"
                       style={{ width: "100%", height: "600px" }}
-                      src="/images/section/home-3.jpg" data-src="/images/section/page-title-home-1.jpg" alt="" className="lazyload" />
+                      src="/images/section/hero.svg" data-src="/images/section/page-title-home-1.jpg" alt="" className="lazyload" />
                   </div>
                   <div className="wg-curve-text tf-animate__box animate__slow">
                     <div className="icon">
-                      <i className="flaticon-rocket" />
+                      <Image
+                        src="/images/section/background.svg"
+                        alt="Background Decorative Icon"
+                        width={80}
+                        height={80}
+                        style={{
+                          objectFit: "contain",
+                          filter: "drop-shadow(0 0 10px rgba(255,255,255,0.2))",
+                        }}
+                      />
                     </div>
                     <div className="text-rotate">
                       <div className="circle">

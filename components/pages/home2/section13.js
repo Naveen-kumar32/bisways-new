@@ -42,7 +42,7 @@ export default function Section13() {
 									working process
 								</motion.p>
 
-								{/* Main Title - slides from left */}
+								
 								<motion.p
 									className="s-title mb-70 text-center text-anime-wave"
 									variants={titleFromLeftVariants}
@@ -50,8 +50,8 @@ export default function Section13() {
 									animate={inView ? 'visible' : 'hidden'}
 									style={{color:"#0b1972"}}
 								>
-									From Concept to Execution <br />
-									Our Consulting	<span style={{ color: "#e6ac41" }}> Process</span>
+									We understand your goals, challenges, and <br />
+									 operations to identify  <span style={{ color: "#e6ac41" }}> key growth areas</span>
 								</motion.p>
 
 								<div className="tf-accordion-type-3 accordion" id="accordionExample">
@@ -72,10 +72,8 @@ export default function Section13() {
 													Discovery &amp; Assessment
 												</p>
 												<p className="text mb-25 tf-fade-item fade-1 text-white">
-													This initial phase involves understanding the client’s
-													needs,
-													<br />
-													challenges, and goals. Consultants conduct in-depth.
+													We understand your goals, challenges, and operations to identify key growth areas.
+													
 												</p>
 												<ul className="benefit-list text-white">
 													<li className="tf-fade-item fade-2">
@@ -104,7 +102,7 @@ export default function Section13() {
 													height="0"
 													sizes="100vw"
 													style={{ width: "100%", height: "auto" }}
-													src="/images/section/home-3.jpg" data-src="/images/widget/accordion-type-3.jpg" alt="" className="lazyload" />
+													src="/images/section/step-1.svg" data-src="/images/widget/accordion-type-3.jpg" alt="" className="lazyload" />
 											</div>
 										</div>
 									</div>
@@ -125,10 +123,8 @@ export default function Section13() {
 													Strategy Development
 												</p>
 												<p className="text mb-25 tf-fade-item fade-1 text-white">
-													This initial phase involves understanding the client’s
-													needs,
-													<br />
-													challenges, and goals. Consultants conduct in-depth.
+													We design tailored strategies to align finance, structure, and compliance.
+													
 												</p>
 												<ul className="benefit-list text-white">
 													<li className="tf-fade-item fade-2">
@@ -136,7 +132,7 @@ export default function Section13() {
 															<i className="flaticon-check-mark" />
 														</div>
 														<p>
-															Stakeholder Interviews &amp; Data Gathering
+															 Strategic Roadmap Planning
 														</p>
 													</li>
 													<li className="tf-fade-item fade-3">
@@ -144,7 +140,7 @@ export default function Section13() {
 															<i className="flaticon-check-mark" />
 														</div>
 														<p>
-															Comprehensive Business Analysis
+															Financial & Compliance Frameworks
 														</p>
 													</li>
 												</ul>
@@ -157,7 +153,7 @@ export default function Section13() {
 													height="0"
 													sizes="100vw"
 													style={{ width: "100%", height: "auto" }}
-													src="/images/section/home-3.jpg" data-src="/images/widget/accordion-type-3-2.jpg" alt="" className="lazyload" />
+													src="/images/section/step-2.svg" data-src="/images/widget/accordion-type-3-2.jpg" alt="" className="lazyload" />
 											</div>
 										</div>
 									</div>
@@ -178,10 +174,8 @@ export default function Section13() {
 													Implementation &amp; Execution
 												</p>
 												<p className="text mb-25 tf-fade-item fade-1 text-white">
-													This initial phase involves understanding the client’s
-													needs,
-													<br />
-													challenges, and goals. Consultants conduct in-depth.
+													We ensure effective rollout, tracking, and process integration.
+													
 												</p>
 												<ul className="benefit-list text-white">
 													<li className="tf-fade-item fade-2">
@@ -189,7 +183,7 @@ export default function Section13() {
 															<i className="flaticon-check-mark" />
 														</div>
 														<p>
-															Stakeholder Interviews &amp; Data Gathering
+															 Process Integration & System Setup
 														</p>
 													</li>
 													<li className="tf-fade-item fade-3">
@@ -197,7 +191,7 @@ export default function Section13() {
 															<i className="flaticon-check-mark" />
 														</div>
 														<p>
-															Comprehensive Business Analysis
+															Policy Implementation & Checks
 														</p>
 													</li>
 												</ul>
@@ -210,7 +204,7 @@ export default function Section13() {
 													height="0"
 													sizes="100vw"
 													style={{ width: "100%", height: "auto" }}
-													src="/images/section/home-3.jpg" data-src="/images/widget/accordion-type-3-3.jpg" alt="" className="lazyload" />
+													src="/images/section/step-3.svg" data-src="/images/widget/accordion-type-3-3.jpg" alt="" className="lazyload" />
 											</div>
 										</div>
 									</div>
@@ -231,10 +225,8 @@ export default function Section13() {
 													Monitoring &amp; Continuous Improvement
 												</p>
 												<p className="text mb-25 tf-fade-item fade-1 text-white">
-													This initial phase involves understanding the client’s
-													needs,
-													<br />
-													challenges, and goals. Consultants conduct in-depth.
+													We review performance and refine systems for lasting success.
+													
 												</p>
 												<ul className="benefit-list text-white">
 													<li className="tf-fade-item fade-2">
@@ -242,7 +234,7 @@ export default function Section13() {
 															<i className="flaticon-check-mark" />
 														</div>
 														<p>
-															Stakeholder Interviews &amp; Data Gathering
+															 Ongoing Financial Monitoring
 														</p>
 													</li>
 													<li className="tf-fade-item fade-3">
@@ -250,7 +242,9 @@ export default function Section13() {
 															<i className="flaticon-check-mark" />
 														</div>
 														<p>
-															Comprehensive Business Analysis
+															 Performance Optimization & Reporting
+
+
 														</p>
 													</li>
 												</ul>
@@ -263,7 +257,7 @@ export default function Section13() {
 													height="0"
 													sizes="100vw"
 													style={{ width: "100%", height: "auto" }}
-													src="/images/section/home-3.jpg" data-src="/images/widget/accordion-type-3-4.jpg" alt="" className="lazyload" />
+													src="/images/section/step-4.svg" data-src="/images/widget/accordion-type-3-4.jpg" alt="" className="lazyload" />
 											</div>
 										</div>
 									</div>

@@ -7,7 +7,7 @@ const applyCircularText = () => {
 		const rotateText = document.querySelectorAll(".text-rotate .text")
 
 		if (curveText && rotateText.length > 0) {
-			const text = "Agency - Business - Consulting -"
+			const text = "Bisways - Consulting - Group - "
 			const chars = text.split("")
 			const degree = 360 / chars.length
 

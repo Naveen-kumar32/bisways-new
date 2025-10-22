@@ -12,7 +12,7 @@ export default function Menu() {
 	return (
 		<ul className="nav-list">
 			<li className={`item ${isActive("/home-2")}`}><Link href="/home-2"><span>Home</span></Link></li>
-			<li className={`item has-child ${isParentActive(["/home-2", "/home-3", "/home-4"])}`}>
+			{/* <li className={`item has-child ${isParentActive(["/home-2", "/home-3", "/home-4"])}`}>
 				<Link href="#"><span>Home</span></Link>
 				<ul className="sub-nav">
 					<li className={isActive("/")}>
@@ -28,23 +28,22 @@ export default function Menu() {
 						<Link href="/home-4"><span> Marketing Consulting </span></Link>
 					</li>
 				</ul>
-			</li>
+			</li> */}
 			{/* <li className={`item ${isActive("/mission-vision")}`}><Link href="/mission-vision"><span>Mission vision</span></Link></li> */}
-			
+
 			<li className={`item ${isActive("/about-us")}`}><Link href="/about-us"><span>About</span></Link></li>
 			<li className={`item has-child ${isParentActive(["/our-service", "/our-service-02", "/service-details"])}`}>
 				<Link href="#"><span>Services</span></Link>
-				<ul className="sub-nav" style={{width:"300px"}}>
-					
-					<li className={isActive("/our-service")}><Link href="/our-service"><span> Annual Accounts & Filings </span></Link></li>
-					<li className={isActive("/our-service-02")}><Link href="/our-service-02"><span> Corporation Tax Returns </span></Link></li>
-					<li className={isActive("/service-details")}><Link href="/service-details"><span> Monthly Financial Statements </span></Link></li>
-					<li className={isActive("/quarterly-management-reports")}><Link href="/quarterly-management-reports"><span> Quarterly Management Reports </span></Link></li>
-					<li className={isActive("/business-activity-statements")}><Link href="/business-activity-statements"><span> Business Activity Statements </span></Link></li>
-					<li className={isActive("/payroll-accounting")}><Link href="/payroll-accounting"><span> Payroll Accounting </span></Link></li>
-					<li className={isActive("/accounts-payables-and-receivables")}><Link href="/accounts-payables-and-receivables"><span> Accounts Payables and Receivables </span></Link></li>
-					<li className={isActive("/book-keeping-and-credit-control")}><Link href="/book-keeping-and-credit-control"><span> Book Keeping And Credit Control </span></Link></li>
-					<li className={isActive("/software-migration-services")}><Link href="/software-migration-services"><span> Software Migration Services </span></Link></li>
+				<ul className="sub-nav" style={{ width: "300px" }}>
+					<li className={isActive("/our-service")}><Link href="/our-service"><span> Virtual CFO Services </span></Link></li>
+					<li className={isActive("/our-service-02")}><Link href="/our-service-02"><span> Business Registration & Startup Setup </span></Link></li>
+					<li className={isActive("/service-details")}><Link href="/service-details"><span> GST, Taxation & Audit Support </span></Link></li>
+					<li className={isActive("/quarterly-management-reports")}><Link href="/quarterly-management-reports"><span> ROC, MCA & Compliance Filings </span></Link></li>
+					<li className={isActive("/business-activity-statements")}><Link href="/business-activity-statements"><span> Trust, NGO & CSR Consulting </span></Link></li>
+					<li className={isActive("/payroll-accounting")}><Link href="/payroll-accounting"><span> Business Structuring & Advisory </span></Link></li>
+					<li className={isActive("/accounts-payables-and-receivables")}><Link href="/accounts-payables-and-receivables"><span> Digital, API & eCommerce Consulting </span></Link></li>
+					<li className={isActive("/book-keeping-and-credit-control")}><Link href="/book-keeping-and-credit-control"><span> Accounting, Payroll & Automation </span></Link></li>
+					{/* <li className={isActive("/software-migration-services")}><Link href="/software-migration-services"><span> Software Migration Services </span></Link></li> */}
 				</ul>
 			</li>
 			{/* <li className={`item has-child ${isParentActive(["/case-study-01", "/case-study-02", "/case-details"])}`} >
@@ -63,7 +62,7 @@ export default function Menu() {
 				</ul>
 			</li> */}
 			<li className={`item has-child ${isParentActive(["/team-member", "/team-details", "/pricing-table", "/career", "/awards", "/mission-vision", "/faqs", "/404"])}`}>
-				<Link href="#"><span>Pages</span></Link>
+				<Link href="#"><span>Blogs</span></Link>
 				<ul className="sub-nav">
 					{/* <li className={isActive("/team-member")}><Link href="/team-member"><span> Team Member </span></Link></li>
 					<li className={isActive("/team-details")}><Link href="/team-details"><span> Team Details </span></Link></li>
@@ -71,7 +70,7 @@ export default function Menu() {
 					<li className={isActive("/career")}><Link href="/career"><span> Career </span></Link></li>
 					<li className={isActive("/awards")}><Link href="/awards"><span> Awards </span></Link></li> */}
 					<li className={isActive("/mission-vision")}><Link href="/mission-vision"><span> Mission Vision </span></Link></li>
-					<li className={isActive("/faqs")}><Link href="/faqs"><span> FAQs </span></Link></li>
+					{/* <li className={isActive("/faqs")}><Link href="/faqs"><span> FAQs </span></Link></li> */}
 					{/* <li className={isActive("/404")}><Link href="/404"><span> 404 </span></Link></li> */}
 				</ul>
 			</li>

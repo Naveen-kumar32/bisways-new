@@ -90,19 +90,22 @@ export default function Section10() {
             </div>
           </div>
         </div> */}
-		<div className="content" style={{left:"550px",top:"350px", width:"800px",minHeight:"300px" }}>
-									<p className="s-title text-white mb-40 text-clamp-4 text-anime-wave" style={{fontSize:"60px"}} >
-										Transforming Challenges <br /> 
-                    into Opportunities for Your <br />
-										<span>
-											Business Growth
-										</span>
-									</p>
-									<Link href="/contact" className="tf-btn style-13 text-anime-style-1">
-										Get Consultation
-										<i className="icon-chevron-right" />
-									</Link>
-								</div>
+        <div className="content" style={{ left: "550px", top: "350px", width: "800px", minHeight: "300px", height: "auto" }}>
+          <p className="s-title text-white mb-40 text-clamp-4 text-anime-wave" style={{ fontSize: "60px" }} >
+            Transforming Challenges <br />
+            into Opportunities for Your <br />
+            <span>
+              Business Growth
+            </span>
+          </p>
+          <p style={{ color: "white", fontWeight: "300", fontSize: "36px", marginBottom: "20px" }}>Let’s discuss how Bisways can support your goals — from
+            finance to compliance and beyond.
+          </p>
+          <Link href=" https://bisways.zohobookings.com/#/booking" className="tf-btn style-13 text-anime-style-1">
+            Book a Free Consultation
+            <i className="icon-chevron-right" />
+          </Link>
+        </div>
       </section>
     </>
   )

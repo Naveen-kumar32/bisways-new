@@ -35,16 +35,29 @@ export default function Section11() {
       transition: { duration: 2.0, ease: [0.25, 1, 0.5, 1], delay: 0.06 },
     },
   }
+  const circleVariants = {
+    hidden: { opacity: 0, scale: 0.6, rotate: -30, x: 80 },
+    visible: custom => ({
+      opacity: 1,
+      scale: [0.9, 1.03, 1],
+      rotate: [-10, 6, 0],
+      x: 0,
+      transition: {
+        delay: custom,                       // custom delay per circle
+        duration: 1.1,
+        ease: [0.22, 1, 0.36, 1],            // smooth 'springy' feel
+      }
+    })
+  }
+
 
   return (
     <section ref={ref} className="s-about-company tf-spacing-2 relative z-5">
       <div className="tf-container">
         <div className="row">
-          {/* LEFT CONTENT */}
           <div className="col-lg-6">
             <div className="content-section">
 
-              {/* ABOUT COMPANY SUBTITLE - slides from bottom-right */}
               <motion.p
                 className="s-sub-title"
                 style={{ color: "#0b1972" }}
@@ -56,38 +69,34 @@ export default function Section11() {
                 about company
               </motion.p>
 
-              {/* MAIN TITLE - slides in from LEFT */}
               <motion.p
                 className="s-title mb-20 text-anime-wave-right text-clamp-4"
                 variants={titleFromLeftVariants}
                 initial="hidden"
                 animate={controls}
-                style={{ color: "#0b1972" }}
+                style={{ color: "#0b1972", paddingBottom: "5px" }}
               >
-                We Work For Building a Brighter Future Together
-                and <span style={{ color: "#e6ac41" }}>Grow Business</span>
+                Empowering Businesses to Build a<span style={{ color: "#e6ac41" }}> Brighter Future</span>
               </motion.p>
 
-              {/* The intro paragraph remains static (no animation) */}
               <p className="text mb-30">
-                We provide expert consulting services designed to help businesses
-                thrive in today’s dynamic marketplace with an experienced team.
+                We partner with entrepreneurs and organizations to deliver
+                strategic consulting, financial clarity, and long-term success.
               </p>
 
-              {/* THE TWO LIST POINTS (STATIC) */}
               <ul className="list mb-50">
                 <li>
-                  <p className="font-main-2" style={{ color: "#0b1972" }}>Company Mission</p>
+                  <p className="font-main-2" style={{ color: "#0b1972" }}>Our Mission</p>
                   <p className="text">
-                    We provide expert consulting services designed help businesses
-                    thrive in today’s dynamic marketplace team experienced
+                    To empower businesses through strategic financial and
+                    regulatory consulting that drives measurable growth.
                   </p>
                 </li>
                 <li>
-                  <p className="font-main-2" style={{ color: "#0b1972" }}>Company Vision</p>
+                  <p className="font-main-2" style={{ color: "#0b1972" }}>Our Vision</p>
                   <p className="text">
-                    To be the trusted partner that empowers businesses worldwide to
-                    unlock their full potential, driving sustainable growth
+                    To be a trusted consulting partner enabling financial clarity,
+                    operational excellence, and sustainable successe.
                   </p>
                 </li>
               </ul>
@@ -98,7 +107,6 @@ export default function Section11() {
             </div>
           </div>
 
-          {/* RIGHT IMAGE (STATIC) */}
           <div className="col-lg-5 offset-lg-1">
             <div className="image-wrap">
               <div className="image">
@@ -106,25 +114,32 @@ export default function Section11() {
                   width="0"
                   height="0"
                   sizes="100vw"
-                  style={{ width: "100%", height: "auto", borderRadius: "12px" }}
-                  src="/images/section/home-1.jpg"
-                  alt="About Saylo Consulting"
-                  className="lazyload tf-animate-2"
-                />
+                  style={{ width: "100%", height: "auto" }}
+                  src="/images/section/hero-1.svg" data-src="/images/section/hero-1.svg" alt="" className="lazyload tf-animate-2" />
               </div>
-              <span className="half-circle item-1" />
-              <span className="half-circle item-2" />
+              <span
+                key={inView ? "anim1" : "noanim1"}
+                className="half-circle item-1 rollInRight"
+              />
+              <span
+                key={inView ? "anim2" : "noanim2"}
+                className="half-circle item-2 rollInRight" data-wow-delay="0.5s"
+              />
             </div>
           </div>
         </div>
       </div>
-
-      {/* MARQUEE SECTION */}
-      <div className="tf-marquee slider-saylo style-2">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="tf-marquee slider-saylo style-2" style={{ marginTop: "2px" }}>
         <div className="wrap-marquee">
           {[...Array(10)].map((_, i) => (
             <div className="marquee-item" key={i}>
-              <p className="font-main-2 text">Bisways Consulting</p>
+              <p className="font-main-2 text">Bisways Consulting Group</p>
             </div>
           ))}
         </div>

@@ -12,25 +12,36 @@ import Section11 from "./section11"
 import Section12 from "./section12"
 import Section13 from "./section13"
 export default function Home2() {
+  return (
+    <>
+      {/* Background layer (behind everything) */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: "fixed",
+          inset: 0,                    // top:0; right:0; bottom:0; left:0;
+          zIndex: -1,                  // behind content
+          backgroundImage: "url('/images/section/background.svg')",
+          backgroundSize: "cover",     // cover whole viewport
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed", // stays in place while scrolling
+          pointerEvents: "none",       // doesn't block clicks
+          opacity: 1,                  // tweak this if you want it subtle (e.g. 0.08)
+        }}
+      />
 
-	return (
-		<>
-			<Section8 />
-			<Section1 />
-			<Section11 />
-			<Section2 />
-			
-			{/* <Section3 /> */}
-			{/* <Section4 /> */}
-			{/* <Section5 /> */}
-			
-			<Section13 />
-			<Section7 />
-			<Section6 />
-			<Section10 />
-			<Section9 />
-			<Section12 />
-			
-		</>
-	)
+      {/* Your sections */}
+      <Section8 />
+      <Section1 />
+      <Section11 />
+      <Section2 />
+      <Section13 />
+      <Section7 />
+      <Section6 />
+      <Section10 />
+      <Section9 />
+      <Section12 />
+    </>
+  );
 }

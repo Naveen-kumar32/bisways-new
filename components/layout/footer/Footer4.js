@@ -56,15 +56,7 @@ export default function Footer4() {
 							<div className="footer-inner">
 								<div className="footer-inner-wrap">
 									<div className="logo-site">
-										<Link href="/">
-											<Image
-												width="139"
-												height="39"
-												sizes="100vw"
-												style={{ width: "100%", height: "auto", paddingBottom: "20px" }}
-												id="logo_header" src="/images/section/footer-logo.png" data-retina="./images/section/footer-logo.png" alt="" />
-
-										</Link>
+										
 									</div>
 									<p className="text mb-70">
 										Consulting agency serves strategic businesses looking
@@ -146,6 +138,7 @@ export default function Footer4() {
 											+91 99403 44774
 										</p>
 									</div>
+									
 								</div>
 
 								{/* <div className="footer-inner-wrap form-wrap">

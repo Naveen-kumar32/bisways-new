@@ -36,12 +36,12 @@ export default function Section1() {
                   initial={{ x: 100, y: 50, opacity: 0 }}
                   animate={inView ? { x: 0, y: 0, opacity: 1 } : { x: 100, y: 50, opacity: 0 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
-                  style={{color:"#0b1972"}}
+                  style={{ color: "#0b1972" }}
                 >
-                 
-                    <i className="icon-angles-right moveLeftToRight" style={{color:"#0b1972"}}/>
-                    WHO WE ARE
-                  
+
+                  <i className="icon-angles-right moveLeftToRight" style={{ color: "#0b1972" }} />
+                  WHO WE ARE
+
                 </motion.p>
 
                 <p className="s-title text-main-green-3 mb-70 text-anime-wave">
@@ -73,7 +73,7 @@ export default function Section1() {
                     width="0"
                     height="0"
                     sizes="100vw"
-                    style={{ width: "100%", height: "auto",minWidth:"626.6px",minHeight:"418.22px" }}
+                    style={{ width: "100%", height: "auto", minWidth: "626.6px", minHeight: "418.22px" }}
                     src="/images/section/consulting.svg"
                     alt=""
                     className={`lazyload ${inView ? 'tf-animate-2' : ''}`}
@@ -88,14 +88,28 @@ export default function Section1() {
           <div className="col-lg-3">
             <div className="content">
               <div className="wg-curve-text style-2 mb-50">
-                <div className="icon"><i className="flaticon-rocket" /></div>
+                <div className="icon"><Image
+                  src="/images/section/background.svg"
+                  alt="Background Decorative Icon"
+                  width={80}
+                  height={80}
+                  style={{
+                    objectFit: "contain",
+                    filter: "drop-shadow(0 0 10px rgba(255,255,255,0.2))",
+                  }}
+                /></div>
                 <div className="text-rotate">
                   <div className="circle"><div id="circularText" className="text" /></div>
                 </div>
               </div>
               <p className="text mb-40">
-                We specialize in transforming growth businesses delivering strategic insights and
-                tailored solutions that drive growth and operational excellence consultants,
+                At Bisways, we bring clarity to complexity.
+                We’re a multi-disciplinary consulting firm
+                offering Virtual CFO, compliance, audit,
+                taxation, NGO, and digital advisory —
+                helping clients grow with confidence.
+
+
               </p>
               <Link href="/our-service">
 
@@ -109,7 +123,7 @@ export default function Section1() {
                     marginTop: '50px',
                   }}
                 >
-                  {['Get Started'].map((label, idx) => (
+                  {['Learn More About Us'].map((label, idx) => (
                     // parent group: hovering either button or circle triggers variants
                     <motion.div
                       key={idx}
@@ -126,7 +140,7 @@ export default function Section1() {
                           // border: '2px solid #ffffff',
                           background: '#e6ac41',
                           color: '#ffffff',
-                          fontSize: '18px',
+                          fontSize: '17px',
                           fontWeight: '600',
                           cursor: 'pointer',
                           // ensure no gap: right margin zero

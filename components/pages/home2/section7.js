@@ -14,25 +14,25 @@ export default function Section7() {
     {
       id: '01',
       title: 'Customer-centric approach',
-      text: 'Customer-centric approach business strategy prioritizes the needs, preferences.',
+      text: ' We focus on needs first to deliver personalized solutions.',
       delay: 0
     },
     {
       id: '02',
-      title: 'Sales-driven and marketing plans',
-      text: 'Sales-driven marketing plans focus on aligning marketing strategies sales objectives',
+      title: 'Growth & Marketing Strategies',
+      text: 'Financial and business insights that drive measurable expansion.',
       delay: 0.2
     },
     {
       id: '03',
-      title: 'Financial analysis & tutorials',
-      text: 'Financial analysis a tutorials essential compo businesses, investors, and individuals.',
+      title: 'Financial Advisory & Analysis',
+      text: 'Clear financial visibility for better decisions.',
       delay: 0.4
     },
     {
       id: '04',
-      title: 'Market Research and Analysis solutions',
-      text: 'Analyze competitors in the eco-friendly laun detergent space to identify gaps.',
+      title: 'Market Research & Insights',
+      text: ' Data-backed intelligence to stay competitive.',
       delay: 0.6
     }
   ]
@@ -68,9 +68,9 @@ export default function Section7() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={inView ? { x: 0, opacity: 1 } : {}}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    style={{color:"#0b1972"}}
+                    style={{ color: "#0b1972" }}
                   >
-                    <i className="icon-angles-right moveLeftToRight" style={{color:"#0b1972"}} />
+                    <i className="icon-angles-right moveLeftToRight" style={{ color: "#0b1972" }} />
                     business benefit
                   </motion.p>
 
@@ -81,7 +81,8 @@ export default function Section7() {
                     animate={inView ? { x: 0, opacity: 1 } : {}}
                     transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                   >
-                    Transformative Benefits Corporate <span style={{color:"#e6ac41"}}>Consulting</span>
+                    Transformative Benefits <br />
+                    of Corporate <span style={{ color: "#e6ac41" }}>Consulting</span>
                   </motion.p>
 
                   {/* Paragraph */}
@@ -91,10 +92,10 @@ export default function Section7() {
                     animate={inView ? { y: 0, opacity: 1 } : {}}
                     transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
                   >
-                    Corporate consulting strategic partnership to helps organizations navigate
-                    complex business challenges, optimize operations, and drive sustainable
-                    growth. By leveraging industry expertise and analytical insights,
-                    corporate consultants
+                    Bisways builds strategic partnerships that
+                    help businesses overcome challenges,
+                    optimize operations, and achieve sustainable
+                    growth.
                   </motion.p>
                 </div>
               </div>
@@ -104,7 +105,7 @@ export default function Section7() {
       </div>
 
       {/* 4 boxes */}
-      <div className="wrap-2" style={{marginTop:"-70px"}}>
+      <div className="wrap-2" style={{ marginTop: "-70px" }}>
         <div className="tf-container">
           <div className="row">
             {boxes.map((box, index) => (
