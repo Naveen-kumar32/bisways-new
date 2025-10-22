@@ -56,13 +56,21 @@ export default function Footer4() {
 							<div className="footer-inner">
 								<div className="footer-inner-wrap">
 									<div className="logo-site">
-										
+										<Link href="/">
+											<Image
+												width="304"
+												height="60"
+												sizes="100vw"
+												style={{ width: "304px", height: "60px", }}
+												id="logo_header" src="/images/section/footer-logo.png" data-retina="./images/section/footer-logo.png" alt="" />
+
+										</Link>
 									</div>
-									<p className="text mb-70">
+									<p className="text mb-70" style={{top:"-15px",marginLeft:"15px"}}>
 										Consulting agency serves strategic businesses looking
 										overcome.
 									</p>
-									<ul className="social-list">
+									<ul className="social-list" style={{marginLeft:"15px"}}>
 										<li>
 											<Link href="https://www.facebook.com/profile.php?id=100081860504520">
 												<i className="icon-facebook" />
@@ -75,7 +83,7 @@ export default function Footer4() {
 										</li>
 										<li>
 											<Link href="https://www.instagram.com/biswaysconsultinggroup/">
-												<i className="fab fa-instagram" style={{size:"42px"}}/>
+												<i className="fab fa-instagram"style={{size:"42px"}} />
 											</Link>
 										</li>
 										<li>
@@ -89,48 +97,49 @@ export default function Footer4() {
 									<h5 className="footer-title footer-title-desktop">Services</h5>
 									<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion3(1)}>Services</h5>
 									<ul className="list tf-collapse-content" style={{ display: getDisplayStyle3(1) }}>
+										
 										<li>
-											<Link href="/service-details">Annual Accounts & Filings</Link>
+											<Link href="/service-details">Virtual CFO Services</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Corporation Tax Returns</Link>
+											<Link href="/service-details">Business Registration & Startup Setup</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Monthly Financial Statements</Link>
+											<Link href="/service-details">GST, Taxation & Audit Support</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Quarterly Management Reports</Link>
+											<Link href="/service-details">ROC, MCA & Compliance Filings</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Business Activity Statements</Link>
+											<Link href="/service-details">Trust, NGO & CSR Consulting</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Payroll Accounting</Link>
+											<Link href="/service-details">Business Structuring & Advisory</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Accounts Payables and Receivables</Link>
+											<Link href="/service-details">Digital, API & eCommerce Consulting</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Book Keeping And Credit Control</Link>
+											<Link href="/service-details">Accounting, Payroll & Automatio</Link>
 										</li>
-										<li>
-											<Link href="/service-details">Software Migration Services</Link>
-										</li>
+										
+										
 									</ul>
 								</div>
-								<div className="footer-inner-wrap s1">
+								<div className="footer-inner-wrap s1" style={{width:"350px"}}>
 									<div className={`wrap footer-col-block  ${isAccordion1 === 1 ? 'open' : ''}`}>
 										<h5 className="footer-title footer-title-desktop">Address Business</h5>
 										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion1(1)}>Address Business</h5>
 										<p className="text tf-collapse-content" style={{ display: getDisplayStyle1(1) }}>
 											Plot no. 31,
-											Lisa Ponnammal St, 3rd
-											Floor, Golden George Nagar,
-											Nerkundram, Chennai,
-											Tamil Nadu 600107
+											Lisa Ponnammal St, 3rd Floor,
+											<br/>
+											Golden George Nagar, Nerkundram,
+											<br/>
+											Chennai, Tamil Nadu - 600107
 										</p>
 									</div>
-									<div className={`wrap footer-col-block  ${isAccordion2 === 1 ? 'open' : ''}`}>
+									<div className={`wrap footer-col-block  ${isAccordion2 === 1 ? 'open' : ''}`}style={{marginBottom:"5px"}}>
 										<h5 className="footer-title footer-title-desktop">Contact Us</h5>
 										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion2(1)}>Contact Us</h5>
 										<p className="text tf-collapse-content" style={{ display: getDisplayStyle2(1) }}>
@@ -170,9 +179,7 @@ export default function Footer4() {
 									<i className="icon-arrow-top fs-8" />
 								</Link>
 								<p className="no-copy style-2">
-									Copyright © {new Date().getFullYear()} <span> Bisways</span> Designed by
-									<Link href="/" target="_blank">
-										Ligiotec
+									Copyright © {new Date().getFullYear()} <span> Bisways</span> Designed by<Link href="/" target="_blank">	Ligiotec
 									</Link>
 									, All Rights Reserved.
 								</p>
