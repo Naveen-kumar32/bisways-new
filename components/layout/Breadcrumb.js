@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt }) {
+export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt, imageSrc = "/images/section/home-3.jpg", imageAlt = "" }) {
 	const words = breadcrumbTitle?.split(" ")
 	const formattedTitle = words?.length > 1 ? (
 		<>
@@ -16,16 +16,14 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt }) {
 			{breadcrumbTitle &&
 				<div className="tf-page-title">
 					<div className="content-wrap">
-						<div className="bg-image">
+						<div className="bg-image" >
 							<div className="rellax" data-rellax-speed={-10}>
 								<Image
-									width="0"
-									height="0"
+									src={imageSrc}
+									alt={imageAlt || breadcrumbTitle || "page background"}
+									fill
 									sizes="100vw"
-									style={{ width: "100%", height: "auto" }}
-
-									src="/images/section/home-3.jpg"
-									alt={""}
+									style={{ objectFit: "cover" }}
 								/>
 							</div>
 						</div>
@@ -49,16 +47,16 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt }) {
 							</div>
 						</div>
 					</div>
-					
-				</div>	
+
+				</div>
 			}
 
 			{breadcrumbAlt === 1 &&
 				<div className="tf-page-title style-2">
 					<div className="content-wrap">
-						<div className="bg-image">
+						<div className="bg-image" >
 							<div className="rellax" data-rellax-speed={-10}>
-								<img src="/images/page-title/page-title.jpg" alt />
+								<Image src={imageSrc} alt={imageAlt || "page"} fill sizes="100vw" style={{ objectFit: "cover" }} />
 							</div>
 						</div>
 						<div className="tf-overlay" />
@@ -111,16 +109,16 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt }) {
 							</div>
 						</div>
 					</div>
-				
+
 				</div>
 
 			}
 			{breadcrumbAlt === 2 &&
 				<div className="tf-page-title">
 					<div className="content-wrap">
-						<div className="bg-image">
+						<div className="bg-image" >
 							<div className="rellax" data-rellax-speed={-10}>
-								<img src="/images/page-title/page-title-2.jpg" alt />
+								<Image src={imageSrc} alt={imageAlt || "page"} fill sizes="100vw" style={{ objectFit: "cover" }} />
 							</div>
 						</div>
 						<div className="tf-overlay" />
@@ -129,9 +127,9 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt }) {
 								<div className="row">
 									<div className="col-lg-12">
 										<p className="title mb-30">
-											Marketing 
+											Marketing
 											<span className="ms-2">
-												 Consulting
+												Consulting
 											</span>
 										</p>
 										<div className="breadcrums">

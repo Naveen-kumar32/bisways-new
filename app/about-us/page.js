@@ -5,7 +5,7 @@ export default function Home() {
 
 	return (
 		<>
-			<Layout breadcrumbTitle="About Company" mainCls="padding-0">
+			<Layout breadcrumbTitle="About Company" mainCls="padding-0" breadcrumbImage="/images/section/about-hero.svg">
 				<AboutUs />
 			</Layout>
 		</>

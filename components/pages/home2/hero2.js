@@ -1,14 +1,44 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import ModalVideo from 'react-modal-video'
 import { TypeAnimation } from "react-type-animation"
-export default function Hero1() {
+
+export default function Hero2() {
   const [isOpen, setOpen] = useState(false)
+  const circleContainerRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Trigger reflow to restart CSS animation
+            const element = entry.target  // removed "as HTMLElement"
+            element.style.animation = 'none'
+            // Force reflow
+            void element.offsetWidth
+            element.style.animation = ''
+          }
+        })
+      },
+      { threshold: 0.5 } // Trigger when 50% visible
+    )
+
+    if (circleContainerRef.current) {
+      observer.observe(circleContainerRef.current)
+    }
+
+    return () => {
+      if (circleContainerRef.current) {
+        observer.unobserve(circleContainerRef.current)
+      }
+    }
+  }, [])
+
   return (
     <>
-
       <div className="page-title-home-1" style={{ backgroundColor: "#0b1972" }}>
         <div className="mb-50">
           <div className="tf-container w-1780">
@@ -36,8 +66,8 @@ export default function Hero1() {
                         speed={50}
                         style={{ display: 'inline-block', marginLeft: "15px" }}
                         repeat={Infinity}
-                        className="cd-words-wrapper ms-3">
-                      </TypeAnimation>
+                        className="cd-words-wrapper ms-3"
+                      />
                     </span>
                   </p>
                   <span className="line mb-75" />
@@ -51,7 +81,6 @@ export default function Hero1() {
                       Explore Services
                       <i className="icon-chevron-right" />
                     </Link>
-
                   </div>
                 </div>
               </div>
@@ -59,13 +88,20 @@ export default function Hero1() {
                 <div className="image-wrap">
                   <div className="image">
                     <Image
-                      width="0"
-                      height="0"
+                      width={0}
+                      height={0}
                       sizes="100vw"
                       style={{ width: "100%", height: "600px" }}
-                      src="/images/section/hero.svg" data-src="/images/section/page-title-home-1.jpg" alt="" className="lazyload" />
+                      src="/images/section/hero.svg"
+                      data-src="/images/section/page-title-home-1.jpg"
+                      alt=""
+                      className="lazyload"
+                    />
                   </div>
-                  <div className="wg-curve-text tf-animate__box animate__slow">
+                  <div
+                    ref={circleContainerRef}
+                    className="wg-curve-text tf-animate__box animate__slow"
+                  >
                     <div className="icon">
                       <Image
                         src="/images/section/background.svg"
@@ -89,63 +125,14 @@ export default function Hero1() {
             </div>
           </div>
         </div>
-        {/* <div className="tf-marquee slider-saylo">
-          <div className="wrap-marquee">
-            <div className="marquee-item">
-              <p className="font-main-2 text">
-                Saylo Consulting
-              </p>
-            </div>
-            <div className="marquee-item">
-              <p className="font-main-2 text">
-                Saylo Consulting
-              </p>
-            </div>
-            <div className="marquee-item">
-              <p className="font-main-2 text">
-                Saylo Consulting
-              </p>
-            </div>
-            <div className="marquee-item">
-              <p className="font-main-2 text">
-                Saylo Consulting
-              </p>
-            </div>
-            <div className="marquee-item">
-              <p className="font-main-2 text">
-                Saylo Consulting
-              </p>
-            </div>
-            <div className="marquee-item">
-              <p className="font-main-2 text">
-                Saylo Consulting
-              </p>
-            </div>
-            <div className="marquee-item">
-              <p className="font-main-2 text">
-                Saylo Consulting
-              </p>
-            </div>
-            <div className="marquee-item">
-              <p className="font-main-2 text">
-                Saylo Consulting
-              </p>
-            </div>
-            <div className="marquee-item">
-              <p className="font-main-2 text">
-                Saylo Consulting
-              </p>
-            </div>
-            <div className="marquee-item">
-              <p className="font-main-2 text">
-                Saylo Consulting
-              </p>
-            </div>
-          </div>
-        </div> */}
       </div>
-      <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="JXMWOmuR1hU" onClose={() => setOpen(false)} />
-
+      <ModalVideo
+        channel='youtube'
+        autoplay
+        isOpen={isOpen}
+        videoId="JXMWOmuR1hU"
+        onClose={() => setOpen(false)}
+      />
     </>
   )
 }

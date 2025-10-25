@@ -192,7 +192,7 @@ export default function Footer4() {
 											<Link href="/faqs"> Terms and Conditions </Link>
 										</li>
 										<li>
-											<Link href="/faqs"> Support </Link>
+											<Link href="/faqs"> FAQ </Link>
 										</li>
 									</ul>
 								</div>

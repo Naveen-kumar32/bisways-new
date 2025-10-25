@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function Section1() {
 	return (
-		<section className="s-about tf-spacing-7 relative overflow-hidden" style={{ backgroundColor: "#0b1972",borderRadius:"0px 0px 30px 30px" }}>
+		<section className="s-about tf-spacing-7 relative overflow-hidden" style={{ backgroundColor: "#0b1972", borderRadius: "0px 0px 30px 30px" }}>
 			{/* Gradient overlay at the top */}
 			<div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/70 to-transparent pointer-events-none z-10"></div>
 
@@ -32,9 +32,8 @@ export default function Section1() {
 								transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
 								className="s-title text-white mb-70 text-anime-wave"
 							>
-								We Work For Building a Brighter Future Together <br />
-								and
-								<span style={{color:"#e6ac41"}}> Grow Business</span>
+								We Empower Businesses to
+								Build a <span style={{ color: "#e6ac41" }}> Brighter Future </span>
 							</motion.p>
 
 							<div className="image">
@@ -43,7 +42,7 @@ export default function Section1() {
 									height="0"
 									sizes="100vw"
 									style={{ width: "100%", height: "auto" }}
-									src="/images/section/home-5.jpg"
+									src="/images/section/about-8.svg"
 									alt=""
 									className="lazyload"
 								/>
@@ -67,16 +66,18 @@ export default function Section1() {
 										height="0"
 										sizes="100vw"
 										style={{ width: "100%", height: "auto" }}
-										src="/images/section/home-4.jpg"
+										src="/images/section/home-5.jpg"
 										alt=""
 										className="lazyload tf-animate-2"
 									/>
 								</div>
 							</div>
 							<p className="text text-white mb-40">
-								Business consulting services are designed help organizations navigate challenges,
-								streamline operations a achieve long-term success we work closely with clients to
-								identify areas.
+								Bisways Consulting Group provides expert
+								Virtual CFO, taxation, compliance, and advisory
+								services. With 10+ years of experience, we help
+								startups, enterprises, and NGOs achieve financial
+								clarity and long-term growth.
 							</p>
 							<ul className="list mb-40">
 								<li>

@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
-export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handleWelcomeBox, isWelcomeBox }) {
+export default function Header2({ scroll, isMobileMenu, handleMobileMenu, handleWelcomeBox, isWelcomeBox }) {
 	return (
 		<>
 
@@ -16,10 +16,10 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 									<div className="logo-site">
 										<Link href="/">
 											<Image
-												width="139"
+												width="139"s
 												height="39"
 												sizes="100vw"
-												style={{ width: "100%", height: "auto",paddingBottom:"20px" }}
+												style={{ width: "100%", height: "auto" }}
 												id="logo_header" src="/images/section/header-logo.svg" data-retina="./images/section/header-logo.svg" alt="" />
 										</Link>
 									</div>
@@ -33,9 +33,9 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, handle
 
 								</div>
 							</div>
-							<div className={isMobileMenu ? "mobile-nav-wrap active" : "	mobile-nav-wrap"} style={{color:"#0b1972"}}>
-								
-								
+							<div className={isMobileMenu ? "mobile-nav-wrap active" : "	mobile-nav-wrap"} style={{ color: "#0b1972" }}>
+
+
 							</div>
 						</div>
 					</div>

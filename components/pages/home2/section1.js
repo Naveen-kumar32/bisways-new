@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useInView } from 'react-intersection-observer';
 import { motion } from "framer-motion";
-
+import { useState, useRef, useEffect } from 'react'
 
 export default function Section1() {
   const { ref: sectionRef, inView } = useInView({
@@ -22,6 +22,34 @@ export default function Section1() {
     rest: { rotate: -45, transition: syncTransition },
     hover: { rotate: 0, transition: syncTransition }, // to right (→)
   }
+  const circleContainerRef = useRef(null)
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Trigger reflow to restart CSS animation
+            const element = entry.target  // removed "as HTMLElement"
+            element.style.animation = 'none'
+            // Force reflow
+            void element.offsetWidth
+            element.style.animation = ''
+          }
+        })
+      },
+      { threshold: 0.5 } // Trigger when 50% visible
+    )
+
+    if (circleContainerRef.current) {
+      observer.observe(circleContainerRef.current)
+    }
+
+    return () => {
+      if (circleContainerRef.current) {
+        observer.unobserve(circleContainerRef.current)
+      }
+    }
+  }, [])
 
   return (
     <section ref={sectionRef} className="s-about-company-2 tf-spacing-3">
@@ -87,19 +115,27 @@ export default function Section1() {
           {/* Right Side Content */}
           <div className="col-lg-3">
             <div className="content">
-              <div className="wg-curve-text style-2 mb-50">
-                <div className="icon"><Image
-                  src="/images/section/background.svg"
-                  alt="Background Decorative Icon"
-                  width={80}
-                  height={80}
-                  style={{
-                    objectFit: "contain",
-                    filter: "drop-shadow(0 0 10px rgba(255,255,255,0.2))",
-                  }}
-                /></div>
+              <div
+                ref={circleContainerRef}
+                className="wg-curve-text style-2 tf-animate__box animate__slow"
+                style={{backgroundColor:"white"}}
+              >
+                <div className="icon">
+                  <Image
+                    src="/images/section/background.svg"
+                    alt="Background Decorative Icon"
+                    width={80}
+                    height={80}
+                    style={{
+                      objectFit: "contain",
+                      filter: "drop-shadow(0 0 10px rgba(255,255,255,0.2))",
+                    }}
+                  />
+                </div>
                 <div className="text-rotate">
-                  <div className="circle"><div id="circularText" className="text" /></div>
+                  <div className="circle" style={{ color: "#0b1972" }}>
+                    <div id="circularText" className="text" style={{ color: "#0b1972" }} />
+                  </div>
                 </div>
               </div>
               <p className="text mb-40">

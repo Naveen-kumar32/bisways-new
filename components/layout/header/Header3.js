@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
-export default function Header3({ scroll, isMobileMenu, handleMobileMenu, handleWelcomeBox, isWelcomeBox }) {
+export default function Header2({ scroll, isMobileMenu, handleMobileMenu, handleWelcomeBox, isWelcomeBox }) {
 	return (
 		<>
 
@@ -16,7 +16,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, handle
 									<div className="logo-site">
 										<Link href="/">
 											<Image
-												width="139"
+												width="139"s
 												height="39"
 												sizes="100vw"
 												style={{ width: "100%", height: "auto" }}

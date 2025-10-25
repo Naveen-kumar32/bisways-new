@@ -42,19 +42,19 @@ export default function Section2() {
 					<div className="row">
 						{/* LEFT SIDE (slide from top) */}
 						<div className="col-lg-7 slide-top" >
-							<div className="wg-company" style={{ backgroundColor: "#e6ac41"}}>
+							<div className="wg-company" style={{ backgroundColor: "#e6ac41" }}>
 								<ul className="list">
 									<li >
 										<div className="title">
 											<div className="icon">
 												<i className="flaticon-rocket" />
 											</div>
-											<Link href="/#" style={{ color: "#0b1972" }}>Company Mission</Link>
+											<Link href="/#" style={{ color: "#0b1972" }}>Our Mission</Link>
 										</div>
 										<p className="text">
-											Our mission is to empower businesses by providing innovative, data-driven
-											solutions that drive growth, enhance efficiency, and create lasting value.
-											We are committed to delivering exceptional service and personalized.
+											To empower businesses and institutions through innovative financial and regulatory
+											strategies that enhance transparency, strengthen compliance, and ensure
+											measurable, sustainable growth with integrity, expertise, and long-term impact.
 										</p>
 									</li>
 									<li>
@@ -62,13 +62,12 @@ export default function Section2() {
 											<div className="icon">
 												<i className="flaticon-market" />
 											</div>
-											<Link href="/#" style={{ color: "#0b1972" }}>Company Vision &amp; Goals</Link>
+											<Link href="/#" style={{ color: "#0b1972" }}>Our Vision &amp; Goals</Link>
 										</div>
 										<p className="text">
-											Our vision is to be global leader delivering transformative business
-											solutions that empower organizations to reach their full potential. We
-											strive to set the standard for innovation, excellence, and customer success
-											by continuously improving.
+											To be the most trusted consulting partner, enabling businesses and institutions to achieve
+											financial clarity, operational excellence, and long-term success through innovative strategies,
+											transparent practices, and expert guidance that drive measurable and sustainable growth.
 										</p>
 									</li>
 								</ul>
@@ -83,8 +82,8 @@ export default function Section2() {
 										width="0"
 										height="0"
 										sizes="100vw"
-										style={{ width: "100%", height: "auto",maxHeight:"500px",objectFit:"cover" }}
-										src="/images/section/home-1.jpg"
+										style={{ width: "100%", height: "auto", maxHeight: "579.8px", objectFit: "cover" }}
+										src="/images/section/hero-1.svg"
 										alt=""
 										className="lazyload"
 									/>
@@ -93,7 +92,7 @@ export default function Section2() {
 						</div>
 					</div>
 				</div>
-				
+
 			</section>
 
 			{/* Inline styles */}

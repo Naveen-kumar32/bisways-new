@@ -52,18 +52,18 @@ export default function Section3() {
 										className="s-title letter-space-0 text-anime-wave"
 										style={{ color: "#0b1972" }}
 									>
-										Expert Team <span style={{ color: "#e6ac41" }}> Member </span>
+										Our Management <span style={{ color: "#e6ac41" }}> Team </span>
 									</p>
 								</div>
 
 								{/* RIGHT SIDE - Slide in from right */}
-								<Link
+								{/* <Link
 									href="/team-member"
 									className="tf-btn style-3 text-anime-style-1 slide-right"
 								>
 									Explore All Member
 									<i className="icon-chevron-right" />
-								</Link>
+								</Link> */}
 							</div>
 						</div>
 					</div>
@@ -75,14 +75,14 @@ export default function Section3() {
 						<SwiperSlide>
 							<div
 								className="card-member  tf-hover"
-								style={{ backgroundColor: "#0b1972" }}
+								
 							>
 								<div className="image hover-14 hover-1">
 									<Image
 										width="0"
 										height="0"
 										sizes="100vw"
-										style={{ width: "100%", height: "auto" ,maxHeight:"540.94px"}}
+										style={{ width: "100%", height: "auto"}}
 										src="/images/section/home-1.jpg"
 										alt=""
 										className="lazyload"
@@ -90,14 +90,14 @@ export default function Section3() {
 								</div>
 								<div className="content">
 									<Link href="/team-details" className="name">
-										Daniel L. Braddock
+										 Soundarya S 
 									</Link>
-									<p className="duty">Business Consultant</p>
-									<ul className="social-list style-5 style-4">
-										<li><Link href="/#"><i className="icon-facebook" /></Link></li>
+									<p className="duty">Founder & Chief Executive Office</p>
+									<ul className="social-list style-5 style-4" style={{height:"28px"}}>
+										{/* <li><Link href="/#"><i className="icon-facebook" /></Link></li>
 										<li><Link href="/#"><i className="icon-twitter" /></Link></li>
 										<li><Link href="/#"><i className="icon-linkedin" /></Link></li>
-										<li><Link href="/#"><i className="icon-youtube" /></Link></li>
+										<li><Link href="/#"><i className="icon-youtube" /></Link></li> */}
 									</ul>
 								</div>
 							</div>
@@ -119,14 +119,15 @@ export default function Section3() {
 								</div>
 								<div className="content">
 									<Link href="/team-details" className="name">
-										Michael B. Reader
+										 Sarath B
 									</Link>
-									<p className="duty">Business Consultant</p>
-									<ul className="social-list style-5 style-4">
-										<li><Link href="/#"><i className="icon-facebook" /></Link></li>
+									<p className="duty">Head – Audit & Taxation</p>
+									
+									<ul className="social-list style-5 style-4" style={{height:"28px"}}>
+										{/* <li><Link href="/#"><i className="icon-facebook" /></Link></li>
 										<li><Link href="/#"><i className="icon-twitter" /></Link></li>
 										<li><Link href="/#"><i className="icon-linkedin" /></Link></li>
-										<li><Link href="/#"><i className="icon-youtube" /></Link></li>
+										<li><Link href="/#"><i className="icon-youtube" /></Link></li> */}
 									</ul>
 								</div>
 							</div>
