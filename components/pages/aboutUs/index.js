@@ -9,6 +9,22 @@ export default function AboutUs() {
 
 	return (
 		<>
+		  <div
+        aria-hidden="true"
+        style={{
+          position: "fixed",
+          inset: 0,                    // top:0; right:0; bottom:0; left:0;
+          zIndex: -1,                  // behind content
+          backgroundImage: "url('/images/section/background.svg')",
+          backgroundSize: "cover",     // cover whole viewport
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed", 
+          pointerEvents: "none",       
+          opacity: 0.7,  
+                     
+        }}
+      />
 			<Section1 />
 			<Section2 />
 			<Section3 />

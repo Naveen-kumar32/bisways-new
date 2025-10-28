@@ -43,13 +43,13 @@ export default function Hero2() {
         <div className="mb-50">
           <div className="tf-container w-1780">
             <div className="row">
-              <div className="col-lg-6">
-                <div className="content">
+              <div className="col-lg-6" >
+                <div className="content" >
                   <p className="s-sub-title text-white ">
                     <i className="icon-angles-right moveLeftToRight" />
                     consulting agency
                   </p>
-                  <p className="s-title text-white-yellow mb-70 text-fs-70">
+                  <p className="s-title text-white-yellow mb-40 text-fs-70">
                     Empowering Business
                     Through <br />
                     <span className="animationtext clip">
@@ -70,7 +70,7 @@ export default function Hero2() {
                       />
                     </span>
                   </p>
-                  <span className="line mb-75" />
+                  <span className="line mb-40" />
                   <p className="text font-main-2 fw-5 mb-40">
                     From Virtual CFO to Complete Business
                     Setup & Advisory — we’re your growth
@@ -91,7 +91,7 @@ export default function Hero2() {
                       width={0}
                       height={0}
                       sizes="100vw"
-                      style={{ width: "100%", height: "600px" }}
+                      style={{ width: "100%", height: "789.6px" }}
                       src="/images/section/hero.svg"
                       data-src="/images/section/page-title-home-1.jpg"
                       alt=""
