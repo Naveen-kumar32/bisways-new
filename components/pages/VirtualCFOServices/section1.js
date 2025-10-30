@@ -1,114 +1,138 @@
-"use client"
 
-import Image from "next/image"
-import Link from "next/link"
-import { motion } from "framer-motion"
-import { useInView } from "react-intersection-observer"
-
+import Image from 'next/image'
+import Link from 'next/link'
 export default function Section1() {
-	const { ref, inView } = useInView({
-		triggerOnce: false, // 👈 replay every scroll
-		threshold: 0.2,
-	})
-
-	// Left slide
-	const slideLeft = {
-		hidden: { opacity: 0, x: -80 },
-		visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
-	}
-
-	// Bottom slide
-	const slideUp = {
-		hidden: { opacity: 0, y: 60 },
-		visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-	}
-
 	return (
-		<section className="s-we-do tf-spacing-3" ref={ref}>
-			<div className="tf-container">
-				<div className="row">
-					<div className="col-lg-12">
-						<div className="heading mb-70">
-							{/* Subtitle */}
-							<motion.p
-								className="s-sub-title mb-15 justify-center"
-								style={{ color: "#0b1972", display: "flex", alignItems: "center", gap: "6px" }}
-								initial="hidden"
-								animate={inView ? "visible" : "hidden"}
-								variants={slideLeft}
-							>
-								<i className="icon-angles-right moveLeftToRight" style={{ color: "#0b1972" }} />
-								what we do
-							</motion.p>
+		<>
 
-							{/* Main Title */}
-							<motion.p
-								className="s-title text-center text-anime-style-2"
-								style={{ color: "#0b1972" }}
-								initial="hidden"
-								animate={inView ? "visible" : "hidden"}
-								variants={slideLeft}
-								transition={{ delay: 0.2 }}
-							>
-								Empowering Businesses with Expert <br />
-								Business <span style={{ color: "#e6ac41" }}>Consulting</span>
-							</motion.p>
-						</div>
+			<section className="s-why-choose-4 tf-spacing-3">
+				<div className="content-wrap tf-spacing-3">
+					<div className="content-left">
+						<p className="s-sub-title mb-15" style={{ color: "#0b1972" }}>
+							<i className="icon-angles-right moveLeftToRight" style={{ color: "#0b1972" }} />
+							Why choose us
+						</p>
+						<p className="s-title mb-40 text-anime-wave" style={{ color: "#0b1972" }}>
+							Unmatched Expertise for Your<span style={{ color: "#e6ac41" }}> Business Success</span>
+						</p>
+						<p className="text">
+							Bisways Virtual CFO services provide expert financial planning,
+							forecasting, and analysis without the need for a full-time CFO.
 
-						{/* Feature Boxes */}
-						<div className="feature-group overflow-hidden">
-							{[
-								{
-									icon: "flaticon-workflow",
-									title: "Customized Strategic Planning & Ideas",
-									text: "We develop tailored strategies that align with your business addressing unique challenges leveraging.",
-								},
-								{
-									icon: "flaticon-workflow",
-									title: "Customized Strategic Planning & Ideas",
-									text: "We develop tailored strategies that align with your business addressing unique challenges leveraging.",
-								},
-								{
-									icon: "flaticon-team",
-									title: "Operational Efficiency Optimization",
-									text: "We analyze and refine business the processes to improve productivity to reduce costs, and enhance overall.",
-								},
-							].map((item, i) => (
-								<motion.div
-									key={i}
-									className="box-icon style-8"
-									initial="hidden"
-									animate={inView ? "visible" : "hidden"}
-									variants={slideUp}
-									transition={{ delay: 0.4 + i * 0.2 }}
-								>
-									<div className="icon">
-										<i className={item.icon} />
-									</div>
-									<Link href="/service-details" className="title">
-										{item.title}
-									</Link>
-									<span className="line mb-30" />
-									<p className="text" style={{ backgroundColor: "#e6ac41",padding:"20px",borderRadius:"20px" }}>{item.text}</p>
-									<div className="image">
-										<Link href="/service-details">
-											<Image
-												width="0"
-												height="0"
-												sizes="100vw"
-												style={{ width: "100%", height: "100%" }}
-												src="/images/section/feature.jpg"
-												alt=""
-												className="lazyload"
-											/>
-										</Link>
-									</div>
-								</motion.div>
-							))}
+						</p>
+						<p className="text">
+							We help your business improve profitability, maintain financial
+							discipline, and achieve sustainable growth.
+
+
+						</p>
+						<ul className="benefit-list style-2">
+							<li>
+								<div className="icon">
+									<i className="icon-check-2" />
+								</div>
+								<p>
+									10+ Years of Experience
+								</p>
+							</li>
+							<li>
+								<div className="icon">
+									<i className="icon-check-2" />
+								</div>
+								<p>
+									500+ Businesses Supported Nationwide
+								</p>
+							</li>
+						</ul>
+						{/* <Link href="/service-details" className="tf-btn style-3 text-anime-style-1">
+							Explore Our Services
+							<i className="icon-chevron-right" />
+						</Link> */}
+					</div>
+					<div className="image-right">
+						<div className="image" style={{ borderRadius: "16px" }}>
+							<Image
+								width="0"
+								height="0"
+								sizes="100vw"
+								style={{ width: "100%", height: "auto", }}
+								src="/images/section/cfo-1.svg" data-src="/images/section/cfo-1.svg" alt="" className="lazyload" />
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+				<div className="content-wrap wrap-2">
+					<div className="image-left relative">
+						<div className="image " style={{ borderRadius: "16px" }}>
+							<Image
+								width="0"
+								height="0"
+								sizes="100vw"
+								style={{ width: "100%", height: "auto" }}
+								src="/images/section/cfo-2.svg" data-src="/images/section/cfo-2.svg" alt="" className="lazyload" />
+						</div>
+					</div>
+					<div className="content-right">
+						<p className="s-title text-anime-wave" style={{ color: "#0b1972" }}>
+							Smart Choice for Virtual
+
+							<span style={{ color: "#e6ac41" }}> CFO Excellence</span>
+						</p>
+						<ul className="list">
+							<li className="wow fadeInUp" data-wow-delay="0s">
+								<div className="number">
+									<p>
+										1
+									</p>
+								</div>
+								<div >
+									<Link href="/#" className="title" style={{ color: "#0b1972" }}>
+										Strategic Decision Support
+									</Link>
+									<p style={{ color: "#0b1972" }}>
+										Turning financial data into clear, actionable insights
+										that guide leadership decisions and improve outcomes.
+
+									</p>
+								</div>
+							</li>
+							<li className="wow fadeInUp" data-wow-delay="0s">
+								<div className="number">
+									<p>
+										2
+									</p>
+								</div>
+								<div >
+									<Link href="/#" className="title" style={{ color: "#0b1972" }}>
+										Data-Driven Forecasting
+									</Link>
+									<p style={{ color: "#0b1972" }}>
+										Planning budgets and predicting growth with precision,
+										ensuring smarter investments and optimized performance.
+									</p>
+								</div>
+							</li>
+							<li className="wow fadeInUp" data-wow-delay="0s">
+								<div className="number">
+									<p>
+										3
+									</p>
+								</div>
+								<div >
+									<Link href="/#" className="title" style={{ color: "#0b1972" }}>
+										Sustainable Financial Health
+									</Link>
+									<p style={{ color: "#0b1972" }}>
+										Building long-term financial discipline and compliance
+										to support consistent growth and organizational strength.
+
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		</>
 	)
 }

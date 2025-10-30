@@ -5,7 +5,7 @@ export default function Home() {
 
 	return (
 		<>
-			<Layout breadcrumbTitle="Virtual CFO Services" mainCls="tf-spacing-10">
+			<Layout breadcrumbTitle="Virtual CFO Services" mainCls="tf-spacing-10" breadcrumbImage="/images/section/cfo-hero.svg">
 				<VirtualCFOServices />
 			</Layout>
 		</>
