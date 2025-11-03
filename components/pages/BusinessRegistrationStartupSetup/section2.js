@@ -32,21 +32,9 @@ export default function Section2() {
 	}
 
 	return (
-		<section className="s-process tf-spacing-1" ref={ref}>
+		<section className="s-process tf-spacing-1" ref={ref} sty style={{backgroundColor:"#0b1972"}}>
 			<div className="tf-overlay" />
-			<div className="bg-image">
-				<div className="rellax" data-rellax-speed="0.3">
-					<Image
-						width="0"
-						height="0"
-						sizes="100vw"
-						style={{ width: "100%", height: "100%" }}
-						src="/images/section/process.jpg"
-						alt=""
-						className="lazyload"
-					/>
-				</div>
-			</div>
+			
 			<div className="content-wrap">
 				<div className="tf-container">
 					<div className="row">
@@ -56,26 +44,25 @@ export default function Section2() {
 								{/* Sub Title */}
 								<motion.p
 									className="s-sub-title mb-15"
-									style={{ color: "#0b1972", display: "flex", alignItems: "center", gap: "6px" }}
+									style={{ color: "#ffffffff", display: "flex", alignItems: "center", gap: "6px" }}
 									initial="hidden"
 									animate={inView ? "visible" : "hidden"}
 									variants={slideLeft}
 								>
-									<i className="icon-angles-right moveLeftToRight" style={{ color: "#0b1972" }} />
+									<i className="icon-angles-right moveLeftToRight" style={{ color: "#ffffffff" }} />
 									working process
 								</motion.p>
 
 								{/* Main Title */}
 								<motion.p
 									className="s-title text-anime-wave"
-									style={{ color: "#0b1972" }}
+									style={{ color: "#ffffffff" }}
 									initial="hidden"
 									animate={inView ? "visible" : "hidden"}
 									variants={slideLeft}
 									transition={{ delay: 0.2, duration: 0.6 }}
 								>
-									Crafting your Success <br />
-									to Process <span style={{ color: "#e6ac41" }}>Roadmap</span>
+									Crafting your <br /> Success  <span style={{ color: "#e6ac41" }}>Roadmap</span>
 								</motion.p>
 							</div>
 
@@ -88,7 +75,8 @@ export default function Section2() {
 								transition={{ delay: 0.4, duration: 0.6 }}
 							>
 								<p className="title font-main-2 mb-30">
-									Step-by-Step Consulting for Sustainable Growth
+									Step-by-Step Consulting
+									for Business Setup
 								</p>
 								<span className="line" />
 								<ul className="benefit-list">
@@ -96,19 +84,19 @@ export default function Section2() {
 										<div className="icon">
 											<i className="icon-check-2" />
 										</div>
-										<p>Core Competencies and Expertise</p>
+										<p>Financial Planning and Control</p>
 									</li>
 									<li>
 										<div className="icon">
 											<i className="icon-check-2" />
 										</div>
-										<p>Key Strengths and Accomplishments</p>
+										<p>Performance Insights and Analysis</p>
 									</li>
 									<li>
 										<div className="icon">
 											<i className="icon-check-2" />
 										</div>
-										<p>Skills and Career Highlights</p>
+										<p>Strategy Execution and Monitoring</p>
 									</li>
 								</ul>
 							</motion.div>
@@ -117,10 +105,10 @@ export default function Section2() {
 						{/* Right Column */}
 						<div className="col-lg-6">
 							{[
-								{ step: "01", title: "Discovery & Research", text: "We begin deep understanding your business, goal challenges market research, competitor" },
-								{ step: "02", title: "Strategy Development", text: "Based on our research develop comprehensive best marketing strategy aligns with objectives." },
-								{ step: "03", title: "Implementation", text: "Once the strategy is finalized, we move into action execute marketing campaigns across" },
-								{ step: "04", title: "Monitoring Support", text: "We continuously monitor they performance metrics, tracking KPIs such as engagement" },
+								{ step: "01", title: "Discovery & Consultation", text: "Understand your business goals,requirements, and choose the ideal registration structure." },
+								{ step: "02", title: "Documentation & Filing", text: "Collect mandatory documents,prepare incorporation papers,and file with relevant authorities." },
+								{ step: "03", title: "Registration & Compliance", text: "Register your entity, complete PAN, TAN, GST, MSME, and DSC formalities." },
+								{ step: "04", title: "Advisory & Post-Setup Support", text: "Provide continuous guidance,manage compliance, and ensure smooth operational implementation." },
 							].map((item, index) => (
 								<motion.div
 									key={index}

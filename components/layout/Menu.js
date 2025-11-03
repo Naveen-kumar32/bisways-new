@@ -38,11 +38,11 @@ export default function Menu() {
 					<li className={isActive("/our-service")}><Link href="/our-service"><span> Virtual CFO Services </span></Link></li>
 					<li className={isActive("/businessregistration-startup-setup")}><Link href="/businessregistration-startup-setup"><span> Business Registration & Startup Setup </span></Link></li>
 					<li className={isActive("/gst-taxation-audit")}><Link href="/gst-taxation-audit"><span> GST, Taxation & Audit Support </span></Link></li>
-					<li className={isActive("/quarterly-management-reports")}><Link href="/quarterly-management-reports"><span> ROC, MCA & Compliance Filings </span></Link></li>
-					<li className={isActive("/business-activity-statements")}><Link href="/business-activity-statements"><span> Trust, NGO & CSR Consulting </span></Link></li>
-					<li className={isActive("/payroll-accounting")}><Link href="/payroll-accounting"><span> Business Structuring & Advisory </span></Link></li>
-					<li className={isActive("/accounts-payables-and-receivables")}><Link href="/accounts-payables-and-receivables"><span> Digital, API & eCommerce Consulting </span></Link></li>
-					<li className={isActive("/book-keeping-and-credit-control")}><Link href="/book-keeping-and-credit-control"><span> Accounting, Payroll & Automation </span></Link></li>
+					<li className={isActive("/roc-mca-company-compliance")}><Link href="/roc-mca-company-compliance"><span> ROC, MCA & Compliance Filings </span></Link></li>
+					<li className={isActive("/trust-ngo-csr-support")}><Link href="/trust-ngo-csr-support"><span> Trust, NGO & CSR Consulting </span></Link></li>
+					<li className={isActive("/business-structuring-advisory")}><Link href="/business-structuring-advisory"><span> Business Structuring & Advisory </span></Link></li>
+					<li className={isActive("/digital-api-e-commerce-consulting")}><Link href="/digital-api-e-commerce-consulting"><span> Digital, API & eCommerce Consulting </span></Link></li>
+					<li className={isActive("/accounting-payroll-automation")}><Link href="/accounting-payroll-automation"><span> Accounting, Payroll & Automation </span></Link></li>
 					{/* <li className={isActive("/software-migration-services")}><Link href="/software-migration-services"><span> Software Migration Services </span></Link></li> */}
 				</ul>
 			</li>
@@ -61,7 +61,7 @@ export default function Menu() {
 					<li className={isActive("/blog-details")}><Link href="/blog-details"><span> Blog Details </span></Link></li>
 				</ul>
 			</li> */}
-			<li className={`item ${isActive("/mission-vision")}`}><Link href="/mission-vision"><span>Blogs</span></Link></li>
+			<li className={`item ${isActive("/blog-standard")}`}><Link href="/blog-standard"><span>Blogs</span></Link></li>
 			{/* <li className={`item has-child ${isParentActive(["/team-member", "/team-details", "/pricing-table", "/career", "/awards", "/mission-vision", "/faqs", "/404"])}`}>
 				<Link href="#"><span>Blogs</span></Link>
 				<ul className="sub-nav">

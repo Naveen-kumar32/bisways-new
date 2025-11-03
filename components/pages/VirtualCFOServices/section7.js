@@ -97,20 +97,8 @@ export default function Section7() {
 										{item.title}
 									</Link>
 									<span className="line mb-30" />
-									<p className="text" style={{ boxShadow: "2px", backgroundColor: "#e6ac41", padding: "20px", borderRadius: "20px", height: "170px" }}>{item.text}</p>
-									<div className="image">
-										<Link href="/service-details">
-											<Image
-												width="0"
-												height="0"
-												sizes="100vw"
-												style={{ width: "100%", height: "100%" }}
-												src="/images/section/feature.jpg"
-												alt=""
-												className="lazyload"
-											/>
-										</Link>
-									</div>
+									<p className="text" style={{ boxShadow: "2px", backgroundColor: "#e6ac41", padding: "20px", borderRadius: "20px", height: "170px",width:"300px",textAlign:"center" }}>{item.text}</p>
+									
 								</motion.div>
 							))}
 						</div>

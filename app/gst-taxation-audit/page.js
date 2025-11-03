@@ -5,7 +5,7 @@ export default function Home() {
 
 	return (
 		<>
-			<Layout breadcrumbTitle="GST Taxation Audit Support">
+			<Layout breadcrumbTitle="GST, Income Tax & Audit Support" breadcrumbImage="/images/section/gst-hero.svg">
 				<GSTTaxationAudit />
 			</Layout>
 		</>

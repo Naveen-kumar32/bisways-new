@@ -61,14 +61,14 @@ export default function Footer4() {
 												width="304"
 												height="60"
 												sizes="100vw"
-												style={{ width: "304px", height: "60px", }}
-												id="logo_header" src="/images/section/footer-logo.png" data-retina="./images/section/footer-logo.png" alt="" />
+												style={{ width: "304px", height: "60px",paddingRight:"70px" }}
+												id="logo_header" src="/images/section/footer-logo-1.svg" data-retina="./images/section/footer-logo.png" alt="" />
 
 										</Link>
 									</div>
-									<p className="text mb-70" style={{top:"-15px",marginLeft:"15px"}}>
-										Consulting agency serves strategic businesses looking
-										overcome.
+									<p className="text mb-70" style={{top:"-15px",marginLeft:"15px",fontSize:"14px"}}>
+										Consulting agency serves  strategic
+										<br/> businesses looking overcome.														
 									</p>
 									<ul className="social-list" style={{marginLeft:"15px"}}>
 										<li>
