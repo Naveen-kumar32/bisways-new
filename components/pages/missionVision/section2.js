@@ -15,7 +15,7 @@ export default function Section2() {
 								<div className="rellax type-2" style={{
 									backgroundAttachment: "fixed", 
 									backgroundPosition: "center", 
-									backgroundSize: "cover", 
+									backgroundSize: "50%", 
 									backgroundImage: "url(/images/section/home-6.jpg)",
 									width: "100%",
 									height: "100%",

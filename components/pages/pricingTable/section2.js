@@ -17,7 +17,7 @@ export default function Section2() {
 							width="0"
 							height="0"
 							sizes="100vw"
-							style={{backgroundAttachment: "fixed", backgroundPosition: "center", backgroundSize: "cover", width: "100%", height: "100%"}}
+							style={{backgroundAttachment: "fixed", backgroundPosition: "center", backgroundSize: "50%", width: "100%", height: "100%"}}
 							src="/images/widget/process.jpg" alt="" />
 					</div>
 				</div>

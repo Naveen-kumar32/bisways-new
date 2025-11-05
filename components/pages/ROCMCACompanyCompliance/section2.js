@@ -108,7 +108,7 @@ export default function Section2() {
 								{ step: "01", title: "Company Data Collection & Review", text: "Gather company details, director records,and statutory documents to verify filing readiness and identify pending compliances." },
 								{ step: "02", title: "Documentation & Form Preparation", text: "Prepare AOC-4, MGT-7, ADT-1, and other filings with supporting resolutions, ensuring accuracy and legal adherence." },
 								{ step: "03", title: "Submission & Coordination", text: "Submit annual and event-based filings to ROC and MCA portals, maintaining proof of acknowledgment and statutory tracking." },
-								{ step: "04", title: "Advisory & Post-Filing Support", text: "Assist with compliance follow-ups, handle ROC queries or resubmissions, and provide advisory for future statutory events." },
+								{ step: "04", title: "Advisory & Post-Filing     Support", text: "Assist with compliance follow-ups, handle ROC queries or resubmissions, and provide advisory for future statutory events." },
 							].map((item, index) => (
 								<motion.div
 									key={index}
@@ -122,7 +122,7 @@ export default function Section2() {
 										<div className="step-number">
 											<span>step {item.step}</span>
 										</div>
-										<Link href="/#" className="name-process font-main-2">
+										<Link href="/#" className="name-process font-main-2" style={{paddingRight:"50px"}}>
 											{item.title}
 										</Link>
 									</div>

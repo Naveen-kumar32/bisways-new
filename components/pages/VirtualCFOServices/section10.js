@@ -22,13 +22,30 @@ export default function Section10() {
 		hidden: { opacity: 0, y: 60 },
 		visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 	}
+	const titleVariant = {
+		hidden: { x: 120, y: 40, opacity: 0 },
+		visible: { x: 0, y: 0, opacity: 1 },
+	}
 
 	return (
 		<section className="s-we-do tf-spacing-3" ref={ref}>
 			<div className="tf-container">
 				<div className="heading mb-70">
 					{/* Subtitle */}
-
+					<motion.p
+						className="s-sub-title mb-15 justify-center"
+						style={{ color: '#0b1972' }}
+						variants={titleVariant}
+						initial="hidden"
+						animate={inView ? 'visible' : 'hidden'}
+						transition={{ duration: 0.7, ease: 'easeOut' }}
+					>
+						<i
+							className="icon-angles-right moveLeftToRight"
+							style={{ color: '#0b1972' }}
+						/>
+						WHO WE SERVE
+					</motion.p>
 
 					{/* Main Title */}
 					<motion.p
@@ -44,8 +61,8 @@ export default function Section10() {
 
 					</motion.p>
 				</div>
-				<p style={{justifyContent:"center",alignItems:"center",display:"flex",color: "#0b1972", fontSize:'23px'}}>
-					Founders, business owners, NGOs, and educational institutions that<br/>
+				<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: '23px' }}>
+					Founders, business owners, NGOs, and educational institutions that<br />
 					want to keep finances organized and investor / audit-ready.
 				</p>
 				<div className="row">
@@ -144,6 +161,46 @@ export default function Section10() {
 
 				</div>
 			</div>
+			<style jsx>{`
+			
+			/* Card text area - grows to equalize card heights */
+			.card-text {
+				margin-top: auto; /* push to bottom area */
+				padding: 16px;
+				border-radius: 12px;
+				background: #0b1972;
+				color: #fff;
+				box-sizing: border-box;
+				width: 100%;
+				flex: 1 1 auto; /* allow it to grow/shrink to equalize height */
+				display: flex;
+				align-items: center; /* vertical center the text */
+				justify-content: center;
+				text-align: center;
+			}
+
+			/* Optional: if you want to clamp text to a fixed number of lines instead of growing */
+			/* Uncomment the rules below and comment out .card-text { flex: 1 1 auto; } */
+			/*
+			.card-text {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+				-webkit-line-clamp: 3; // change number to how many lines you want
+				padding: 16px;
+				border-radius: 12px;
+				background: #0b1972;
+				color: #fff;
+				width: 100%;
+			}
+			*/
+
+			/* Responsive tweaks */
+			@media (max-width: 768px) {
+				.lead-text { font-size: 18px; padding: 0 12px; }
+				.card { min-height: 200px; }
+			}
+			`}</style>
 		</section>
 	)
 }

@@ -36,7 +36,7 @@ export default function Section1() {
 		<section ref={setRefs} className="s-why-choose-4 tf-spacing-3">
 			<div className="content-wrap tf-spacing-3">
 				<div className="content-left">
-					{/* <motion.p
+					<motion.p
 						className="s-sub-title mb-15"
 						style={{ color: '#0b1972' }}
 						variants={titleVariant}
@@ -48,8 +48,8 @@ export default function Section1() {
 							className="icon-angles-right moveLeftToRight"
 							style={{ color: '#0b1972' }}
 						/>
-						Why choose us
-					</motion.p> */}
+						Why Bisways
+					</motion.p>
 
 					<motion.p
 						className="s-title mb-40 text-anime-wave"
@@ -71,19 +71,19 @@ export default function Section1() {
 					<ul className="benefit-list style-2">
 						<li>
 							<div className="icon">
-								<i className="icon-check-2" />
+								<i className="icon-check-2" style={{backgroundColor:"#e6ac41",fontSize:"15px",padding:"7px",borderRadius:"50%",color:"white"}} />
 							</div>
 							<p>Comprehensive legal and tax structuring</p>
 						</li>
 						<li>
 							<div className="icon">
-								<i className="icon-check-2" />
+								<i className="icon-check-2" style={{backgroundColor:"#e6ac41",fontSize:"15px",padding:"7px",borderRadius:"50%",color:"white"}} />
 							</div>
 							<p>End-to-end support for holding and subsidiary setups</p>
 						</li>
 						<li>
 							<div className="icon">
-								<i className="icon-check-2" />
+								<i className="icon-check-2" style={{backgroundColor:"#e6ac41",fontSize:"15px",padding:"7px",borderRadius:"50%",color:"white"}} />
 							</div>
 							<p>Streamlined systems for growth and compliance</p>
 						</li>
@@ -122,6 +122,20 @@ export default function Section1() {
 
 				<div className="content-right">
 					<motion.p
+											className="s-sub-title mb-15"
+											style={{ color: '#0b1972' }}
+											variants={titleVariant}
+											initial="hidden"
+											animate={inView ? 'visible' : 'hidden'}
+											transition={{ duration: 0.7, ease: 'easeOut' }}
+										>
+											<i
+												className="icon-angles-right moveLeftToRight"
+												style={{ color: '#0b1972' }}
+											/>
+											the Smart choice
+										</motion.p>
+					<motion.p
 						className="s-title text-anime-wave"
 						style={{ color: '#0b1972' }}
 						variants={rightHeadingVariant}
@@ -141,9 +155,9 @@ export default function Section1() {
 								<p>1</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p href="" className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Strategic Structuring Advice
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									We design efficient business structures that balance
 									compliance, taxation, and long-term growth potential.
@@ -155,9 +169,9 @@ export default function Section1() {
 								<p>2</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p href="" className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Process & Control Frameworks
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									We help define SOPs, financial controls, and reporting
 									systems for scalable and efficient operations.
@@ -169,9 +183,9 @@ export default function Section1() {
 								<p>3</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p href="" className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Governance & Shareholding Advisory
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									We guide shareholding restructuring, ESOP planning, and
 									group-level management for sustained business evolution.

@@ -19,7 +19,7 @@ export default function DigitalAPIeCommerceConsulting() {
           inset: 0,                    // top:0; right:0; bottom:0; left:0;
           zIndex: -1,                  // behind content
           backgroundImage: "url('/images/section/background.svg')",
-          backgroundSize: "cover",     // cover whole viewport
+          backgroundSize: "50%",     // cover whole viewport
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed", 

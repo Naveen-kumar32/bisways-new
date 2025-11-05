@@ -102,7 +102,7 @@ export default function Section11() {
               </ul>
 
               <Link href="/about-us" className="tf-btn">
-                Learn More Us <i className="icon-chevron-right" />
+                Learn More About Us <i className="icon-chevron-right" />
               </Link>
             </div>
           </div>

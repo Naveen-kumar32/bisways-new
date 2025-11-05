@@ -24,6 +24,10 @@ export default function Section8() {
 		localRef.current = node
 		inViewRef(node)
 	}
+	const titleVariant = {
+		hidden: { x: 120, y: 40, opacity: 0 },
+		visible: { x: 0, y: 0, opacity: 1 },
+	}
 
 	const headingVariant = {
 		hidden: { x: -140, opacity: 0 },
@@ -41,6 +45,20 @@ export default function Section8() {
 				<div className="row">
 					<div className="col-lg-5">
 						<div className="content">
+							<motion.p
+								className="s-sub-title mb-15"
+								style={{ color: '#0b1972' }}
+								variants={titleVariant}
+								initial="hidden"
+								animate={inView ? 'visible' : 'hidden'}
+								transition={{ duration: 0.7, ease: 'easeOut' }}
+							>
+								<i
+									className="icon-angles-right moveLeftToRight"
+									style={{ color: '#0b1972' }}
+								/>
+								FAQS
+							</motion.p>
 
 							<motion.p
 								className="s-title mb-40 text-anime-wave"
@@ -137,7 +155,7 @@ export default function Section8() {
 							</div>
 						</div>
 					</div>
-					<div className="col-lg-6 offset-lg-1" style={{borderRadius:"16px"}}>
+					<div className="col-lg-6 offset-lg-1" style={{ borderRadius: "16px" }}>
 						<div className="image-wrap">
 							<motion.div
 								className="image"
@@ -145,7 +163,7 @@ export default function Section8() {
 								initial="hidden"
 								animate={inView ? 'visible' : 'hidden'}
 								transition={{ duration: 0.6, ease: 'easeOut' }}
-								
+
 							>
 								<Image
 									width={1200}

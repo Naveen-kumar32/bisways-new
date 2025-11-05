@@ -48,7 +48,7 @@ export default function Section1() {
 							className="icon-angles-right moveLeftToRight"
 							style={{ color: '#0b1972' }}
 						/>
-						Why choose us
+						Why Bisways
 					</motion.p>
 
 					<motion.p
@@ -77,19 +77,19 @@ export default function Section1() {
 					<ul className="benefit-list style-2">
 						<li>
 							<div className="icon">
-								<i className="icon-check-2" />
+								<i className="icon-check-2" style={{backgroundColor:"#e6ac41",fontSize:"15px",padding:"7px",borderRadius:"50%",color:"white"}} />
 							</div>
 							<p>Experienced professionals ensuring accurate compliance</p>
 						</li>
 						<li>
 							<div className="icon">
-								<i className="icon-check-2" />
+								<i className="icon-check-2" style={{backgroundColor:"#e6ac41",fontSize:"15px",padding:"7px",borderRadius:"50%",color:"white"}} />
 							</div>
 							<p>On-time filing of returns for all entities</p>
 						</li>
 						<li>
 							<div className="icon">
-								<i className="icon-check-2" />
+								<i className="icon-check-2" style={{backgroundColor:"#e6ac41",fontSize:"15px",padding:"7px",borderRadius:"50%",color:"white"}} />
 							</div>
 							<p>Assistance with audits, notices, and queries from authorities</p>
 						</li>
@@ -128,6 +128,20 @@ export default function Section1() {
 
 				<div className="content-right">
 					<motion.p
+											className="s-sub-title mb-15"
+											style={{ color: '#0b1972' }}
+											variants={titleVariant}
+											initial="hidden"
+											animate={inView ? 'visible' : 'hidden'}
+											transition={{ duration: 0.7, ease: 'easeOut' }}
+										>
+											<i
+												className="icon-angles-right moveLeftToRight"
+												style={{ color: '#0b1972' }}
+											/>
+											the Smart choice
+										</motion.p>
+					<motion.p
 						className="s-title text-anime-wave"
 						style={{ color: '#0b1972' }}
 						variants={rightHeadingVariant}
@@ -146,9 +160,9 @@ export default function Section1() {
 								<p>1</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p href="" className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Accurate Filings
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									We ensure all GST and income-tax filings are prepared
 									precisely, reviewed thoroughly, and submitted without errors.
@@ -160,9 +174,9 @@ export default function Section1() {
 								<p>2</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p href="" className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Timely Compliance
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									Every deadline is managed proactively with monthly, quarterly,
 									and annual return tracking for complete peace of mind.
@@ -174,9 +188,9 @@ export default function Section1() {
 								<p>3</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p href="" className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Reliable Audit Assistance
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									Our experts coordinate end-to-end audit processes, handle
 									notices, and ensure smooth communication with authorities.

@@ -98,11 +98,11 @@ export default function Section10() {
               Business Growth
             </span>
           </p>
-          <p style={{ color: "white", fontWeight: "300", fontSize: "36px", marginBottom: "20px" }}>Let’s discuss how Bisways can support your goals — from
+          <p style={{ color: "white", fontWeight: "300", fontSize: "36px", marginBottom: "50px" }}>Let’s discuss how Bisways can support your goals — from
             finance to compliance and beyond.
           </p>
           <Link href=" https://bisways.zohobookings.com/#/booking" className="tf-btn style-13 text-anime-style-1">
-            Book a Free Consultation
+            Schedule a Free Consultation
             <i className="icon-chevron-right" />
           </Link>
         </div>

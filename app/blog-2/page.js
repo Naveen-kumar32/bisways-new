@@ -1,12 +1,12 @@
 
 import Layout from "@/components/layout/Layout"
-import BlogStandard from "@/components/pages/blogStandard"
+import Blog2 from "@/components/pages/Blog2"
 export default function Home() {
 
 	return (
 		<>
 			<Layout >
-				<BlogStandard />
+				<Blog2 />
 			</Layout>
 		</>
 	)

@@ -67,8 +67,10 @@ export default function Footer4() {
 										</Link>
 									</div>
 									<p className="text mb-70" style={{top:"-15px",marginLeft:"15px",fontSize:"14px"}}>
-										Consulting agency serves  strategic
-										<br/> businesses looking overcome.														
+										Your trusted partner in financial <br />
+										growth and compliance excellence.
+										
+																			
 									</p>
 									<ul className="social-list" style={{marginLeft:"15px"}}>
 										<li>
@@ -120,7 +122,7 @@ export default function Footer4() {
 											<Link href="/service-details">Digital, API & eCommerce Consulting</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Accounting, Payroll & Automatio</Link>
+											<Link href="/service-details">Accounting, Payroll & Automation</Link>
 										</li>
 										
 										
@@ -128,8 +130,8 @@ export default function Footer4() {
 								</div>
 								<div className="footer-inner-wrap s1" style={{width:"350px"}}>
 									<div className={`wrap footer-col-block  ${isAccordion1 === 1 ? 'open' : ''}`}>
-										<h5 className="footer-title footer-title-desktop">Address Business</h5>
-										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion1(1)}>Address Business</h5>
+										<h5 className="footer-title footer-title-desktop">Office Address</h5>
+										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion1(1)}>Office Address</h5>
 										<p className="text tf-collapse-content" style={{ display: getDisplayStyle1(1) }}>
 											Plot no. 31,
 											Lisa Ponnammal St, 3rd Floor,

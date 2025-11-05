@@ -8,7 +8,7 @@ import Section7 from "./section7"
 import Section8 from "./section8"
 import Section9 from "./section9"
 import Section10 from "./section10"
-export default function VirtualCFOServices() {
+export default function ROCMCACompanyCompliance() {
 
 	return (
 		<>
@@ -19,7 +19,7 @@ export default function VirtualCFOServices() {
           inset: 0,                    // top:0; right:0; bottom:0; left:0;
           zIndex: -1,                  // behind content
           backgroundImage: "url('/images/section/background.svg')",
-          backgroundSize: "cover",     // cover whole viewport
+          backgroundSize: "50%",     // cover whole viewport
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed", 

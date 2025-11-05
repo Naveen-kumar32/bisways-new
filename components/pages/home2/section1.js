@@ -84,7 +84,7 @@ export default function Section1() {
                       width="0"
                       height="0"
                       sizes="100vw"
-                      style={{ width: "100%", height: "auto" }}
+                      style={{ width: "100%", height: "auto",borderRadius:"16px" }}
                       src="/images/section/consulting-small.svg"
                       alt=""
                       className={`lazyload ${inView ? 'tf-animate-1' : ''}`}
@@ -96,12 +96,12 @@ export default function Section1() {
 
               {/* Right Image */}
               <div className="image-right tf-hover">
-                <div className="image-2 hover-1">
+                <div className="image-2 hover-1" style={{borderRadius:"16px"}}>
                   <Image
                     width="0"
                     height="0"
                     sizes="100vw"
-                    style={{ width: "100%", height: "auto", minWidth: "626.6px", minHeight: "418.22px" }}
+                    style={{ width: "100%", height: "auto",borderRadius:"16px", minWidth: "626.6px", minHeight: "418.22px" }}
                     src="/images/section/consulting.svg"
                     alt=""
                     className={`lazyload ${inView ? 'tf-animate-2' : ''}`}
@@ -147,7 +147,7 @@ export default function Section1() {
 
 
               </p>
-              <Link href="/our-service">
+              <Link href="/about-us">
 
 
                 <div

@@ -50,8 +50,8 @@ export default function Section13() {
 									animate={inView ? 'visible' : 'hidden'}
 									style={{color:"#0b1972"}}
 								>
-									We understand your goals, challenges, and <br />
-									 operations to identify  <span style={{ color: "#e6ac41" }}> key growth areas</span>
+									From  Concept to  Execution <br />
+									 Our Consulting  <span style={{ color: "#e6ac41" }}> Process</span>
 								</motion.p>
 
 								<div className="tf-accordion-type-3 accordion" id="accordionExample">

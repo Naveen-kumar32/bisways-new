@@ -741,7 +741,7 @@ a.hover-text-main-golden:hover {
 	margin-right: auto;
 	padding-right: 15px;
 	padding-left: 15px;
-	width: 1320px;
+	width: 90%;
 	max-width: 100%;
 }
 
@@ -1783,7 +1783,7 @@ a.hover-text-main-golden:hover {
 }
 
 .box-welcome.active .popular-wrap {
-	transform: translateX(0px);
+	transform: translateX(-50px);
 }
 
 .btn-close-welcome {
@@ -1990,7 +1990,7 @@ a.hover-text-main-golden:hover {
 	z-index: 1001;
 	height: 100%;
 	width: 320px;
-	background-color: var(--White);
+	background-color: #e6ac41;
 	left: -320px;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -3042,9 +3042,9 @@ button {
 }
 
 .tf-btn.style-9 {
-	color: var(--Bg-2);
+	color: #000000;
 	border: 1px solid var(--Border-4);
-	background-color: var(--Bg-4);
+	background-color:#e6ac41;
 }
 
 .tf-btn.style-9::before {
@@ -3052,9 +3052,9 @@ button {
 }
 
 .tf-btn.style-9:hover {
-	color: var(--White);
-	border: 1px solid var(--Bg-2);
-	background-color: var(--Bg-2);
+	color: #000000;
+	/* border: 1px solid var(--Bg-2); */
+	background-color: #e6ac41;
 }
 
 .tf-btn.style-10 {

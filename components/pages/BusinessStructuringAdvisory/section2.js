@@ -42,7 +42,7 @@ export default function Section2() {
 						<div className="col-lg-6">
 							<div className="heading mb-50">
 								{/* Sub Title */}
-								{/* <motion.p
+								<motion.p
 									className="s-sub-title mb-15"
 									style={{ color: "#ffffffff", display: "flex", alignItems: "center", gap: "6px" }}
 									initial="hidden"
@@ -51,7 +51,7 @@ export default function Section2() {
 								>
 									<i className="icon-angles-right moveLeftToRight" style={{ color: "#ffffffff" }} />
 									working process
-								</motion.p> */}
+								</motion.p>
 
 								{/* Main Title */}
 								<motion.p
@@ -122,7 +122,7 @@ export default function Section2() {
 										<div className="step-number">
 											<span>step {item.step}</span>
 										</div>
-										<Link href="/#" className="name-process font-main-2">
+										<Link href="/#" className="name-process font-main-2" style={{paddingRight:"50px"}}>
 											{item.title}
 										</Link>
 									</div>

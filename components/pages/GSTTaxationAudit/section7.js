@@ -84,7 +84,7 @@ export default function Section7() {
 						</p>
 
 						{/* Feature Boxes in two rows of three */}
-						<div className="feature-group overflow-hidden">
+						<div className="feature-group overflow-hidden ">
 							{features.slice(0, 3).map((item, i) => (
 								<motion.div
 									key={i}
@@ -93,7 +93,7 @@ export default function Section7() {
 									animate={inView ? "visible" : "hidden"}
 									variants={slideUp}
 									transition={{ delay: 0.4 + i * 0.2 }}
-
+									
 								>
 									<div className="icon">
 										<Image
@@ -104,11 +104,11 @@ export default function Section7() {
 											style={{ objectFit: "contain" }}
 										/>
 									</div>
-									<Link href="/service-details" className="title" style={{ color: "#0b1972", height: "50px" }}>
+									<p href="/service-details" className="title" style={{width:"350px", color: "#0b1972", height: "50px",fontSize:"22px", fontWeight:"600",fontStyle:"bold"  }}>
 										{item.title}
-									</Link>
+									</p>
 									<span className="line mb-30" />
-									<p className="text" style={{ boxShadow: "2px", padding: "20px", borderRadius: "20px", height: "180px",width:"300px", backgroundColor: "#e6ac41",textAlign:"center" }}>{item.text}</p>
+									<p className="text" style={{ boxShadow: "2px", padding: "20px", borderRadius: "20px", height: "180px",width:"350px", backgroundColor: "#e6ac41",textAlign:"center" }}>{item.text}</p>
 
 								</motion.div>
 							))}
@@ -134,11 +134,11 @@ export default function Section7() {
 											style={{ objectFit: "contain" }}
 										/>
 									</div>
-									<Link href="/service-details" className="title" style={{ color: "#0b1972", height: "50px" }}>
+									<p href="/service-details" className="title" style={{width:"350px", color: "#0b1972", height: "50px",fontSize:"22px", fontWeight:"600",fontStyle:"bold"  }}>
 										{item.title}
-									</Link>
+									</p>
 									<span className="line mb-30" />
-									<p className="text" style={{ boxShadow: "2px", padding: "20px", borderRadius: "20px", height: "170px",width:"300px", backgroundColor: "#e6ac41" ,textAlign:"center"}}>{item.text}</p>
+									<p className="text" style={{width:"350px", boxShadow: "2px", padding: "20px", borderRadius: "20px", height: "170px", backgroundColor: "#e6ac41" ,textAlign:"center"}}>{item.text}</p>
 
 								</motion.div>
 							))}

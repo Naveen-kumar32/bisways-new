@@ -23,7 +23,7 @@ export default function Hero2() {
 			position: "absolute",
 			inset: 0,
 			backgroundImage: `url('/images/section/hero-2.svg')`,
-			backgroundSize: "cover",
+			backgroundSize: "50%",
 			backgroundPosition: "center",
 			opacity: 0.5, // ✅ opacity only for image
 			zIndex: 0,

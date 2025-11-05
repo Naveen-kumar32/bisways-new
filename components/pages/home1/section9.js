@@ -20,7 +20,7 @@ export default function Section9() {
 									</p>
 									<ul className="list ">
 										<li className="wow fadeInUp" data-wow-delay="0s">
-											<p className="cap">Address Business</p>
+											<p className="cap">Office Address</p>
 											<p className="infor">
 												55 East 10th Street, New York, <br />
 												NY 10003, United States

@@ -15,55 +15,27 @@ export default function MobileMenu() {
 	const isParentActive = (paths = []) => paths.some((path) => pathname.startsWith(path)) ? "active" : ""
 
 	const menuItems = [
-		{
-			title: "Home",
-			subMenu: [
-				{ title: "Home Consulting", path: "/" },
-				{ title: "Corporate Consulting", path: "/home-2" },
-				{ title: "Financial Advisor", path: "/home-3" },
-				{ title: "Marketing Consulting", path: "/home-4" }
-			]
-		},
-		{
-			title: "Page",
-			subMenu: [
-				{ title: "Team Member", path: "/team-member" },
-				{ title: "Team Details", path: "/team-details" },
-				{ title: "Pricing Table", path: "/pricing-table" },
-				{ title: "Career", path: "/career" },
-				{ title: "Awards", path: "/awards" },
-				{ title: "Mission Vision", path: "/mission-vision" },
-				{ title: "FAQs", path: "/faqs" },
-				{ title: "404", path: "/404" }
-			]
-		},
-		{ title: "About", path: "/about-us" },
+
+		{ title: "Home", path: "/" },
+		{ title: "About", path: "/about-us" },	
 		{
 			title: "Services",
 			subMenu: [
-				{ title: "Our Service", path: "/our-service" },
-				{ title: "Our Service 02", path: "/our-service-02" },
-				{ title: "Service Details", path: "/service-details" }
+				{ title: "Virtual CFO Services", path: "/virtual-cfo" },
+				{ title: "Business Registration & Startup Setup", path: "/businessregistration-startup-setup" },
+				{ title: "GST, Taxation & Audit Support", path: "/gst-taxation-audit" },
+				{ title: "ROC, MCA & Compliance Filings", path: "/roc-mca-company-compliance" },
+				{ title: "Trust, NGO & CSR Consulting", path: "/trust-ngo-csr-support" },
+				{ title: "Business Structuring & Advisory", path: "/business-structuring-advisory" },
+				{ title: "Digital, API & eCommerce Consulting", path: "/digital-api-e-commerce-consulting" },
+				{ title: "Accounting, Payroll & Automation", path: "/accounting-payroll-automation" }
 			]
 		},
-		{
-			title: "Case",
-			subMenu: [
-				{ title: "Case Study 01", path: "/case-study-01" },
-				{ title: "Case Study 02", path: "/case-study-02" },
-				{ title: "Case Details", path: "/case-details" }
-			]
-		},
-		{
-			title: "Blog",
-			subMenu: [
-				{ title: "Blog Standard", path: "/blog-standard" },
-				{ title: "Blog Details", path: "/blog-details" }
-			]
-		},
+		{ title: "blog", path: "/blog-standard" },
+		
 		{ title: "Contact", path: "/contact" }
 	]
-
+	
 	return (
 		<ul id="menu-mobile-menu" className="menu">
 			{menuItems.map((item, index) => {

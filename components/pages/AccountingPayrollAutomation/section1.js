@@ -36,7 +36,7 @@ export default function Section1() {
 		<section ref={setRefs} className="s-why-choose-4 tf-spacing-3">
 			<div className="content-wrap tf-spacing-3">
 				<div className="content-left">
-					{/* <motion.p
+					<motion.p
 						className="s-sub-title mb-15"
 						style={{ color: '#0b1972' }}
 						variants={titleVariant}
@@ -48,8 +48,8 @@ export default function Section1() {
 							className="icon-angles-right moveLeftToRight"
 							style={{ color: '#0b1972' }}
 						/>
-						Why choose us
-					</motion.p> */}
+						Why Bisways
+					</motion.p>
 
 					<motion.p
 						className="s-title mb-40 text-anime-wave"
@@ -66,25 +66,25 @@ export default function Section1() {
 
 					<p className="text">
 						Our professionals integrate modern tools with expert
-accounting to help you maintain accurate books, automate
-processes, and ensure smooth payroll compliance.
+						accounting to help you maintain accurate books, automate
+						processes, and ensure smooth payroll compliance.
 					</p>
 					<ul className="benefit-list style-2">
 						<li>
 							<div className="icon">
-								<i className="icon-check-2" />
+								<i className="icon-check-2" style={{ backgroundColor: "#e6ac41", fontSize: "15px", padding: "7px", borderRadius: "50%", color: "white" }} />
 							</div>
 							<p>Real-time accounting and reporting</p>
 						</li>
 						<li>
 							<div className="icon">
-								<i className="icon-check-2" />
+								<i className="icon-check-2" style={{ backgroundColor: "#e6ac41", fontSize: "15px", padding: "7px", borderRadius: "50%", color: "white" }} />
 							</div>
 							<p>Automated payroll processing with statutory compliance</p>
 						</li>
 						<li>
 							<div className="icon">
-								<i className="icon-check-2" />
+								<i className="icon-check-2" style={{ backgroundColor: "#e6ac41", fontSize: "15px", padding: "7px", borderRadius: "50%", color: "white" }} />
 							</div>
 							<p>Digital finance systems for smarter business decisions</p>
 						</li>
@@ -123,6 +123,20 @@ processes, and ensure smooth payroll compliance.
 
 				<div className="content-right">
 					<motion.p
+						className="s-sub-title mb-15"
+						style={{ color: '#0b1972' }}
+						variants={titleVariant}
+						initial="hidden"
+						animate={inView ? 'visible' : 'hidden'}
+						transition={{ duration: 0.7, ease: 'easeOut' }}
+					>
+						<i
+							className="icon-angles-right moveLeftToRight"
+							style={{ color: '#0b1972' }}
+						/>
+						the Smart choice
+					</motion.p>
+					<motion.p
 						className="s-title text-anime-wave"
 						style={{ color: '#0b1972' }}
 						variants={rightHeadingVariant}
@@ -142,12 +156,12 @@ processes, and ensure smooth payroll compliance.
 								<p>1</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p href="" className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Accounting & Bookkeeping
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									We maintain accurate financial records, ledgers, and statements
-aligned with regulatory standards and audit readiness.
+									aligned with regulatory standards and audit readiness.
 								</p>
 							</div>
 						</li>
@@ -156,12 +170,12 @@ aligned with regulatory standards and audit readiness.
 								<p>2</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p href="" className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Payroll & Statutory Compliance
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									We manage end-to-end payroll, PF, ESI, TDS, and
-professional tax with automated monthly reporting.
+									professional tax with automated monthly reporting.
 								</p>
 							</div>
 						</li>
@@ -170,12 +184,12 @@ professional tax with automated monthly reporting.
 								<p>3</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p href="" className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Automation & Analytics Setup
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									We implement digital systems like Zoho Books, Tally Prime,
-and Excel automation for real-time visibility and insights.
+									and Excel automation for real-time visibility and insights.
 								</p>
 							</div>
 						</li>

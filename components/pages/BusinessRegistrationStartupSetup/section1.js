@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useRef } from 'react'
 
+
 export default function Section1() {
 	const { ref: inViewRef, inView } = useInView({
 		triggerOnce: false, // replay every time section enters view
@@ -48,7 +49,7 @@ export default function Section1() {
 							className="icon-angles-right moveLeftToRight"
 							style={{ color: '#0b1972' }}
 						/>
-						Why choose us
+						Why Bisways
 					</motion.p>
 
 					<motion.p
@@ -60,7 +61,7 @@ export default function Section1() {
 						transition={{ duration: 0.7, ease: 'easeOut', delay: 0.06 }}
 					>
 						Unmatched Expertise for Your
-						<span style={{ color: '#e6ac41' }}> Business Success</span>
+						<span style={{ color: '#e6ac41' }}> Business Setup</span>
 					</motion.p>
 
 					<p className="text">
@@ -75,19 +76,19 @@ export default function Section1() {
 					<ul className="benefit-list style-2">
 						<li>
 							<div className="icon">
-								<i className="icon-check-2" />
+								<i className="icon-check-2" style={{backgroundColor:"#e6ac41",fontSize:"15px",padding:"7px",borderRadius:"50%",color:"white"}} />
 							</div>
 							<p>Fast and efficient registration process</p>
 						</li>
 						<li>
 							<div className="icon">
-								<i className="icon-check-2" />
+								<i className="icon-check-2" style={{backgroundColor:"#e6ac41",fontSize:"15px",padding:"7px",borderRadius:"50%",color:"white"}} />
 							</div>
 							<p>Full compliance with government regulations</p>
 						</li>
 						<li>
 							<div className="icon">
-								<i className="icon-check-2" />
+								<i className="icon-check-2" style={{backgroundColor:"#e6ac41",fontSize:"15px",padding:"7px",borderRadius:"50%",color:"white"}} />
 							</div>
 							<p>Personalized advice for your business structure</p>
 						</li>
@@ -126,6 +127,20 @@ export default function Section1() {
 
 				<div className="content-right">
 					<motion.p
+						className="s-sub-title mb-15"
+						style={{ color: '#0b1972' }}
+						variants={titleVariant}
+						initial="hidden"
+						animate={inView ? 'visible' : 'hidden'}
+						transition={{ duration: 0.7, ease: 'easeOut' }}
+					>
+						<i
+							className="icon-angles-right moveLeftToRight"
+							style={{ color: '#0b1972' }}
+						/>
+						the Smart choice
+					</motion.p>
+					<motion.p
 						className="s-title text-anime-wave"
 						style={{ color: '#0b1972' }}
 						variants={rightHeadingVariant}
@@ -145,9 +160,9 @@ export default function Section1() {
 								<p>1</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p href="" className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Efficient Registration Process
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									We handle all paperwork and processes for quick
 									registration.
@@ -159,9 +174,9 @@ export default function Section1() {
 								<p>2</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p href="" className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Legal Compliance Guarantee
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									Ensure your business is fully compliant with tax and legal
 									requirements.
@@ -173,9 +188,9 @@ export default function Section1() {
 								<p>3</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p href="" className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Tailored Business Structure Advice
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									Receive expert guidance on choosing the right business
 									structure (LLP, Pvt Ltd, etc.).

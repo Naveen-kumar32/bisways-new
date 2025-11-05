@@ -35,7 +35,7 @@ export default function Menu() {
 			<li className={`item has-child ${isParentActive(["/our-service", "/our-service-02", "/service-details"])}`}>
 				<Link href="#"><span>Services</span></Link>
 				<ul className="sub-nav" style={{ width: "300px" }}>
-					<li className={isActive("/our-service")}><Link href="/our-service"><span> Virtual CFO Services </span></Link></li>
+					<li className={isActive("/virtual-cfo")}><Link href="/virtual-cfo"><span> Virtual CFO Services </span></Link></li>
 					<li className={isActive("/businessregistration-startup-setup")}><Link href="/businessregistration-startup-setup"><span> Business Registration & Startup Setup </span></Link></li>
 					<li className={isActive("/gst-taxation-audit")}><Link href="/gst-taxation-audit"><span> GST, Taxation & Audit Support </span></Link></li>
 					<li className={isActive("/roc-mca-company-compliance")}><Link href="/roc-mca-company-compliance"><span> ROC, MCA & Compliance Filings </span></Link></li>

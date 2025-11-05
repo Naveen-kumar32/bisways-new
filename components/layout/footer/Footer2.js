@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 
 
-export default function Footer4() {
+export default function Footer2() {
 	const [isAccordion1, setIsAccordion1] = useState(0)
 	const [isAccordion2, setIsAccordion2] = useState(0)
 	const [isAccordion3, setIsAccordion3] = useState(0)
@@ -67,8 +67,10 @@ export default function Footer4() {
 										</Link>
 									</div>
 									<p className="text mb-70" style={{top:"-15px",marginLeft:"15px",fontSize:"14px"}}>
-										Consulting agency serves  strategic
-										<br/> businesses looking overcome.														
+										Your trusted partner in<br />
+										financial growth and
+										
+										<br /> compliance excellence.													
 									</p>
 									<ul className="social-list" style={{marginLeft:"15px"}}>
 										<li>
@@ -128,8 +130,8 @@ export default function Footer4() {
 								</div>
 								<div className="footer-inner-wrap s1" style={{width:"350px"}}>
 									<div className={`wrap footer-col-block  ${isAccordion1 === 1 ? 'open' : ''}`}>
-										<h5 className="footer-title footer-title-desktop">Address Business</h5>
-										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion1(1)}>Address Business</h5>
+										<h5 className="footer-title footer-title-desktop">Office Address</h5>
+										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion1(1)}>Office Address</h5>
 										<p className="text tf-collapse-content" style={{ display: getDisplayStyle1(1) }}>
 											Plot no. 31,
 											Lisa Ponnammal St, 3rd Floor,

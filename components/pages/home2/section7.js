@@ -14,25 +14,25 @@ export default function Section7() {
     {
       id: '01',
       title: 'Customer-centric approach',
-      text: ' We focus on needs first to deliver personalized solutions.',
+      text: ' We focus on each client’s  unique business goals. Personalized strategies ensure measurable results and long-term, sustainable  financial performance.',
       delay: 0
     },
     {
       id: '02',
       title: 'Growth & Marketing Strategies',
-      text: 'Financial and business insights that drive measurable expansion.',
+      text: 'We design integrated plans  that align finance with  marketing insights, driving  profitable growth and  expanding your business  reach effectively',
       delay: 0.2
     },
     {
       id: '03',
       title: 'Financial Advisory & Analysis',
-      text: 'Clear financial visibility for better decisions.',
+      text: 'We deliver clear financial  insights and guidance. In depth analysis supports  informed decisions and  strong budgeting for lasting  business success.',
       delay: 0.4
     },
     {
       id: '04',
-      title: 'Market Research & Insights',
-      text: ' Data-backed intelligence to stay competitive.',
+      title: 'Market Research & Insights', 
+      text: '  We turn data into strategic intelligence that helps you understand markets, identify opportunities, and stay ahead in a changing business landscape.',
       delay: 0.6
     }
   ]
@@ -109,7 +109,7 @@ export default function Section7() {
         <div className="tf-container">
           <div className="row">
             {boxes.map((box, index) => (
-              <div className="col-lg-3 col-md-6" key={index}>
+              <div className="col-lg-3 col-md-6" key={index} >
                 <motion.div
                   className="box-benefit"
                   initial={{ rotateY: 90, opacity: 0 }}
@@ -128,7 +128,7 @@ export default function Section7() {
                     {box.title}
                   </Link>
                   <span className="line" />
-                  <p className="text text-clamp-3">{box.text}</p>
+                  <p className="text text-clamp-3" style={{height:"200px"}}>{box.text}</p>
                 </motion.div>
               </div>
             ))}

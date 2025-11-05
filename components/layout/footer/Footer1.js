@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 
 
-export default function Footer4() {
+export default function Footer1() {
 	const [isAccordion1, setIsAccordion1] = useState(0)
 	const [isAccordion2, setIsAccordion2] = useState(0)
 	const [isAccordion3, setIsAccordion3] = useState(0)
@@ -61,16 +61,18 @@ export default function Footer4() {
 												width="304"
 												height="60"
 												sizes="100vw"
-												style={{ width: "304px", height: "60px",paddingRight:"70px" }}
+												style={{ width: "304px", height: "60px", paddingRight: "70px" }}
 												id="logo_header" src="/images/section/footer-logo-1.svg" data-retina="./images/section/footer-logo.png" alt="" />
 
 										</Link>
 									</div>
-									<p className="text mb-70" style={{top:"-15px",marginLeft:"15px",fontSize:"14px"}}>
-										Consulting agency serves  strategic
-										<br/> businesses looking overcome.														
+									<p className="text mb-70" style={{ top: "-15px", marginLeft: "15px", fontSize: "14px" }}>
+										Your trusted partner in<br />
+										financial growth and
+										
+										<br /> compliance excellence.
 									</p>
-									<ul className="social-list" style={{marginLeft:"15px"}}>
+									<ul className="social-list" style={{ marginLeft: "15px" }}>
 										<li>
 											<Link href="https://www.facebook.com/profile.php?id=100081860504520">
 												<i className="icon-facebook" />
@@ -83,7 +85,7 @@ export default function Footer4() {
 										</li>
 										<li>
 											<Link href="https://www.instagram.com/biswaysconsultinggroup/">
-												<i className="fab fa-instagram"style={{size:"42px"}} />
+												<i className="fab fa-instagram" style={{ size: "42px" }} />
 											</Link>
 										</li>
 										<li>
@@ -97,7 +99,7 @@ export default function Footer4() {
 									<h5 className="footer-title footer-title-desktop">Services</h5>
 									<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion3(1)}>Services</h5>
 									<ul className="list tf-collapse-content" style={{ display: getDisplayStyle3(1) }}>
-										
+
 										<li>
 											<Link href="/service-details">Virtual CFO Services</Link>
 										</li>
@@ -122,24 +124,24 @@ export default function Footer4() {
 										<li>
 											<Link href="/service-details">Accounting, Payroll & Automatio</Link>
 										</li>
-										
-										
+
+
 									</ul>
 								</div>
-								<div className="footer-inner-wrap s1" style={{width:"350px"}}>
+								<div className="footer-inner-wrap s1" style={{ width: "350px" }}>
 									<div className={`wrap footer-col-block  ${isAccordion1 === 1 ? 'open' : ''}`}>
-										<h5 className="footer-title footer-title-desktop">Address Business</h5>
-										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion1(1)}>Address Business</h5>
+										<h5 className="footer-title footer-title-desktop">Office Address</h5>
+										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion1(1)}>Office Address</h5>
 										<p className="text tf-collapse-content" style={{ display: getDisplayStyle1(1) }}>
 											Plot no. 31,
 											Lisa Ponnammal St, 3rd Floor,
-											<br/>
+											<br />
 											Golden George Nagar, Nerkundram,
-											<br/>
+											<br />
 											Chennai, Tamil Nadu - 600107
 										</p>
 									</div>
-									<div className={`wrap footer-col-block  ${isAccordion2 === 1 ? 'open' : ''}`}style={{marginBottom:"5px"}}>
+									<div className={`wrap footer-col-block  ${isAccordion2 === 1 ? 'open' : ''}`} style={{ marginBottom: "5px" }}>
 										<h5 className="footer-title footer-title-desktop">Contact Us</h5>
 										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion2(1)}>Contact Us</h5>
 										<p className="text tf-collapse-content" style={{ display: getDisplayStyle2(1) }}>
@@ -147,7 +149,7 @@ export default function Footer4() {
 											+91 99403 44774
 										</p>
 									</div>
-									
+
 								</div>
 
 								{/* <div className="footer-inner-wrap form-wrap">

@@ -1,6 +1,5 @@
 import Section1 from "./section1"
-import Section2 from "./section2"
-export default function Contact() {
+export default function Blog2() {
 
 	return (
 		<>
@@ -21,7 +20,6 @@ export default function Contact() {
         }}
       />
 			<Section1 />
-			<Section2 />
 		</>
 	)
 }

@@ -48,7 +48,7 @@ export default function Section1() {
 							className="icon-angles-right moveLeftToRight"
 							style={{ color: '#0b1972' }}
 						/>
-						Why choose us
+						Why Bisways
 					</motion.p>
 
 					<motion.p
@@ -76,13 +76,13 @@ export default function Section1() {
 					<ul className="benefit-list style-2">
 						<li>
 							<div className="icon">
-								<i className="icon-check-2" />
+								<i className="icon-check-2" style={{backgroundColor:"#e6ac41",fontSize:"15px",padding:"7px",borderRadius:"50%",color:"white"}} />
 							</div>
 							<p>10+ Years of Experience</p>
 						</li>
 						<li>
 							<div className="icon">
-								<i className="icon-check-2" />
+								<i className="icon-check-2" style={{backgroundColor:"#e6ac41",fontSize:"15px",padding:"7px",borderRadius:"50%",color:"white"}} />
 							</div>
 							<p>500+ Businesses Supported Nationwide</p>
 						</li>
@@ -121,6 +121,20 @@ export default function Section1() {
 
 				<div className="content-right">
 					<motion.p
+						className="s-sub-title mb-15"
+						style={{ color: '#0b1972' }}
+						variants={titleVariant}
+						initial="hidden"
+						animate={inView ? 'visible' : 'hidden'}
+						transition={{ duration: 0.7, ease: 'easeOut' }}
+					>
+						<i
+							className="icon-angles-right moveLeftToRight"
+							style={{ color: '#0b1972' }}
+						/>
+						the Smart choice
+					</motion.p>
+					<motion.p
 						className="s-title text-anime-wave"
 						style={{ color: '#0b1972' }}
 						variants={rightHeadingVariant}
@@ -139,9 +153,9 @@ export default function Section1() {
 								<p>1</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p   className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Strategic Decision Support
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									Turning financial data into clear, actionable insights that guide
 									leadership decisions and improve outcomes.
@@ -153,9 +167,9 @@ export default function Section1() {
 								<p>2</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Data-Driven Forecasting
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									Planning budgets and predicting growth with precision, ensuring
 									smarter investments and optimized performance.
@@ -167,9 +181,9 @@ export default function Section1() {
 								<p>3</p>
 							</div>
 							<div>
-								<Link href="/#" className="title" style={{ color: '#0b1972' }}>
+								<p className="title" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 									Sustainable Financial Health
-								</Link>
+								</p>
 								<p style={{ color: '#0b1972' }}>
 									Building long-term financial discipline and compliance to support
 									consistent growth and organizational strength.

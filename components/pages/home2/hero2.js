@@ -78,7 +78,7 @@ export default function Hero2() {
                   </p>
                   <div className="bot">
                     <Link href="/our-service" className="tf-btn">
-                      Explore Services
+                      Get  Free Consultation
                       <i className="icon-chevron-right" />
                     </Link>
                   </div>

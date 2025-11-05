@@ -34,13 +34,31 @@ export default function Section8() {
 		hidden: { scale: 1 },
 		visible: { scale: 1.03 }, // subtle zoom when section in view
 	}
-
+const titleVariant = {
+		hidden: { x: 120, y: 40, opacity: 0 },
+		visible: { x: 0, y: 0, opacity: 1 },
+	}
 	return (
 		<section ref={setRefs} className="s-faq-2 tf-spacing-1">
 			<div className="tf-container">
 				<div className="row">
 					<div className="col-lg-5">
 						<div className="content">
+
+							<motion.p
+								className="s-sub-title mb-15"
+								style={{ color: '#0b1972' }}
+								variants={titleVariant}
+								initial="hidden"
+								animate={inView ? 'visible' : 'hidden'}
+								transition={{ duration: 0.7, ease: 'easeOut' }}
+							>
+								<i
+									className="icon-angles-right moveLeftToRight"
+									style={{ color: '#0b1972' }}
+								/>
+								FAQS
+							</motion.p>
 
 							<motion.p
 								className="s-title mb-40 text-anime-wave"

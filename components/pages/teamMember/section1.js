@@ -30,7 +30,7 @@ export default function Section1() {
 									<div className="rellax" data-rellax-speed={1} data-bleed={5} style={{
 										backgroundAttachment: "fixed",
 										backgroundPosition: "center",
-										backgroundSize: "cover",
+										backgroundSize: "50%",
 										backgroundImage: "url(/images/section/team-member.jpg)",
 										width: "100%",
 										height: "100%",

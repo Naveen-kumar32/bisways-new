@@ -191,11 +191,11 @@ export default function Section2() {
                   animate={inView ? { x: 0, opacity: 1 } : { x: 100, opacity: 0 }}
                   transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
                 >
-                  We deliver end-to-end consulting<br />
-                  from discovery and strategy to<br />
+                  We deliver end-to-end consulting
+                  from discovery and strategy to
                   execution, financial management,<br />
-                 
-                  <span style={{ color: "#e6ac41" }}>and sustainable growth</span>
+
+                  <span style={{ color: "#e6ac41" }}>and Sustainable Growth</span>
                 </motion.p>
 
               </div>

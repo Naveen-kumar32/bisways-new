@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt, imageSrc = "/images/section/home-3.jpg", imageAlt = "" }) {
+export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt, breadcrumbText, imageSrc = "/images/section/home-3.jpg", imageAlt = "" }) {
 	const words = breadcrumbTitle?.split(" ")
 	const formattedTitle = words?.length > 1 ? (
 		<>
@@ -33,6 +33,9 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt, imageSrc = 
 								<div className="row">
 									<div className="col-lg-12">
 										<p className="title">{formattedTitle}</p>
+										<p style={{color:"white",fontSize:"30px",marginBottom:"20px",fontWeight:"600px"}}>
+											{breadcrumbText}
+										</p>
 										<div className="breadcrums">
 											<Link href="/">Home</Link>
 											<div className="icon">
@@ -41,6 +44,7 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt, imageSrc = 
 											<Link href="/#" className="current">
 												{formattedTitle}
 											</Link>
+
 										</div>
 									</div>
 								</div>

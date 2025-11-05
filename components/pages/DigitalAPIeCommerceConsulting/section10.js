@@ -22,6 +22,10 @@ export default function Section10() {
 		hidden: { opacity: 0, y: 60 },
 		visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 	}
+	const titleVariant = {
+		hidden: { x: 120, y: 40, opacity: 0 },
+		visible: { x: 0, y: 0, opacity: 1 },
+	}
 
 	return (
 		<section className="s-we-do tf-spacing-3" ref={ref}>
@@ -29,6 +33,20 @@ export default function Section10() {
 				<div className="heading mb-70">
 					{/* Subtitle */}
 
+<motion.p
+						className="s-sub-title mb-15 justify-center"
+						style={{ color: '#0b1972' }}
+						variants={titleVariant}
+						initial="hidden"
+						animate={inView ? 'visible' : 'hidden'}
+						transition={{ duration: 0.7, ease: 'easeOut' }}
+					>
+						<i
+							className="icon-angles-right moveLeftToRight"
+							style={{ color: '#0b1972' }}
+						/>
+						WHO WE SERVE
+					</motion.p>
 
 					{/* Main Title */}
 					<motion.p

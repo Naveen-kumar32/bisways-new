@@ -47,7 +47,7 @@ export default function Section7() {
   ]
 
   return (
-    <section className="s-we-do tf-spacing-3" ref={ref}>
+    <section className="s-we-do tf-spacing-3" ref={ref} >
       {/* NOTE: this container tweak is scoped to this section only */}
       <div className="tf-container section-fullwidth">
         <div className="row">
@@ -79,7 +79,7 @@ export default function Section7() {
               </motion.p>
             </div>
 
-            <p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 40px", marginBottom: 32 }}>
+            <p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 40px", marginBottom: 32,textAlign:"center" }}>
               We provide a comprehensive service for business registration and legal setup, ensuring you start your business on the right foot. Here’s what we do for you:
             </p>
 
@@ -105,14 +105,14 @@ export default function Section7() {
                   </div>
 
                   <div style={{  height:"150px" }}>
-                    <Link href="/service-details" className="title" style={{ color: "#0b1972", fontWeight: 600 ,}}>
-                      {item.title}
-                    </Link>
+                   <p href="/service-details" className="title" style={{ color: "#0b1972", height: "50px",fontSize:"22px", fontWeight:"600",fontStyle:"bold"  }}>
+										{item.title}
+									</p>
                   </div>
 
                   <span className="line mb-12" />
 
-                  <p className="text card-text-box" style={{fontSize:"14px",minHeight:"280px",width:"200px",textAlign:"center"}}>
+                  <p className="text card-text-box" style={{minHeight:"330px",width:"200px",textAlign:"center"}}>
                     {item.text}
                   </p>
 
@@ -131,11 +131,11 @@ export default function Section7() {
 
         /* Make the container wider for this section (overrides any outer container padding) */
         .s-we-do .section-fullwidth {
-          max-width: 1600px; /* expand the usable width for this section */
+          max-width: 100%; /* expand the usable width for this section */
           padding-left: 12px;
           padding-right: 12px;
-          margin-left: auto;
-          margin-right: auto;
+          // margin-left: auto;
+          // margin-right: auto;
         }
 
         /* Feature grid: equal columns and full-width usage */

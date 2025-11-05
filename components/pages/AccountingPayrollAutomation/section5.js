@@ -46,10 +46,9 @@ export default function Section5() {
 												borderRadius: "20px",
 											}}
 										>
-											<p className="cap" style={{ color: "#0b1972" }}>Address Business</p>
+											<p className="cap" style={{ color: "#0b1972" }}>Office Address</p>
 											<p className="infor">
-												Plot no. 31,
-												Lisa Ponnammal St, 3rd Floor,
+												Plot no. 31,Lisa Ponnammal St, 3rd Floor,
 												<br />
 												Golden George Nagar, Nerkundram,
 												<br />

@@ -98,11 +98,11 @@ export default function Section7() {
 											style={{ objectFit: "contain" }}
 										/>
 									</div>
-									<Link href="/service-details" className="title" style={{ color: "#0b1972", height: "50px" }}>
+									<p href="/service-details" className="title" style={{width:"350px", color: "#0b1972", height: "50px",fontSize:"22px", fontWeight:"600",fontStyle:"bold"  }}>
 										{item.title}
-									</Link>
+									</p>
 									<span className="line mb-30" />
-									<p className="text" style={{ boxShadow: "2px", backgroundColor: "#e6ac41", padding: "20px", borderRadius: "20px", height: "170px" ,width:"300px",textAlign:"center"}}>{item.text}</p>
+									<p className="text" style={{ boxShadow: "2px", backgroundColor: "#e6ac41", padding: "20px", borderRadius: "20px", height: "170px" ,width:"350px",textAlign:"center"}}>{item.text}</p>
 
 								</motion.div>
 							))}
