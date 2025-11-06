@@ -83,11 +83,11 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, handle
 										<span className="dot" />
 										<span className="dot" />
 									</div>
-									<div className="union style-2 btn-open-welcome" onClick={handleWelcomeBox}>
+									{/* <div className="union style-2 btn-open-welcome" onClick={handleWelcomeBox}>
 										<span className="dot" />
 										<span className="dot" />
 										<span className="dot" />
-									</div>
+									</div> */}
 									
 								</div>
 							</div>

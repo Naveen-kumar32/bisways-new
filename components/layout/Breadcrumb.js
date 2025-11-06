@@ -22,7 +22,7 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt, breadcrumbT
 									src={imageSrc}
 									alt={imageAlt || breadcrumbTitle || "page background"}
 									fill
-									sizes="100vw"
+									sizes="100%"
 									style={{ objectFit: "cover" }}
 								/>
 							</div>

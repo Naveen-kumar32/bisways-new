@@ -106,7 +106,7 @@ export default function Section10() {
 										{item.title}
 									</Link>
 									<span className="line mb-30" />
-									<p className="text" style={{ color: "white", boxShadow: "2px", backgroundColor: "#0b1972", padding: "20px", borderRadius: "16px", height: "100px" }}>{item.text}</p>
+									<p className="text" style={{width:"550px", color: "white", boxShadow: "2px", backgroundColor: "#0b1972", padding: "20px", borderRadius: "16px", height: "100px" }}>{item.text}</p>
 
 								</motion.div>
 							))}
@@ -152,7 +152,7 @@ export default function Section10() {
 										{item.title}
 									</Link>
 									<span className="line mb-30" />
-									<p className="text" style={{ color: "white", boxShadow: "2px", backgroundColor: "#0b1972", padding: "20px", borderRadius: "16px", height: "100px" }}>{item.text}</p>
+									<p className="text" style={{width:"550px", color: "white", boxShadow: "2px", backgroundColor: "#0b1972", padding: "20px", borderRadius: "16px", height: "100px" }}>{item.text}</p>
 
 								</motion.div>
 							))}
