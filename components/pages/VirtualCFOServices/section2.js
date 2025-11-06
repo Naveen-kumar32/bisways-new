@@ -122,9 +122,10 @@ export default function Section2() {
 										<div className="step-number">
 											<span>step {item.step}</span>
 										</div>
-										<Link href="/#" className="name-process font-main-2">
+										<p  className="name-process font-main-2" style={{ color: '#0b1972', fontSize:"22px", fontWeight:"600",fontStyle:"bold" }}>
 											{item.title}
-										</Link>
+										</p>
+										
 									</div>
 									<p className="text">{item.text}</p>
 								</motion.div>

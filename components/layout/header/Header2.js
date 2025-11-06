@@ -12,7 +12,7 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, handle
 							<div className="topbar-inner">
 								<div className="topbar-left">
 									<div className="icon">
-										<i className="flaticon-tag" />
+										
 									</div>
 									<p></p>
 								</div>
