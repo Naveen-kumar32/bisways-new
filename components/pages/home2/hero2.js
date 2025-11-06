@@ -77,10 +77,16 @@ export default function Hero2() {
                     partner at every step.
                   </p>
                   <div className="bot">
-                    <Link href="/our-service" className="tf-btn">
-                      Get  Free Consultation
+                    <Link
+                      href="https://bisways.zohobookings.com/#/booking"
+                      className="tf-btn style-13 text-anime-style-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Schedule a Free Consultation
                       <i className="icon-chevron-right" />
                     </Link>
+
                   </div>
                 </div>
               </div>
