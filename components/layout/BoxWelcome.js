@@ -180,7 +180,7 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
               {/* ---------- Styled Submit Button (animated circle + arrow) ---------- */}
               <div className="bot flex justify-center mb-10">
                 <button type="submit" className="tf-btn text-anime-style-1">
-                  Send Message Us
+                  Submit & Download
                   <i className="icon-chevron-right" />
                 </button>
               </div>
