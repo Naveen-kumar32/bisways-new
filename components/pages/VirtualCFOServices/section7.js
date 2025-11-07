@@ -57,7 +57,7 @@ export default function Section7() {
 						</div>
 
 						{/* Feature Boxes */}
-						<div className="feature-group overflow-hidden">
+						<div className="feature-group overflow-hidden" style={{width:"100vw"}}>
 							{[
 								{
 									img: "/images/section/cfo-icon-1.png",

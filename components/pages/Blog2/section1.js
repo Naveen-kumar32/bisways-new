@@ -5,7 +5,7 @@ export default function Section1() {
 	return (
 		<>
 
-			<section className="s-blog-standard">
+			<section className="s-blog-standard" style={{paddingTop:"50px"}}>
 				<div className="tf-container">
 					<div className="row">
 						<div className="col-lg-8">

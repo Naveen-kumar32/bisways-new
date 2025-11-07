@@ -35,26 +35,30 @@ export default function Section1() {
 									</p>
 									<span className="line" />
 									<ul
-										className="contact-infor-list style-2"
-										style={{ backgroundColor: "#e6ac41", borderRadius: "20px", padding: "10px" }}
+										className="contact-infor-list "
+										style={{ backgroundColor: "#e6ac41", borderRadius: "20px", padding: "20px" }}
 									>
 										<li>
 											<Link
-												href="https://maps.google.com/?q=55MainRoad,MelbourneAustralia"
+												href="https://maps.app.goo.gl/DBK8NaH68CQ6wkeg8"
 												className="infor"
 												target="_blank"
 											>
-												55 Main Road, Melbourne Australia
+												Plot no. 31,Lisa Ponnammal St, 3rd Floor,
+												<br />
+												Golden George Nagar, Nerkundram,
+												<br />
+												Chennai, Tamil Nadu - 600107
 											</Link>
 										</li>
 										<li>
-											<Link href="mailto:themesflat@gmail.com" className="infor">
-												themesflat@gmail.com
+											<Link href="mailto:info@bisways.com" className="infor">
+												info@bisways.com
 											</Link>
 										</li>
 										<li>
-											<Link href="/tel:0123456789" className="infor">
-												+000 (123) 456 888
+											<Link href="tel:+919940344774" className="infor">
+												+91 99403 44774
 											</Link>
 										</li>
 									</ul>

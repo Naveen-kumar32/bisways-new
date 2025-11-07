@@ -24,7 +24,7 @@ export default function Section9() {
 	});
 
 	return (
-		<section className="s-partner-2 tf-spacing-3" ref={ref} style={{marginTop:"150px"}}>
+		<section className="s-partner-2 tf-spacing-3" ref={ref} style={{ marginTop: "150px" }}>
 			<div className="tf-container">
 				<div className="row">
 					<div className="col-lg-4">
@@ -35,9 +35,9 @@ export default function Section9() {
 								initial={{ x: -80, opacity: 0 }}
 								animate={inView ? { x: 0, opacity: 1 } : { x: -80, opacity: 0 }}
 								transition={{ duration: 0.6, ease: "easeOut" }}
-								style={{color:"#0b1972"}}
+								style={{ color: "#0b1972" }}
 							>
-								<i className="icon-angles-right moveLeftToRight" style={{color:"#0b1972"}} />
+								<i className="icon-angles-right moveLeftToRight" style={{ color: "#0b1972" }} />
 								our partners
 							</motion.p>
 
@@ -53,7 +53,7 @@ export default function Section9() {
 							</motion.p>
 
 							{/* Button + Arrow stays same */}
-							<Link href="/our-service">
+							<Link href="https://bisways.zohobookings.com/#/booking">
 								<div
 									style={{
 										display: 'flex',
@@ -62,6 +62,8 @@ export default function Section9() {
 										justifyContent: 'center',
 										marginTop: '50px',
 									}}
+									target="_blank"
+									rel="noopener noreferrer"
 								>
 									{['Get Started'].map((label, idx) => (
 										<motion.div

@@ -35,7 +35,7 @@ export default function Section1() {
 	return (
 		<section ref={setRefs} className="s-why-choose-4 tf-spacing-3">
 			<div className="content-wrap tf-spacing-3">
-				<div className="content-left">
+				<div className="content-left" >
 					<motion.p
 						className="s-sub-title mb-15"
 						style={{ color: '#0b1972' }}

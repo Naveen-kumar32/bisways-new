@@ -103,9 +103,9 @@ export default function Section10() {
 											style={{ objectFit: "contain" }}
 										/>
 									</div>
-									<Link href="#" className="title" style={{ color: "#0b1972", height: "20px" }}>
+									<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 40px", marginBottom: 32 }} className="title" >
 										{item.title}
-									</Link>
+									</p>
 									<span className="line mb-30" />
 									<p className="text" style={{width:"550px", color: "white", boxShadow: "2px", backgroundColor: "#0b1972", padding: "20px", borderRadius: "16px", height: "100px" }}>{item.text}</p>
 
@@ -149,9 +149,9 @@ export default function Section10() {
 											style={{ objectFit: "contain" }}
 										/>
 									</div>
-									<Link href="/service-details" className="title" style={{ color: "#0b1972", height: "20px" }}>
+									<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 40px", marginBottom: 32 }} className="title" >
 										{item.title}
-									</Link>
+									</p>
 									<span className="line mb-30" />
 									<p className="text" style={{width:"550px", color: "white", boxShadow: "2px", backgroundColor: "#0b1972", padding: "20px", borderRadius: "16px", height: "100px" }}>{item.text}</p>
 

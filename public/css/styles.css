@@ -1773,9 +1773,6 @@ a.hover-text-main-golden:hover {
 	z-index: 1000;
 }
 
-.box-welcome .tf-overlay {
-	background-color: rgba(0, 0, 0, 0.4);
-}
 
 .box-welcome.active {
 	visibility: visible;
@@ -2375,6 +2372,7 @@ a.hover-text-main-golden:hover {
 	display: flex;
 	gap: 114px;
 	border-bottom: 1px solid var(--Border);
+	justify-content: space-between;
 }
 
 .tf-footer.style-3 .logo-site {
@@ -4207,10 +4205,10 @@ fieldset {
 
 /*------------ blog ---------------- */
 .tf-page-title {
-	background-color: var(--Main-black);
-	position: relative;
-	z-index: 1;
-	padding-top: 60px;
+	/* background-color: var(--Main-black); */
+	/* position: relative; */
+	/* z-index: 1; */
+	/* padding-top: 60px; */
 }
 
 .tf-page-title .content-wrap {
@@ -4218,7 +4216,7 @@ fieldset {
 	min-height: 587px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	max-width: 1780px;
+	max-width: 100wh;
 	width: 100%;
 	margin: 0px auto;
 	position: relative;
@@ -9273,9 +9271,7 @@ a.mapboxgl-ctrl-logo {
 	color: var(--Main-black);
 }
 
-.contact-infor-list .infor:hover {
-	color: var(--Main-golden);
-}
+
 
 .contact-infor-list li:not(:last-child) {
 	padding-bottom: 29px;
@@ -11846,6 +11842,7 @@ a.mapboxgl-ctrl-logo {
 	border-radius: 10px;
 	background-color: var(--Main-gray);
 	padding: 30px;
+	width: 100vw;
 }
 
 .s-process {

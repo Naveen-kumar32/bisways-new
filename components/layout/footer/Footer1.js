@@ -61,18 +61,17 @@ export default function Footer1() {
 												width="304"
 												height="60"
 												sizes="100vw"
-												style={{ width: "304px", height: "60px", paddingRight: "70px" }}
+												style={{ width: "304px", height: "60px",paddingRight:"70px" }}
 												id="logo_header" src="/images/section/footer-logo-1.svg" data-retina="./images/section/footer-logo.png" alt="" />
 
 										</Link>
 									</div>
-									<p className="text mb-70" style={{ top: "-15px", marginLeft: "15px", fontSize: "14px" }}>
-										Your trusted partner in<br />
-										financial growth and
-										
-										<br /> compliance excellence.
+									<p className="text mb-70" style={{top:"-15px",marginLeft:"15px",fontSize:"14px"}}>
+										Your trusted partner in
+										financial <br />growth
+										and compliance excellence.													
 									</p>
-									<ul className="social-list" style={{ marginLeft: "15px" }}>
+									<ul className="social-list" style={{marginLeft:"15px"}}>
 										<li>
 											<Link href="https://www.facebook.com/profile.php?id=100081860504520">
 												<i className="icon-facebook" />
@@ -85,7 +84,7 @@ export default function Footer1() {
 										</li>
 										<li>
 											<Link href="https://www.instagram.com/biswaysconsultinggroup/">
-												<i className="fab fa-instagram" style={{ size: "42px" }} />
+												<i className="fab fa-instagram"style={{size:"42px"}} />
 											</Link>
 										</li>
 										<li>
@@ -99,49 +98,47 @@ export default function Footer1() {
 									<h5 className="footer-title footer-title-desktop">Services</h5>
 									<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion3(1)}>Services</h5>
 									<ul className="list tf-collapse-content" style={{ display: getDisplayStyle3(1) }}>
-
+										
 										<li>
-											<Link href="/service-details">Virtual CFO Services</Link>
+											<Link href="/virtual-cfo">Virtual CFO Services</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Business Registration & Startup Setup</Link>
+											<Link href="/businessregistration-startup-setup">Business Registration & Startup Setup</Link>
 										</li>
 										<li>
-											<Link href="/service-details">GST, Taxation & Audit Support</Link>
+											<Link href="/gst-taxation-audit">GST, Taxation & Audit Support</Link>
 										</li>
 										<li>
-											<Link href="/service-details">ROC, MCA & Compliance Filings</Link>
+											<Link href="/roc-mca-company-compliance">ROC, MCA & Compliance Filings</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Trust, NGO & CSR Consulting</Link>
+											<Link href="/trust-ngo-csr-support">Trust, NGO & CSR Consulting</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Business Structuring & Advisory</Link>
+											<Link href="/business-structuring-advisory">Business Structuring & Advisory</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Digital, API & eCommerce Consulting</Link>
+											<Link href="/digital-api-e-commerce-consulting">Digital, API & eCommerce Consulting</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Accounting, Payroll & Automatio</Link>
-										</li>
-
-
+											<Link href="/accounting-payroll-automation">Accounting, Payroll & Automation</Link>
+										</li>										
 									</ul>
 								</div>
-								<div className="footer-inner-wrap s1" style={{ width: "350px" }}>
+								<div className="footer-inner-wrap s1" style={{width:"350px"}}>
 									<div className={`wrap footer-col-block  ${isAccordion1 === 1 ? 'open' : ''}`}>
 										<h5 className="footer-title footer-title-desktop">Office Address</h5>
 										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion1(1)}>Office Address</h5>
 										<p className="text tf-collapse-content" style={{ display: getDisplayStyle1(1) }}>
 											Plot no. 31,
 											Lisa Ponnammal St, 3rd Floor,
-											<br />
+											<br/>
 											Golden George Nagar, Nerkundram,
-											<br />
+											<br/>
 											Chennai, Tamil Nadu - 600107
 										</p>
 									</div>
-									<div className={`wrap footer-col-block  ${isAccordion2 === 1 ? 'open' : ''}`} style={{ marginBottom: "5px" }}>
+									<div className={`wrap footer-col-block  ${isAccordion2 === 1 ? 'open' : ''}`}style={{marginBottom:"5px"}}>
 										<h5 className="footer-title footer-title-desktop">Contact Us</h5>
 										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion2(1)}>Contact Us</h5>
 										<p className="text tf-collapse-content" style={{ display: getDisplayStyle2(1) }}>
@@ -149,7 +146,7 @@ export default function Footer1() {
 											+91 99403 44774
 										</p>
 									</div>
-
+									
 								</div>
 
 								{/* <div className="footer-inner-wrap form-wrap">
@@ -181,7 +178,7 @@ export default function Footer1() {
 									<i className="icon-arrow-top fs-8" />
 								</Link>
 								<p className="no-copy style-2">
-									Copyright © {new Date().getFullYear()} <span> Bisways</span> Designed by<Link href="/" target="_blank">	Ligiotec
+									Copyright © {new Date().getFullYear()} <span> Bisways</span> Designed by<Link href="https://ligiotec.com/" target="_blank">	Ligiotec
 									</Link>
 									, All Rights Reserved.
 								</p>

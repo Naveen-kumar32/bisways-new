@@ -17,7 +17,7 @@ export default function MobileMenu() {
 	const menuItems = [
 
 		{ title: "Home", path: "/" },
-		{ title: "About", path: "/about-us" },	
+		{ title: "About Us", path: "/about-us" },	
 		{
 			title: "Services",
 			subMenu: [

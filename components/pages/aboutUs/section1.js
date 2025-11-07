@@ -89,7 +89,10 @@ export default function Section1() {
 									<p>Expertise &amp; Experience</p>
 								</li>
 							</ul>
-							<Link href="/our-service" className="tf-btn text-anime-style-1">
+							<Link href="https://bisways.zohobookings.com/#/booking"
+								className="tf-btn style-13 text-anime-style-1"
+								target="_blank"
+								rel="noopener noreferrer">
 								Get Started
 								<i className="icon-chevron-right" />
 							</Link>

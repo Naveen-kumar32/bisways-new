@@ -21,8 +21,7 @@ export default function Section2() {
       <section className="s-map">
         <div className="box-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.6895046810805!2d-122.52642526124438!3d38.00014098339506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085976736097a2f%3A0xbe014d20e6e22654!2sSan%20Rafael%2C%20California!5e0!3m2!1sen!2s!4v1678975266976!5m2!1sen!2s"
-            height={825}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.409579451537!2d80.17940090886947!3d13.07320868719837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526559eacb8133%3A0xfe5001556ce6804!2sBisways%20Consulting%20Group!5e0!3m2!1sen!2sin!4v1762494818616!5m2!1sen!2sin" height={825}
             style={{ border: 0, width: "100%" }}
             allowFullScreen
             loading="lazy"

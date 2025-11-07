@@ -182,7 +182,7 @@ export default function Section2() {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <i className="icon-angles-right moveLeftToRight" />
-                  services we provide
+                  BUSINESS CONSULTING PROCESS
                 </motion.p>
 
                 <motion.p

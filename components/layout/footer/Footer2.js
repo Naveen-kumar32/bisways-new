@@ -67,10 +67,9 @@ export default function Footer2() {
 										</Link>
 									</div>
 									<p className="text mb-70" style={{top:"-15px",marginLeft:"15px",fontSize:"14px"}}>
-										Your trusted partner in<br />
-										financial growth and
-										
-										<br /> compliance excellence.													
+										Your trusted partner in
+										financial <br />growth
+										and compliance excellence.													
 									</p>
 									<ul className="social-list" style={{marginLeft:"15px"}}>
 										<li>
@@ -101,31 +100,29 @@ export default function Footer2() {
 									<ul className="list tf-collapse-content" style={{ display: getDisplayStyle3(1) }}>
 										
 										<li>
-											<Link href="/service-details">Virtual CFO Services</Link>
+											<Link href="/virtual-cfo">Virtual CFO Services</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Business Registration & Startup Setup</Link>
+											<Link href="/businessregistration-startup-setup">Business Registration & Startup Setup</Link>
 										</li>
 										<li>
-											<Link href="/service-details">GST, Taxation & Audit Support</Link>
+											<Link href="/gst-taxation-audit">GST, Taxation & Audit Support</Link>
 										</li>
 										<li>
-											<Link href="/service-details">ROC, MCA & Compliance Filings</Link>
+											<Link href="/roc-mca-company-compliance">ROC, MCA & Compliance Filings</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Trust, NGO & CSR Consulting</Link>
+											<Link href="/trust-ngo-csr-support">Trust, NGO & CSR Consulting</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Business Structuring & Advisory</Link>
+											<Link href="/business-structuring-advisory">Business Structuring & Advisory</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Digital, API & eCommerce Consulting</Link>
+											<Link href="/digital-api-e-commerce-consulting">Digital, API & eCommerce Consulting</Link>
 										</li>
 										<li>
-											<Link href="/service-details">Accounting, Payroll & Automatio</Link>
-										</li>
-										
-										
+											<Link href="/accounting-payroll-automation">Accounting, Payroll & Automation</Link>
+										</li>										
 									</ul>
 								</div>
 								<div className="footer-inner-wrap s1" style={{width:"350px"}}>
@@ -181,7 +178,7 @@ export default function Footer2() {
 									<i className="icon-arrow-top fs-8" />
 								</Link>
 								<p className="no-copy style-2">
-									Copyright © {new Date().getFullYear()} <span> Bisways</span> Designed by<Link href="/" target="_blank">	Ligiotec
+									Copyright © {new Date().getFullYear()} <span> Bisways</span> Designed by<Link href="https://ligiotec.com/" target="_blank">	Ligiotec
 									</Link>
 									, All Rights Reserved.
 								</p>

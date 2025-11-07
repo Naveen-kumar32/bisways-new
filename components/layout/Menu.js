@@ -31,7 +31,7 @@ export default function Menu() {
 			</li> */}
 			{/* <li className={`item ${isActive("/mission-vision")}`}><Link href="/mission-vision"><span>Mission vision</span></Link></li> */}
 
-			<li className={`item ${isActive("/about-us")}`}><Link href="/about-us"><span>About</span></Link></li>
+			<li className={`item ${isActive("/about-us")}`}><Link href="/about-us"><span>About Us</span></Link></li>
 			<li className={`item has-child ${isParentActive(["/our-service", "/our-service-02", "/service-details"])}`}>
 				<Link href="#"><span>Services</span></Link>
 				<ul className="sub-nav" style={{ width: "300px" }}>
