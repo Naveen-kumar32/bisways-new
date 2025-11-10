@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 
 export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
+  const formRef = useRef(null);
   const syncTransition = { duration: 0.3, ease: "easeInOut" };
 
   const circleVariants = {
@@ -103,6 +104,32 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
       }
     }, 3000);
   };
+
+  useEffect(() => {
+    if (isWelcomeBox) {
+      // Reset all form data when modal opens
+      setSubmitted(false);
+      setPhone("");
+      setPhoneError("");
+
+      // Clear form fields completely
+      if (formRef.current) {
+        formRef.current.reset();
+      }
+
+      // Clear any leftover timeout
+      if (submitTimeoutRef.current) {
+        clearTimeout(submitTimeoutRef.current);
+        submitTimeoutRef.current = null;
+      }
+    } else {
+      // Modal closed → clear timeout if any
+      if (submitTimeoutRef.current) {
+        clearTimeout(submitTimeoutRef.current);
+        submitTimeoutRef.current = null;
+      }
+    }
+  }, [isWelcomeBox]);
   // -------------------------------------------------------------------------
 
   return (
@@ -125,41 +152,57 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
               <i className="icon-xmark" />
             </button>
 
-            <h3 className="text-anime-wave" style={{ color: "#0b1972" }}>
-              Send Us Message
+            <h3 className="text-anime-wave centered-header" style={{ color: "#0b1972" }}>
+              Get Brochure
             </h3>
 
-            <p className="note mb-20">
-              Your email address will not be published. Required fields are marked *
+            <p className="note centered-note mb-20">
+              Field Market with <span aria-hidden="true">*</span> are mandatory.
             </p>
 
             {/* ---------- NOTE: replaced form submission with our handler ---------- */}
-            <form action="#" className="form-comment style-3" onSubmit={handleSubmit}>
-              <div className="cols mb-20">
+            <form ref={formRef} action="#" className="form-comment style-3" onSubmit={handleSubmit}>
+              <div className="cols mb-20 two-cols">
                 <fieldset>
-                  <input type="text" placeholder="Name" required />
+                  <label htmlFor="name" className="form-label">
+                    Name <span className="required-star">*</span>
+                  </label>
+                  <input id="name" name="name" type="text" placeholder="Enter your name" required />
                 </fieldset>
-                {/* <fieldset>
-                  <input type="number" placeholder="Phone" required />
-                </fieldset> */}
+
+                <fieldset>
+                  <label htmlFor="company" className="form-label">
+                    Company Name
+                  </label>
+                  <input id="company" name="company" type="text" placeholder="Enter company name" />
+                </fieldset>
               </div>
 
-              <div className="cols mb-20">
+              <div className="cols mb-20 two-cols">
                 <fieldset>
-                  <input type="text" placeholder="Company Name" />
+                  <label htmlFor="email" className="form-label">
+                    Email <span className="required-star">*</span>
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="you@example.com"
+                    required
+                  />
                 </fieldset>
-                <fieldset>
-                  <input type="email" placeholder="Email" required />
-                </fieldset>
-              </div>
 
-              <div className="cols mb-20">
                 <fieldset>
+                  <label htmlFor="phone" className="form-label">
+                    Phone <span className="required-star">*</span>
+                  </label>
                   {/* ---------- PHONE INPUT: only digits, maxLength=10 ---------- */}
                   <input
+                    id="phone"
                     ref={phoneInputRef}
+                    name="phone"
                     type="tel"
-                    placeholder="Phone"
+                    placeholder="10-digit mobile number"
                     required
                     inputMode="numeric"
                     pattern="\d{10}"
@@ -173,7 +216,10 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
 
               <div className="cols mb-20">
                 <fieldset>
-                  <textarea placeholder="Subject" />
+                  <label htmlFor="subject" className="form-label">
+                    Subject
+                  </label>
+                  <textarea id="subject" name="subject" placeholder="Your message (optional)" />
                 </fieldset>
               </div>
 
@@ -287,6 +333,31 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
         .form-comment .cols fieldset textarea {
           width: 100%;
           box-sizing: border-box;
+          padding: 10px 12px;
+          border: 1px solid #d1d5db;
+          border-radius: 8px;
+          font-size: 14px;
+        }
+
+        .form-label {
+          display: block;
+          font-size: 13px;
+          margin-bottom: 6px;
+          color: #0b1972;
+          font-weight: 600;
+        }
+
+        .required-star {
+          color: #b91c1c;
+          margin-left: 4px;
+          font-weight: 700;
+        }
+
+        /* Two-column layout for wider screens (keeps stacked on small screens) */
+        .two-cols {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
         }
 
         /* center the confirmation block */
@@ -301,6 +372,16 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
           display: inline-block;
         }
 
+        /* center heading & note */
+        .centered-header {
+          text-align: center;
+          margin: 6px 0 6px 0;
+        }
+        .centered-note {
+          text-align: center;
+          margin: 0 0 18px 0;
+        }
+
         /* responsive tweaks */
         @media (max-width: 720px) {
           .modal-content {
@@ -311,6 +392,9 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
           .btn-close-welcome {
             top: 8px;
             right: 8px;
+          }
+          .two-cols {
+            grid-template-columns: 1fr;
           }
         }
       `}</style>
