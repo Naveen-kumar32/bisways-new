@@ -74,10 +74,10 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, handle
 									</nav>
 								</div>
 								<div className="header-right">
-									<p  className="tf-btn style-9 small" onClick={handleWelcomeBox}>
+									<button  className="tf-btn style-9 small" onClick={handleWelcomeBox}>
 										Get In Touch
 										<i className="icon-chevron-right" />
-									</p>
+									</button>
 									<div className="union style-2 mobile-button" onClick={handleMobileMenu}>
 										<span className="dot" />
 										<span className="dot" />

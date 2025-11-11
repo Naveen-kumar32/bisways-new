@@ -167,7 +167,7 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
                   <label htmlFor="name" className="form-label">
                     Name <span className="required-star">*</span>
                   </label>
-                  <input id="name" name="name" type="text" placeholder="Enter your name" required />
+                  <input id="name" name="name" type="text" placeholder="Full Name" required />
                 </fieldset>
 
                 <fieldset>
@@ -219,7 +219,7 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
                   <label htmlFor="subject" className="form-label">
                     Subject
                   </label>
-                  <textarea id="subject" name="subject" placeholder="Your message (optional)" />
+                  <textarea id="subject" name="subject" placeholder="Write message here..." />
                 </fieldset>
               </div>
 
