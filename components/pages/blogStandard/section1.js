@@ -725,7 +725,7 @@ export default function Section1() {
 										</Link>
 									</div>
 								</div> */}
-								<div className="pagination-section">
+								<div className="pagination-section" style={{marginBottom:"20px"}}>
 									<ul>
 										<li><Link href="#" className="active">1</Link></li>
 										<li><Link href="/blog-2">2</Link></li>
@@ -733,7 +733,7 @@ export default function Section1() {
 									</ul>
 									<Link href="/blog-2" className="btn-next-pagination">
 										Next
-										<i className="icon-chevron-right fs-12">
+										<i className="icon-arrow-right fs-12">
 										</i>
 									</Link>
 								</div>

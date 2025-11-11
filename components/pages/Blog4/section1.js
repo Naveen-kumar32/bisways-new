@@ -5,7 +5,7 @@ export default function Section1() {
 	return (
 		<>
 
-			<section className="s-blog-standard" style={{paddingTop:"50px"}}>
+			<section className="s-blog-standard" style={{ paddingTop: "50px" }}>
 				<div className="tf-container">
 					<div className="row">
 						<div className="col-lg-8">
@@ -727,18 +727,18 @@ export default function Section1() {
 								</div> */}
 								<div className="pagination-section" style={{marginBottom:"20px"}}>
 
-									<Link href="/blog-standard" className="btn-next-pagination">
-									<i className="icon-arrow-left fs-12">
-										</i>
+									<Link href="/blog-3" className="btn-next-pagination">
 										Previous
-										
+										<i className="icon-arrow-left fs-12">
+										</i>
 									</Link>
 									<ul>
-										
-										<li><Link href="/#" className="active">2</Link></li>
-										<li><Link href="/blog-3" >3</Link></li>
+
+										<li><Link href="/#" className="active">4</Link></li>
+										<li><Link href="/blog-5">5</Link></li>
+
 									</ul>
-									<Link href="/blog-3" className="btn-next-pagination">
+									<Link href="/blog-5" className="btn-next-pagination">
 										Next
 										<i className="icon-arrow-right fs-12">
 										</i>
