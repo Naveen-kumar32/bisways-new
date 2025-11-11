@@ -1,5 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
+import Link from 'next/link';
 
 const leftVariants = {
 	hidden: { x: -100, opacity: 0 },
