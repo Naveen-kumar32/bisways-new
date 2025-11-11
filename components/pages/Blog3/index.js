@@ -1,5 +1,5 @@
 import Section1 from "./section1"
-export default function Blog2() {
+export default function Blog3() {
 
 	return (
 		<>
