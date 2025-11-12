@@ -24,6 +24,9 @@ const publicSans = Public_Sans({
 export const metadata = {
     title: 'Bisways - Consulting Group',
     description: 'Bisways - Consulting Group',
+    icons: {
+        icon: '/favicon.ico',
+    },
 }
 
 export default function RootLayout({ children }) {
