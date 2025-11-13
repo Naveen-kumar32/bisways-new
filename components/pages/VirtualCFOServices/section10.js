@@ -29,8 +29,8 @@ export default function Section10() {
 
 	return (
 		<section className="s-we-do tf-spacing-3" ref={ref}>
-			<div className="tf-container">
-				<div className="heading mb-70">
+			<div className="tf-container" style={{marginLeft:"0px",marginRight:"0px"}}>
+				<div className="heading mb-70 "style={{width:"100vw"}} >
 					{/* Subtitle */}
 					<motion.p
 						className="s-sub-title mb-15 justify-center"
@@ -61,7 +61,7 @@ export default function Section10() {
 
 					</motion.p>
 				</div>
-				<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: '23px' }}>
+				<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: '23px',width:"100vw" }}>
 					Founders, business owners, NGOs, and educational institutions that<br />
 					want to keep finances organized and investor / audit-ready.
 				</p>
@@ -102,7 +102,7 @@ export default function Section10() {
 											style={{ objectFit: "contain" }}
 										/>
 									</div>
-									<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 40px", marginBottom: 32 }} className="title" >
+									<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: "23", width: "100%", padding: "0 40px", marginBottom: "32" }} className="title" >
 										{item.title}
 									</p>
 									<span className="line mb-30" />

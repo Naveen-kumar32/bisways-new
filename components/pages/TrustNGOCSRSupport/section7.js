@@ -24,8 +24,8 @@ export default function Section7() {
 	}
 
 	return (
-		<section className="s-we-do tf-spacing-3" ref={ref}>
-			<div className="tf-container">
+		<section className="s-we-do tf-spacing-3 flex justify-center" ref={ref}>
+			<div className="tf-container flex justify-center">
 				<div className="row">
 					<div className="col-lg-12">
 						<div className="heading mb-70">
@@ -35,7 +35,7 @@ export default function Section7() {
 								style={{ color: "#0b1972", display: "flex", alignItems: "center", gap: "6px" }}
 								initial="hidden"
 								animate={inView ? "visible" : "hidden"}
-								variants={slideLeft}
+								variants={slideUp}
 							>
 								<i className="icon-angles-right moveLeftToRight" style={{ color: "#0b1972" }} />
 								what we do
@@ -55,7 +55,7 @@ export default function Section7() {
 								<span style={{ color: "#e6ac41" }}>Professional Setup</span>
 							</motion.p>
 						</div>
-						<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 40px", marginBottom: 32 }}>
+						<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 200px", textAlign:"center" }}>
 							We assist charitable trusts, NGOs, and CSR foundations in building transparent, compliant systems that
 							strengthen credibility and long-term sustainability.
 						</p>

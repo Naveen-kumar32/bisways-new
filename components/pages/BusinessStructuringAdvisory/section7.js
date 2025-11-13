@@ -25,7 +25,7 @@ export default function Section7() {
 
 	return (
 		<section className="s-we-do tf-spacing-3" ref={ref}>
-			<div className="tf-container">
+			<div className="tf-container flex justify-center">
 				<div className="row">
 					<div className="col-lg-12">
 						<div className="heading mb-70">
@@ -55,7 +55,7 @@ export default function Section7() {
 								<span style={{ color: "#e6ac41" }}>Strategic Advisory</span>
 							</motion.p>
 						</div>
-						<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 40px", marginBottom: 32 }}>
+						<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 200px", marginBottom: 32,textAlign:"center" }}>
 							We go beyond registration — helping businesses evolve, consolidate, and thrive through well-structured
 
 							frameworks and strong financial governance.

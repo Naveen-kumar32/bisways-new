@@ -24,22 +24,22 @@ export default function Section7() {
 	}
 
 	return (
-		<section className="s-we-do tf-spacing-3" ref={ref}>
-			<div className="tf-container">
+		<section className="s-we-do tf-spacing-3 flex justify-center" ref={ref}>
+			<div className="tf-container flex justify-center">
 				<div className="row">
 					<div className="col-lg-12">
 						<div className="heading mb-70">
 							{/* Subtitle */}
-							<motion.p
+							{/* <motion.p
 								className="s-sub-title mb-15 justify-center"
 								style={{ color: "#0b1972", display: "flex", alignItems: "center", gap: "6px" }}
 								initial="hidden"
 								animate={inView ? "visible" : "hidden"}
-								variants={slideLeft}
+								variants={slideUp}
 							>
 								<i className="icon-angles-right moveLeftToRight" style={{ color: "#0b1972" }} />
 								what we do
-							</motion.p>
+							</motion.p> */}
 
 							{/* Main Title */}
 							<motion.p

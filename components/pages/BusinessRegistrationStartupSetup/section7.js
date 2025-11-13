@@ -49,7 +49,7 @@ export default function Section7() {
   return (
     <section className="s-we-do tf-spacing-3" ref={ref} >
       {/* NOTE: this container tweak is scoped to this section only */}
-      <div className="tf-container section-fullwidth">
+      <div className="tf-container section-fullwidth flex justify-center">
         <div className="row">
           <div className="col-lg-12">
             <div className="heading mb-70" style={{ textAlign: "center" }}>
@@ -79,7 +79,7 @@ export default function Section7() {
               </motion.p>
             </div>
 
-            <p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 40px", marginBottom: 32,textAlign:"center" }}>
+            <p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 200px", marginBottom: 32,textAlign:"center" }}>
               We provide a comprehensive service for business registration and legal setup, ensuring you start your business on the right foot. Here’s what we do for you:
             </p>
 
@@ -132,8 +132,8 @@ export default function Section7() {
         /* Make the container wider for this section (overrides any outer container padding) */
         .s-we-do .section-fullwidth {
           max-width: 100%; /* expand the usable width for this section */
-          padding-left: 12px;
-          padding-right: 12px;
+          // padding-left: 12px;
+          // padding-right: 12px;
           // margin-left: auto;
           // margin-right: auto;
         }

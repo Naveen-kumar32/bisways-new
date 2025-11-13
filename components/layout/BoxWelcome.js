@@ -157,7 +157,7 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
             </h3>
 
             <p className="note centered-note mb-20">
-              Field Market with <span aria-hidden="true">*</span> are mandatory.
+              Fields marked with *  <span aria-hidden="true">*</span> are mandatory.
             </p>
 
             {/* ---------- NOTE: replaced form submission with our handler ---------- */}

@@ -29,8 +29,8 @@ export default function Section10() {
 
 	return (
 		<section className="s-we-do tf-spacing-3" ref={ref}>
-			<div className="tf-container">
-				<div className="heading mb-70">
+			<div className="tf-container" style={{marginLeft:"0px",marginRight:"0px"}}>
+				<div className="heading mb-70" style={{width:"100vw"}}>
 					{/* Subtitle */}
 <motion.p
 						className="s-sub-title mb-15 justify-center"
@@ -62,9 +62,9 @@ export default function Section10() {
 
 					</motion.p>
 				</div>
-				<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: '23px' }}>
+				<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: '23px',width:"100vw",padding:"0px 200px",textAlign:"center" }}>
 					Our services are ideal for individuals and organizations that require structured tax management,
-					compliance assistance, and complete audit coordination under one trusted consulting partner.
+					compliance assistance, and complete audit coordination under one trusted consulting partner.x
 				</p>
 				<div className="row">
 					<div className="col-lg-12">
@@ -107,7 +107,7 @@ export default function Section10() {
 										{item.title}
 									</p>
 									<span className="line mb-30" />
-									<p className="text" style={{ color: "white", boxShadow: "2px", backgroundColor: "#0b1972", padding: "20px", borderRadius: "16px", height: "100px" }}>{item.text}</p>
+									<p className="text" style={{width:"550px" ,color: "white", boxShadow: "2px", backgroundColor: "#0b1972", padding: "20px", borderRadius: "16px", height: "100px" }}>{item.text}</p>
 
 								</motion.div>
 							))}
@@ -153,7 +153,7 @@ export default function Section10() {
 										{item.title}
 									</p>
 									<span className="line mb-30" />
-									<p className="text" style={{ color: "white", boxShadow: "2px", backgroundColor: "#0b1972", padding: "20px", borderRadius: "16px", height: "100px" }}>{item.text}</p>
+									<p className="text" style={{width:"550px", color: "white", boxShadow: "2px", backgroundColor: "#0b1972", padding: "20px", borderRadius: "16px", height: "100px" }}>{item.text}</p>
 
 								</motion.div>
 							))}

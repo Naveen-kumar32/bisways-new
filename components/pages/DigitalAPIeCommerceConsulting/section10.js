@@ -29,11 +29,11 @@ export default function Section10() {
 
 	return (
 		<section className="s-we-do tf-spacing-3" ref={ref}>
-			<div className="tf-container">
-				<div className="heading mb-70">
+			<div className="tf-container" style={{ marginLeft: "0px", marginRight: "0px" }}>
+				<div className="heading mb-70" style={{ width: "100vw" }}>
 					{/* Subtitle */}
 
-<motion.p
+					<motion.p
 						className="s-sub-title mb-15 justify-center"
 						style={{ color: '#0b1972' }}
 						variants={titleVariant}
@@ -62,7 +62,7 @@ export default function Section10() {
 
 					</motion.p>
 				</div>
-				<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: '23px' }}>
+				<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: '23px', width: "100vw", padding: "0px 200px", textAlign: "center" }}>
 					Our consulting services are ideal for entrepreneurs and creators who operate in the
 					digital, API, or eCommerce space and need structured compliance for growth.
 				</p>

@@ -58,11 +58,21 @@ export default function Section7() {
 
 	return (
 		<section className="s-we-do tf-spacing-3" ref={ref}>
-			<div className="tf-container">
+			<div className="tf-container flex justify-center" flex justify-center>
 				<div className="row">
 					<div className="col-lg-12">
 						<div className="heading mb-70">
 							{/* Main Title */}
+							{/* <motion.p
+								className="s-sub-title mb-15 justify-center"
+								style={{ color: "#0b1972", display: "flex", alignItems: "center", gap: "6px" }}
+								initial="hidden"
+								animate={inView ? "visible" : "hidden"}
+								variants={slideLeft}
+							>
+								<i className="icon-angles-right moveLeftToRight" style={{ color: "#0b1972" }} />
+								what we do
+							</motion.p> */}
 							<motion.p
 								className="s-title text-center text-anime-style-2"
 								style={{ color: "#0b1972" }}
@@ -78,7 +88,7 @@ export default function Section7() {
 
 						</div>
 
-						<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 40px", marginBottom: 32 }}>
+						<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 200px", marginBottom: 32, textAlign: "center" }}>
 							We manage every aspect of your taxation and audit process with precision, ensuring timely compliance,
 							accurate filings, seamless coordination with authorities, and complete peace of mind for your business growth.
 						</p>
@@ -93,7 +103,7 @@ export default function Section7() {
 									animate={inView ? "visible" : "hidden"}
 									variants={slideUp}
 									transition={{ delay: 0.4 + i * 0.2 }}
-									
+
 								>
 									<div className="icon">
 										<Image
@@ -104,11 +114,11 @@ export default function Section7() {
 											style={{ objectFit: "contain" }}
 										/>
 									</div>
-									<p href="/service-details" className="title" style={{width:"350px", color: "#0b1972", height: "50px",fontSize:"22px", fontWeight:"600",fontStyle:"bold"  }}>
+									<p href="/service-details" className="title" style={{ width: "350px", color: "#0b1972", height: "50px", fontSize: "22px", fontWeight: "600", fontStyle: "bold" }}>
 										{item.title}
 									</p>
 									<span className="line mb-30" />
-									<p className="text" style={{ boxShadow: "2px", padding: "20px", borderRadius: "20px", height: "180px",width:"350px", backgroundColor: "#e6ac41",textAlign:"center" }}>{item.text}</p>
+									<p className="text" style={{ boxShadow: "2px", padding: "20px", borderRadius: "20px", height: "180px", width: "350px", backgroundColor: "#e6ac41", textAlign: "center" }}>{item.text}</p>
 
 								</motion.div>
 							))}
@@ -134,11 +144,11 @@ export default function Section7() {
 											style={{ objectFit: "contain" }}
 										/>
 									</div>
-									<p href="/service-details" className="title" style={{width:"350px", color: "#0b1972", height: "50px",fontSize:"22px", fontWeight:"600",fontStyle:"bold"  }}>
+									<p href="/service-details" className="title" style={{ width: "350px", color: "#0b1972", height: "50px", fontSize: "22px", fontWeight: "600", fontStyle: "bold" }}>
 										{item.title}
 									</p>
 									<span className="line mb-30" />
-									<p className="text" style={{width:"350px", boxShadow: "2px", padding: "20px", borderRadius: "20px", height: "170px", backgroundColor: "#e6ac41" ,textAlign:"center"}}>{item.text}</p>
+									<p className="text" style={{ width: "350px", boxShadow: "2px", padding: "20px", borderRadius: "20px", height: "170px", backgroundColor: "#e6ac41", textAlign: "center" }}>{item.text}</p>
 
 								</motion.div>
 							))}

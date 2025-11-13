@@ -29,8 +29,8 @@ export default function Section10() {
 
 	return (
 		<section className="s-we-do tf-spacing-3" ref={ref}>
-			<div className="tf-container">
-				<div className="heading mb-70">
+			<div className="tf-container" style={{marginLeft:"0px",marginRight:"0px"}}>
+				<div className="heading mb-70" style={{width:"100vw"}}>
 					{/* Subtitle */}
 
 <motion.p
@@ -62,7 +62,7 @@ export default function Section10() {
 
 					</motion.p>
 				</div>
-				<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: '23px' }}>
+				<p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: '23px',width:"100vw",padding:"0px 200px",textAlign:"center" }}>
 					For new founders, consultants, online sellers, API providers, retailers, and freelancers who want to simplify
 					the business setup process, ensure legal compliance, and lay a strong foundation for long-term growth.
 				</p>
