@@ -42,7 +42,7 @@ export default function Footer1() {
 
 	return (
 		<>
-			<footer className="tf-footer style-3" style={{ borderRadius: "20px 20px 0px 0px" }}>
+			<footer className="tf-footer style-3" >
 				<div className="tf-container">
 					<div className="row">
 						<div className="col-lg-12">

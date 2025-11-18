@@ -14,7 +14,7 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
 											Role of a Business Consulting Agency in Driving Innovation Key to Business
 											Success
 										</p>
@@ -72,7 +72,7 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
 											How to Read and Analyse a Profit & Loss
 											Statement
 										</p>
@@ -130,7 +130,7 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
 											GST Annual Return (Form GSTR-9) – Who
 											Should File & How?
 										</p>
@@ -188,7 +188,7 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
 											Input Tax Credit (ITC) – Eligibility, Conditions
 											& Common Mistakes
 										</p>
@@ -245,7 +245,7 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
 											ROC Annual Filings for Companies & LLPs – A
 											Complete Checklist
 										</p>
@@ -300,7 +300,7 @@ export default function Section1() {
 								</div>
 								<div className="article-blog-item mb-50 tf-hover">
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
 											How to File Your Income Tax Return (ITR) – A
 											Step-by-Step Guide
 										</p>
@@ -355,7 +355,7 @@ export default function Section1() {
 								</div>
 								<div className="article-blog-item mb-50 tf-hover">
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
 											Understanding Form 26AS, AIS & TIS
 											Matching Income Before ITR Filing
 										</p>
@@ -412,7 +412,7 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
 											How to Draft a Founders’ Agreement – Must
 											Have Clauses & Common Mistakes
 										</p>
@@ -469,7 +469,7 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
 											GST Registration – Who Needs It and How to
 											Apply (2025 Edition)
 										</p>
@@ -526,7 +526,7 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
 											Understanding TDS (Tax Deducted at
 											Source) – Process, Forms & Due Dates
 										</p>
@@ -620,7 +620,7 @@ export default function Section1() {
 										</ul>
 									</div>
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
 											Role of a Business Consulting Agency in Driving Innovation Key to Business
 											Success
 										</p>
@@ -693,7 +693,7 @@ export default function Section1() {
 										</ul>
 									</div>
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
 											Role of a Business Consulting Agency in Driving Innovation Key to Business
 											Success
 										</p>
@@ -922,7 +922,7 @@ export default function Section1() {
 											src="/images/blog/service-sidebar.jpg" alt="" />
 									</div>
 									<div className="content">
-										<p className="font-main-2 text-anime-wave">
+										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
 											Professional &amp; Experience Business
 											<span>
 												Services

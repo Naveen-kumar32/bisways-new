@@ -986,7 +986,7 @@ export default function Section1() {
 			<div
 				style={{
 					width: "100vw",
-					marginBottom: "50px",
+					// marginBottom: "50px",
 					boxSizing: "border-box",
 				}}
 			>
@@ -996,7 +996,7 @@ export default function Section1() {
 						// margin: "0 auto",
 						backgroundColor: "#0b1972",
 						// borderRadius: "20px",
-						padding: "70px 30px",
+						padding: "150px 30px",
 						textAlign: "center",
 					}}
 				>
