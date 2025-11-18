@@ -7,17 +7,15 @@ import { useInView } from "react-intersection-observer"
 
 export default function Section7() {
   const { ref, inView } = useInView({
-    triggerOnce: false, // 👈 replay every scroll
+    triggerOnce: false,
     threshold: 0.2,
   })
 
-  // Left slide
   const slideLeft = {
     hidden: { opacity: 0, x: -80 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
   }
 
-  // Bottom slide
   const slideUp = {
     hidden: { opacity: 0, y: 60 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
@@ -47,15 +45,14 @@ export default function Section7() {
   ]
 
   return (
-    <section className="s-we-do tf-spacing-3" ref={ref} >
-      {/* NOTE: this container tweak is scoped to this section only */}
-      <div className="tf-container section-fullwidth flex justify-center">
+    <section className="s-we-do tf-spacing-3" ref={ref}>
+      {/* make this section use full viewport width but keep content centered */}
+      <div className="tf-container section-fullwidth">
         <div className="row">
           <div className="col-lg-12">
             <div className="heading mb-70" style={{ textAlign: "center" }}>
-              {/* Subtitle */}
-              <motion.p
-                className="s-sub-title mb-15 justify-center"
+              {/* <motion.p
+                className="s-sub-title mb-15"
                 style={{ color: "#0b1972", display: "flex", alignItems: "center", gap: "6px", justifyContent: "center" }}
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
@@ -63,9 +60,8 @@ export default function Section7() {
               >
                 <i className="icon-angles-right moveLeftToRight" style={{ color: "#0b1972" }} />
                 what we do
-              </motion.p>
+              </motion.p> */}
 
-              {/* Main Title */}
               <motion.p
                 className="s-title text-center text-anime-style-2"
                 style={{ color: "#0b1972", margin: 0 }}
@@ -79,12 +75,12 @@ export default function Section7() {
               </motion.p>
             </div>
 
-            <p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 200px", marginBottom: 32,textAlign:"center" }}>
+            <p style={{ justifyContent: "center", alignItems: "center", display: "flex", color: "#0b1972", fontSize: 23, width: "100%", padding: "0 200px", textAlign:"center" }}>
               We provide a comprehensive service for business registration and legal setup, ensuring you start your business on the right foot. Here’s what we do for you:
             </p>
 
             {/* Feature Boxes */}
-            <div className="feature-group overflow-hidden">
+            <div className="feature-group" >
               {features.map((item, i) => (
                 <motion.div
                   key={i}
@@ -93,8 +89,9 @@ export default function Section7() {
                   animate={inView ? "visible" : "hidden"}
                   variants={slideUp}
                   transition={{ delay: 0.4 + i * 0.12 }}
+                  style={{width:"330px"}}
                 >
-                  <div className="icon" style={{ display: "flex", justifyContent: "center", paddingTop: 18 }}>
+                  <div className="icon">
                     <Image
                       src={item.img}
                       alt={item.title}
@@ -104,18 +101,17 @@ export default function Section7() {
                     />
                   </div>
 
-                  <div style={{  height:"150px" }}>
-                   <p href="/service-details" className="title" style={{ color: "#0b1972", height: "50px",fontSize:"22px", fontWeight:"600",fontStyle:"bold"  }}>
-										{item.title}
-									</p>
+                  <div className="title-wrap">
+                    <p className="title" style={{color: "#0b1972"}}>
+                      {item.title}
+                    </p>
                   </div>
 
                   <span className="line mb-12" />
 
-                  <p className="text card-text-box" style={{minHeight:"330px",width:"200px",textAlign:"center"}}>
+                  <p className="text card-text-box" >
                     {item.text}
                   </p>
-
                 </motion.div>
               ))}
             </div>
@@ -124,107 +120,123 @@ export default function Section7() {
       </div>
 
       <style jsx>{`
-        /**
-         * SECTION-SCOPED LAYOUT FIXES
-         * - keep changes scoped to this section only
-         */
-
-        /* Make the container wider for this section (overrides any outer container padding) */
         .s-we-do .section-fullwidth {
-          max-width: 100%; /* expand the usable width for this section */
-          // padding-left: 12px;
-          // padding-right: 12px;
-          // margin-left: auto;
-          // margin-right: auto;
-        }
-
-        /* Feature grid: equal columns and full-width usage */
-        .s-we-do .feature-group {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 10px;
-          align-items: stretch;
-          width: 100%;
-          margin-top: 8px;
-        }
-
-        /* Card - full height column so text boxes align */
-        .s-we-do .full-card {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          background: transparent;
-          border-radius: 12px;
-          height: 100%;
-          width: 100%;
+          width: 100vw;               /* use full viewport width */
+          position: relative;
+          left: 50%;
+          right: 50%;
+          margin-left: -50vw;        /* neutralize parent container padding if any */
+          margin-right: -50vw;
           box-sizing: border-box;
         }
 
+        /* Centered inner area to constrain card width while allowing full-bleed background if needed */
+        .s-we-do .tf-container {
+          display: flex;
+          justify-content: center;
+        }
+
+        /* The grid itself - centered within viewport, with a sensible max width */
+        .s-we-do .feature-group {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 28px;
+          align-items: stretch;
+          width: min(1200px, 96%);   /* keep cards readable: expands up to 1200px but respects small screens */
+          margin: 0 auto;            /* center the grid */
+          justify-items: center;     /* center each grid cell content horizontally */
+          padding: 0 12px 24px;
+        }
+
+        /* Each card is a column-flex with a controlled max width so spacing is equal */
+        .s-we-do .full-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          background: transparent;
+          border-radius: 12px;
+          width: 100%;
+          max-width: 300px;          /* consistent card width */
+          box-sizing: border-box;
+          padding: 18px;
+        }
+
+        .s-we-do .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 6px;
+        }
+
+        .s-we-do .title-wrap {
+          width: 100%;
+          // text-align: center;
+          margin-top: 8px;
+        }
+
+        .s-we-do .box-icon .title {
+          display: block;
+          font-size: 20px;
+          color: #0b1972;
+          font-weight: 600;
+          line-height: 1.2;
+          margin: 0;
+        }
+
+        // .s-we-do .line {
+        //   display: block;
+        //   height: 2px;
+        //   width: 48px;
+        //   background: transparent;
+        //   margin: 8px auto 0;
+        // }
+
         .s-we-do .card-text-box {
           flex: 1 1 auto;
-          min-height: 180px; /* increase if text still overflows */
-          width: 100%;
+          min-height: 280px;
+          width: 100%;               /* fill the card width for balanced spacing */
           display: flex;
-        //   align-items: center;
+          // align-items: center;
           justify-content: center;
-          text-align: left;
-          padding: 20px;
-          border-radius: 16px;
+          text-align: center;        /* center text inside the colored box */
+          padding: 18px;
+          border-radius: 12px;
           background: #e6ac41;
-          color: #0b1972;
+          // color: #0b1972;
           line-height: 1.45;
           box-sizing: border-box;
         }
 
-        /* Title spacing */
-        .s-we-do .box-icon .title {
-          display: block;
-          font-size: 18px;
-          color: #0b1972;
-        }
-
-        /* smaller gap under title line */
-        .s-we-do .line {
-          display: block;
-          height: 2px;
-          width: 48px;
-          background: transparent;
-          margin: 8px auto 0;
+        /* Hover lift */
+        .s-we-do .full-card:hover {
+          transform: translateY(-6px);
+          transition: transform 220ms ease, box-shadow 220ms ease;
+          box-shadow: 0 12px 28px rgba(14, 33, 77, 0.08);
         }
 
         /* Responsive: 2 columns on medium screens, 1 column on small screens */
         @media (max-width: 1100px) {
           .s-we-do .feature-group {
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-          }
-
-          .s-we-do .section-fullwidth {
-            max-width: 1000px;
-            padding-left: 12px;
-            padding-right: 12px;
+            width: min(900px, 96%);
+            gap: 22px;
           }
         }
 
         @media (max-width: 640px) {
           .s-we-do .feature-group {
             grid-template-columns: 1fr;
+            width: 96%;
+            gap: 16px;
           }
 
           .s-we-do .card-text-box {
-            min-height: 140px;
-            padding: 16px;
-            text-align: left;
+            min-height: 100px;
+            padding: 14px;
           }
 
           .s-we-do .heading { padding: 0 12px; }
-        }
-
-        /* Optional: subtle hover lift & shadow */
-        .s-we-do .full-card:hover {
-          transform: translateY(-6px);
-          transition: transform 220ms ease, box-shadow 220ms ease;
-          box-shadow: 0 12px 28px rgba(14, 33, 77, 0.08);
         }
       `}</style>
     </section>

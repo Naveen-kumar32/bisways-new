@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt, breadcrumbText, imageSrc = "/images/section/home-3.jpg", imageAlt = "" }) {
+export default function Breadcrumb({ date, breadcrumbTitle, breadcrumbAlt, category, breadcrumbText, imageSrc = "/images/section/home-3.jpg", imageAlt = "" }) {
 	const words = breadcrumbTitle?.split(" ")
 	const formattedTitle = words?.length > 1 ? (
 		<>
@@ -33,7 +33,7 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt, breadcrumbT
 								<div className="row">
 									<div className="col-lg-12">
 										<p className="title">{formattedTitle}</p>
-										<p style={{color:"white",fontSize:"30px",marginBottom:"20px",fontWeight:"600px"}}>
+										<p style={{ color: "white", fontSize: "30px", marginBottom: "20px", fontWeight: "600px" }}>
 											{breadcrumbText}
 										</p>
 										<div className="breadcrums">
@@ -68,48 +68,103 @@ export default function Breadcrumb({ breadcrumbTitle, breadcrumbAlt, breadcrumbT
 							<div className="tf-container">
 								<div className="row">
 									<div className="col-lg-12">
+
 										<div className="breadcrums">
 											<Link href="/"> Home </Link>
 											<div className="icon">
 												<i className="icon-chevron-r" />
 											</div>
-											<Link href="#" className="current">
+											<span style={{ fontSize: "24px", fontWeight: "500", color: "#fdfdfdff" }} className="current">
 												Blog Details
-											</Link>
+											</span>
 										</div>
 										<h2>
-											Role of a Business Consulting Agency in <br />
-											Driving Innovation Key to Business
-											Success
+											{breadcrumbText}
 										</h2>
 										<div className="entry-meta style-2">
 											<ul className="meta-list">
 												<li className="entry author">
 													<div className="icon">
-														<i className="icon-user" />
+														<i className="icon-calendar-days" style={{color:"#ba1616ff"}}/>
 													</div>
-													<Link href="#">
-														William D. Galindo
-													</Link>
+													<div style={{ color: "white" }}>
+														Published:  {date}
+													</div>
+												</li>
+												<li>
+													<div style={{ width: "3px", height: "20px", backgroundColor: "white" }}>
+													</div>
 												</li>
 												<li className="entry date">
 													<div className="icon">
-														<i className="icon-calendar-days" />
+
 													</div>
-													<Link href="#">
-														25 September 2024
-													</Link>
+													<div style={{ color: "white" }}>
+														By Bisways Consulting Group
+													</div>
 												</li>
 												<li className="entry comment">
-													<div className="icon">
-														<i className="icon-comments" />
-													</div>
-													<Link href="#"> Comments (05) </Link>
+
+													<Link href=""> <span style={{ fontStyle: "bold" }}>Category :</span> {category} </Link>
 												</li>
 											</ul>
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+					<div className="tf-marquee slider-saylo style-2" style={{backgroundColor:"#0e0e0eff",marginBottom:"0px"}}>
+						<div className="wrap-marquee">
+							<div className="marquee-item">
+								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+									Bisways Consulting Group
+								</p>
+							</div>
+							<div className="marquee-item">
+								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+									Bisways Consulting Group
+								</p>
+							</div>
+							<div className="marquee-item">
+								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+									Bisways Consulting Group
+								</p>
+							</div>
+							<div className="marquee-item">
+								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+									Bisways Consulting Group
+								</p>
+							</div>
+							<div className="marquee-item">
+								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+									Bisways Consulting Group
+								</p>
+							</div>
+							<div className="marquee-item">
+								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+									Bisways Consulting Group
+								</p>
+							</div>
+							<div className="marquee-item">
+								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+									Bisways Consulting Group
+								</p>
+							</div>
+							<div className="marquee-item">
+								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+									Bisways Consulting Group
+								</p>
+							</div>
+							<div className="marquee-item">
+								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+									Bisways Consulting Group
+								</p>
+							</div>
+							<div className="marquee-item">
+								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+									Bisways Consulting Group
+								</p>
 							</div>
 						</div>
 					</div>

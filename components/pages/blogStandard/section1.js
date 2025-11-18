@@ -55,11 +55,11 @@ export default function Section1() {
 
 									<div className="entry-btn" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
 										<div>
-											<p style={{ color: "black" }}> <span style={{ fontWeight: "bold", color: "black" }}>Category : </span> <Link href="/virtual-cfo"> Virtual CFO</Link> Virtual CFO</p>
+											<p style={{ color: "black" }}> <span style={{ fontWeight: "bold", color: "black" }}>Category : </span> <Link href="/virtual-cfo"> Virtual CFO</Link></p>
 											<p style={{ color: "black" }}> <span style={{ fontWeight: "bold", color: "black" }}>Tags : </span>  Financial Strategy | Business Growth | Advisory</p>
 										</div>
 										<div>
-											<Link href="" className="tf-btn small text-anime-style-1">
+											<Link href="/blog-details1" className="tf-btn small text-anime-style-1">
 												Read More
 												<i className="icon-chevron-right" />
 											</Link>

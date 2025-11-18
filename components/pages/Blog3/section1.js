@@ -15,8 +15,8 @@ export default function Section1() {
 
 									<div className="entry-title">
 										<p className="font-main-2 text-anime-wave">
-											Key Differences Between LLP and Private
-											Limited Company
+											ROC Annual Filings for OPC – A Complete
+											Compliance Guide
 										</p>
 									</div>
 									<div className="entry-meta">
@@ -30,7 +30,7 @@ export default function Section1() {
 													Published :
 												</p>
 												<p style={{ paddingLeft: "15px" }}>
-													March 22, 2022
+													September 14, 2022
 												</p>
 											</li>
 
@@ -48,8 +48,8 @@ export default function Section1() {
 									</div>
 									<div className="entry-text">
 										<p style={{ fontSize: "20px", color: "black" }}>
-											Explains how LLPs and Private Limited Companies differ in compliance,
-											ownership, and taxation to help you choose the right structure.
+											Explains annual compliance for One Person Companies, including AOC-4, MGT
+											7A filing and director responsibilities under Companies Act 2013.
 										</p>
 									</div>
 
@@ -725,7 +725,7 @@ export default function Section1() {
 										</Link>
 									</div>
 								</div> */}
-								<div className="pagination-section" style={{marginBottom:"20px"}}>
+								<div className="pagination-section" style={{ marginBottom: "20px" }}>
 
 									<Link href="/blog-2" className="btn-next-pagination">
 										Previous

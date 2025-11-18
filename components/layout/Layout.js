@@ -25,7 +25,7 @@ import Header4 from "./header/Header4"
 // import { hoverTextAnimate } from "@/utils/hoverTextAnimate"
 // import { hoverTextAnimate } from "@/utils/hoverTextAnimate"
 
-export default function Layout({ headerStyle, footerStyle, breadcrumbTitle,breadcrumbText, children, mainCls, breadcrumbAlt,breadcrumbImage, hero }) {
+export default function Layout({ headerStyle, footerStyle, breadcrumbTitle,category,breadcrumbText,date, children, mainCls, breadcrumbAlt,breadcrumbImage, hero }) {
 	const [scroll, setScroll] = useState(0)
 	// MobilleMenu
 	const [isMobileMenu, setMobileMenu] = useState(false)
@@ -74,7 +74,7 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle,bread
 				{hero == 2 && <Hero2 />}
 				{hero == 3 && <Hero3 />}
 				{hero == 4 && <Hero4 />}
-				<Breadcrumb breadcrumbTitle={breadcrumbTitle} breadcrumbText={breadcrumbText}breadcrumbAlt={breadcrumbAlt} imageSrc={breadcrumbImage} />
+				<Breadcrumb breadcrumbTitle={breadcrumbTitle} category={category} date={date} breadcrumbText={breadcrumbText}breadcrumbAlt={breadcrumbAlt} imageSrc={breadcrumbImage} />
 				<div className={`main-content ${mainCls ? mainCls : ""}`}>
 
 					{children}

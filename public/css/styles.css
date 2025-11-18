@@ -16437,3 +16437,7 @@ a.mapboxgl-ctrl-logo {
 	color: #0b1972;
 	/* optional highlight color */
 }
+
+.marquee-text-color {
+	color: #0b0b0b;
+}

@@ -62,7 +62,7 @@ export default function Section5() {
 											className="infor"
 											target="_blank"
 										>
-											<p className="infor">
+											<p className="infor" style={{ color: "#0b1972",fontWeight:"500",fontSize:"15px" }}>
 												Plot no. 31, Lisa Ponnammal St, 3rd Floor,
 												<br />
 												Golden George Nagar, Nerkundram,
