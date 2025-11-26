@@ -76,6 +76,7 @@ export default function Section1() {
 
 								</p>
 								<h3 style={{ marginTop: "40px", color: '#0b1972' }}>What Is a Virtual CFO?</h3>
+								<br/>
 								<p className="text mb-35">
 									A Virtual CFO is a finance expert who manages an organisation’s financial strategy, planning,
 									reporting, and governance without being hired full-time.<br />
@@ -86,7 +87,7 @@ export default function Section1() {
 
 
 
-								<h5 style={{ color: '#0b1972' }}>A Virtual CFO typically handles:</h5>
+								<h6 style={{ color: '#0b1972' }}>A Virtual CFO typically handles:</h6>
 								<br />
 								<ul className="benefit-list style-2">
 									<li>
@@ -420,7 +421,7 @@ export default function Section1() {
 								<br />
 								<h3 style={{ color: '#0b1972' }}>Who Should Use vCFO Services?</h3>
 								<br />
-								<h5 style={{ color: '#0b1972' }}> A Virtual CFO is ideal for:</h5>
+								<h6 style={{ color: '#0b1972' }}> A Virtual CFO is ideal for:</h6>
 								<br />
 								<ul className="benefit-list style-2">
 									<li>
@@ -485,28 +486,28 @@ export default function Section1() {
 								<br />
 								<h3 style={{ color: '#0b1972' }}>How the Virtual CFO Process Works</h3>
 								<br />
-								<br/>
-								<h5 style={{  color: '#0b1972' }}>Step 1: Financial Assessment</h5>
+								<br />
+								<h5 style={{ color: '#0b1972' }}>Step 1: Financial Assessment</h5>
 								<p>Understanding current financial health, systems, and challenges.</p>
 								<br />
-								<h5 style={{  color: '#0b1972' }}>Step 2: Setting Up Reporting Systems</h5>
+								<h5 style={{ color: '#0b1972' }}>Step 2: Setting Up Reporting Systems</h5>
 								<p>Designing MIS dashboards, monthly review formats, and KPIs.</p>
 								<br />
-								<h5 style={{  color: '#0b1972' }}>Step 3: Budgeting & Forecasting</h5>
+								<h5 style={{ color: '#0b1972' }}>Step 3: Budgeting & Forecasting</h5>
 								<p>Building clear cash-flow and profitability projections.</p>
 								<br />
-								<h5 style={{  color: '#0b1972' }}>Step 4: Monthly Reviews</h5>
+								<h5 style={{ color: '#0b1972' }}>Step 4: Monthly Reviews</h5>
 								<p>Analysing performance, identifying risks, and reviewing targets.</p>
 								<br />
-								<h5 style={{  color: '#0b1972' }}>Step 5: Compliance Tracking</h5>
+								<h5 style={{ color: '#0b1972' }}>Step 5: Compliance Tracking</h5>
 								<p>Ensuring all statutory filings are completed on time.</p>
 								<br />
-								<h5 style={{  color: '#0b1972' }}>Step 6: Ongoing Advisory</h5>
+								<h5 style={{ color: '#0b1972' }}>Step 6: Ongoing Advisory</h5>
 								<p>Supporting decisions on expansion, funding, hiring, and operations.</p>
 								<br />
 
 								<br />
-								<h3 style={{  color: '#0b1972' }}> Benefits of Hiring a Virtual CFO</h3>
+								<h3 style={{ color: '#0b1972' }}> Benefits of Hiring a Virtual CFO</h3>
 								<br />
 
 								<ul className="benefit-list style-2">
@@ -576,7 +577,8 @@ export default function Section1() {
 								</ul>
 								<br />
 								<br />
-								<h3 style={{  color: '#0b1972' }}>Conclusion</h3>
+								<h3 style={{ color: '#0b1972' }}>Conclusion</h3>
+								<br/>
 								<p> A Virtual CFO is more than an outsourced accountant — they are a strategic partner who guides
 									your business towards financial stability and long-term growth. From improving profitability to
 									strengthening governance, a vCFO brings clarity, structure, and expert oversight that every modern
@@ -587,7 +589,7 @@ export default function Section1() {
 								<p>Bisways Consulting Group provides end-to-end Virtual CFO solutions tailored to start-ups, SMEs,
 									and growing enterprises, enabling efficient financial management and confident decision-making.</p>
 
-								
+								<br /><br />
 								<span className="line" />
 								<div className="bot mb-70">
 									<div className="tags">
@@ -1042,7 +1044,60 @@ export default function Section1() {
 					</div>
 				</div>
 			</div>
-
+			<div className="tf-marquee slider-saylo style-2">
+				<div className="wrap-marquee">
+					<div className="marquee-item">
+						<p className="font-main-2 text">
+							Bisways Consulting Group
+						</p>
+					</div>
+					<div className="marquee-item">
+						<p className="font-main-2 text">
+							Bisways Consulting Group
+						</p>
+					</div>
+					<div className="marquee-item">
+						<p className="font-main-2 text">
+							Bisways Consulting Group
+						</p>
+					</div>
+					<div className="marquee-item">
+						<p className="font-main-2 text">
+							Bisways Consulting Group
+						</p>
+					</div>
+					<div className="marquee-item">
+						<p className="font-main-2 text">
+							Bisways Consulting Group
+						</p>
+					</div>
+					<div className="marquee-item">
+						<p className="font-main-2 text">
+							Bisways Consulting Group
+						</p>
+					</div>
+					<div className="marquee-item">
+						<p className="font-main-2 text">
+							Bisways Consulting Group
+						</p>
+					</div>
+					<div className="marquee-item">
+						<p className="font-main-2 text">
+							Bisways Consulting Group
+						</p>
+					</div>
+					<div className="marquee-item">
+						<p className="font-main-2 text">
+							Bisways Consulting Group
+						</p>
+					</div>
+					<div className="marquee-item">
+						<p className="font-main-2 text">
+							Bisways Consulting Group
+						</p>
+					</div>
+				</div>
+			</div>
 
 		</>
 	)

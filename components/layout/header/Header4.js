@@ -75,7 +75,7 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, handle
 								</div>
 								<div className="header-right">
 									<button  className="tf-btn style-9 small" onClick={handleWelcomeBox}>
-										Get In Touch
+										Get Brochure
 										<i className="icon-chevron-right" />
 									</button>
 									<div className="union style-2 mobile-button" onClick={handleMobileMenu}>

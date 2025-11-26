@@ -60,7 +60,13 @@ export default function Breadcrumb({ date, breadcrumbTitle, breadcrumbAlt, categ
 					<div className="content-wrap">
 						<div className="bg-image" >
 							<div className="rellax" data-rellax-speed={-10}>
-								<Image src={imageSrc} alt={imageAlt || "page"} fill sizes="100vw" style={{ objectFit: "cover" }} />
+								<Image
+									src="/images/section/blog-detail-page.svg"
+									alt={imageAlt || "page"}
+									fill
+									sizes="100vw"
+									style={{ objectFit: "cover" }}
+								/>
 							</div>
 						</div>
 						<div className="tf-overlay" />
@@ -68,6 +74,9 @@ export default function Breadcrumb({ date, breadcrumbTitle, breadcrumbAlt, categ
 							<div className="tf-container">
 								<div className="row">
 									<div className="col-lg-12">
+										<h2>
+											{breadcrumbText}
+										</h2>
 
 										<div className="breadcrums">
 											<Link href="/"> Home </Link>
@@ -75,17 +84,21 @@ export default function Breadcrumb({ date, breadcrumbTitle, breadcrumbAlt, categ
 												<i className="icon-chevron-r" />
 											</div>
 											<span style={{ fontSize: "24px", fontWeight: "500", color: "#fdfdfdff" }} className="current">
-												Blog Details
+												Blog
+											</span>
+											<div className="icon">
+												<i className="icon-chevron-r" />
+											</div>
+											<span style={{ fontSize: "24px", fontWeight: "500", color: "#fdfdfdff" }} className="current">
+												{category}
 											</span>
 										</div>
-										<h2>
-											{breadcrumbText}
-										</h2>
-										<div className="entry-meta style-2">
-											<ul className="meta-list">
+
+										<div className="entry-meta style-2 gap-20">
+											<ul className="meta-list" style={{ gap: "25px" }}>
 												<li className="entry author">
 													<div className="icon">
-														<i className="icon-calendar-days" style={{color:"#ba1616ff"}}/>
+														<i className="icon-calendar-days" style={{ color: "#ba1616ff" }} />
 													</div>
 													<div style={{ color: "white" }}>
 														Published:  {date}
@@ -96,17 +109,12 @@ export default function Breadcrumb({ date, breadcrumbTitle, breadcrumbAlt, categ
 													</div>
 												</li>
 												<li className="entry date">
-													<div className="icon">
 
-													</div>
 													<div style={{ color: "white" }}>
 														By Bisways Consulting Group
 													</div>
 												</li>
-												<li className="entry comment">
 
-													<Link href=""> <span style={{ fontStyle: "bold" }}>Category :</span> {category} </Link>
-												</li>
 											</ul>
 										</div>
 									</div>
@@ -114,55 +122,55 @@ export default function Breadcrumb({ date, breadcrumbTitle, breadcrumbAlt, categ
 							</div>
 						</div>
 					</div>
-					<div className="tf-marquee slider-saylo style-2" style={{backgroundColor:"#0e0e0eff",marginBottom:"0px"}}>
+					<div className="tf-marquee slider-saylo style-2" style={{marginBottom:"0px"}}>
 						<div className="wrap-marquee">
 							<div className="marquee-item">
-								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+								<p className="font-main-2 text">
 									Bisways Consulting Group
 								</p>
 							</div>
 							<div className="marquee-item">
-								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+								<p className="font-main-2 text">
 									Bisways Consulting Group
 								</p>
 							</div>
 							<div className="marquee-item">
-								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+								<p className="font-main-2 text">
 									Bisways Consulting Group
 								</p>
 							</div>
 							<div className="marquee-item">
-								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+								<p className="font-main-2 text">
 									Bisways Consulting Group
 								</p>
 							</div>
 							<div className="marquee-item">
-								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+								<p className="font-main-2 text">
 									Bisways Consulting Group
 								</p>
 							</div>
 							<div className="marquee-item">
-								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+								<p className="font-main-2 text">
 									Bisways Consulting Group
 								</p>
 							</div>
 							<div className="marquee-item">
-								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+								<p className="font-main-2 text">
 									Bisways Consulting Group
 								</p>
 							</div>
 							<div className="marquee-item">
-								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+								<p className="font-main-2 text">
 									Bisways Consulting Group
 								</p>
 							</div>
 							<div className="marquee-item">
-								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+								<p className="font-main-2 text">
 									Bisways Consulting Group
 								</p>
 							</div>
 							<div className="marquee-item">
-								<p className="font-main-2  text" style={{color:"#181818ff"}}>
+								<p className="font-main-2 text">
 									Bisways Consulting Group
 								</p>
 							</div>

@@ -17,7 +17,7 @@ export default function Section1() {
 												height="0"
 												sizes="100vw"
 												style={{ width: "100%", height: "auto", borderRadius: "12px",minHeight:"310px" }}
-												src="/images/section/home-2.jpg"
+												src="/images/section/contact-us-headoffice.svg"
 												data-src="/images/widget/office-1.jpg"
 												className="lazyload"
 												alt=""

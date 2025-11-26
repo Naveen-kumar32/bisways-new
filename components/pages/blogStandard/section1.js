@@ -14,13 +14,13 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
+										<Link href="/blog-details1" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Role of a Business Consulting Agency in Driving Innovation Key to Business
 											Success
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
-										<ul className="meta-list ">
+										<ul className="meta-list  " style={{ gap: "25px" }}>
 											<li className="entry author">
 												<div className="icon">
 													<i className="icon-calendar-days" />
@@ -39,10 +39,7 @@ export default function Section1() {
 												</div>
 											</li>
 											<li className="entry comment">
-
-
 												By Bisways Consulting Group
-
 											</li>
 										</ul>
 									</div>
@@ -72,13 +69,13 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
+										<Link href="blog-details2" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											How to Read and Analyse a Profit & Loss
 											Statement
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
-										<ul className="meta-list ">
+										<ul className="meta-list  " style={{ gap: "25px" }}>
 											<li className="entry author">
 												<div className="icon">
 													<i className="icon-calendar-days" />
@@ -117,7 +114,7 @@ export default function Section1() {
 											<p style={{ color: "black" }}> <span style={{ fontWeight: "bold", color: "black" }}>Tags : </span>  Financial Reporting | Business Analysis | Profit & Loss</p>
 										</div>
 										<div>
-											<Link href="" className="tf-btn small text-anime-style-1">
+											<Link href="/blog-details2" className="tf-btn small text-anime-style-1">
 												Read More
 												<i className="icon-chevron-right" />
 											</Link>
@@ -130,13 +127,13 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
+										<Link href="blog-details3" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											GST Annual Return (Form GSTR-9) – Who
 											Should File & How?
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
-										<ul className="meta-list ">
+										<ul className="meta-list  " style={{ gap: "25px" }}>
 											<li className="entry author">
 												<div className="icon">
 													<i className="icon-calendar-days" />
@@ -175,7 +172,7 @@ export default function Section1() {
 											<p style={{ color: "black" }}> <span style={{ fontWeight: "bold", color: "black" }}>Tags : </span>  GST | Compliance | Annual Return</p>
 										</div>
 										<div>
-											<Link href="" className="tf-btn small text-anime-style-1">
+											<Link href="/blog-details3" className="tf-btn small text-anime-style-1">
 												Read More
 												<i className="icon-chevron-right" />
 											</Link>
@@ -188,13 +185,13 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
+										<Link href="blog-details4" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Input Tax Credit (ITC) – Eligibility, Conditions
 											& Common Mistakes
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
-										<ul className="meta-list ">
+										<ul className="meta-list  " style={{ gap: "25px" }}>
 											<li className="entry author">
 												<div className="icon">
 													<i className="icon-calendar-days" />
@@ -233,7 +230,7 @@ export default function Section1() {
 											<p style={{ color: "black" }}> <span style={{ fontWeight: "bold", color: "black" }}>Tags : </span>  Input Tax Credit | Rule 36(4) | GST Compliance</p>
 										</div>
 										<div>
-											<Link href="" className="tf-btn small text-anime-style-1">
+											<Link href="/blog-details4" className="tf-btn small text-anime-style-1">
 												Read More
 												<i className="icon-chevron-right" />
 											</Link>
@@ -245,13 +242,13 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
+										<Link href="blog-details5" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											ROC Annual Filings for Companies & LLPs – A
 											Complete Checklist
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
-										<ul className="meta-list ">
+										<ul className="meta-list  " style={{ gap: "25px" }}>
 											<li className="entry author">
 												<div className="icon">
 													<i className="icon-calendar-days" />
@@ -290,7 +287,7 @@ export default function Section1() {
 											<p style={{ color: "black" }}> <span style={{ fontWeight: "bold", color: "black" }}>Tags : </span>  Annual Filings | Company Law | LLP Compliance</p>
 										</div>
 										<div>
-											<Link href="" className="tf-btn small text-anime-style-1">
+											<Link href="blog-details5" className="tf-btn small text-anime-style-1">
 												Read More
 												<i className="icon-chevron-right" />
 											</Link>
@@ -300,13 +297,13 @@ export default function Section1() {
 								</div>
 								<div className="article-blog-item mb-50 tf-hover">
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
+										<Link href="blog-details6" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											How to File Your Income Tax Return (ITR) – A
 											Step-by-Step Guide
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
-										<ul className="meta-list ">
+										<ul className="meta-list  " style={{ gap: "25px" }}>
 											<li className="entry author">
 												<div className="icon">
 													<i className="icon-calendar-days" />
@@ -355,13 +352,13 @@ export default function Section1() {
 								</div>
 								<div className="article-blog-item mb-50 tf-hover">
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
+										<Link href="blog-details7" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Understanding Form 26AS, AIS & TIS
 											Matching Income Before ITR Filing
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
-										<ul className="meta-list ">
+										<ul className="meta-list  " style={{ gap: "25px" }}>
 											<li className="entry author">
 												<div className="icon">
 													<i className="icon-calendar-days" />
@@ -412,13 +409,13 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
+										<Link href="blog-details8" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											How to Draft a Founders’ Agreement – Must
 											Have Clauses & Common Mistakes
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
-										<ul className="meta-list ">
+										<ul className="meta-list  " style={{ gap: "25px" }}>
 											<li className="entry author">
 												<div className="icon">
 													<i className="icon-calendar-days" />
@@ -469,13 +466,13 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
+										<Link href="blog-details9" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											GST Registration – Who Needs It and How to
 											Apply (2025 Edition)
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
-										<ul className="meta-list ">
+										<ul className="meta-list  " style={{ gap: "25px" }}>
 											<li className="entry author">
 												<div className="icon">
 													<i className="icon-calendar-days" />
@@ -526,13 +523,13 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
+										<Link href="blog-details10" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Understanding TDS (Tax Deducted at
 											Source) – Process, Forms & Due Dates
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
-										<ul className="meta-list ">
+										<ul className="meta-list  " style={{ gap: "25px" }}>
 											<li className="entry author">
 												<div className="icon">
 													<i className="icon-calendar-days" />
@@ -620,7 +617,7 @@ export default function Section1() {
 										</ul>
 									</div>
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
+										<Link href="" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Role of a Business Consulting Agency in Driving Innovation Key to Business
 											Success
 										</p>
@@ -693,7 +690,7 @@ export default function Section1() {
 										</ul>
 									</div>
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
+										<Link href="" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Role of a Business Consulting Agency in Driving Innovation Key to Business
 											Success
 										</p>
@@ -922,7 +919,7 @@ export default function Section1() {
 											src="/images/blog/service-sidebar.jpg" alt="" />
 									</div>
 									<div className="content">
-										<p className="font-main-2 text-anime-wave" style={{ color: '#0b1972' }}>
+										<Link href="" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Professional &amp; Experience Business
 											<span>
 												Services
