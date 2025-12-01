@@ -63,7 +63,7 @@ export default function Section1() {
 			desc: "Explains annual DPT-1 requirements for reporting company deposits and loan status under 2025 ROC rules.",
 			link: "/blog-details50"
 		},
-		
+
 	];
 
 
@@ -150,8 +150,8 @@ export default function Section1() {
 
 							</Link>
 							<ul>
-
-								<li><Link href="/#" className="active">5</Link></li>
+								<li><Link href="/blog-4" >4</Link></li>
+								<li><Link href="#" className="active" style={{ pointerEvents: "none" }}>5</Link></li>
 								<li><Link href="/blog-6" >6</Link></li>
 							</ul>
 							<Link href="/blog-6" className="btn-next-pagination">

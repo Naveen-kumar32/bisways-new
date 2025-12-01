@@ -131,8 +131,9 @@ export default function Section1() {
 							</Link>
 							<ul>
 
+								<li><Link href="/blog-4" >4</Link></li>
 								<li><Link href="/blog-5" >5</Link></li>
-								<li><Link href="/#"className="active" >6</Link></li>
+								<li><Link href="#" className="active" style={{ pointerEvents: "none" }}>6</Link></li>
 							</ul>
 						</div>
 
