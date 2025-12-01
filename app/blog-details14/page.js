@@ -4,7 +4,7 @@ export default function Home() {
 
 	return (
 		<>
-			<Layout breadcrumbAlt={1} date="March 22, 2022" category="Business Structure & Registration" breadcrumbText="Key Differences Between LLP and Private Limited Company">
+			<Layout breadcrumbAlt={1} date="June 17, 2023" category="Company Loan Reporting" breadcrumbText="Form DPT-3 – Loans & Advances">
 				<BlogDetails14 />
 			</Layout>
 		</>

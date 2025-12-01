@@ -4,7 +4,7 @@ export default function Home() {
 
 	return (
 		<>
-			<Layout breadcrumbAlt={1} date="July 18, 2023" category="Income Tax & Compliance" breadcrumbText="How to File Your Income Tax Return (ITR)– A Step-by-Step Guide">
+			<Layout breadcrumbAlt={1} date="July 18, 2023" category="ITR Filing Guide" breadcrumbText="How to File Income Tax Return (ITR)">
 				<BlogDetails6 />
 			</Layout>
 		</>

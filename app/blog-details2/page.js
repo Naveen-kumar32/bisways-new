@@ -4,7 +4,7 @@ export default function Home() {
 
 	return (
 		<>
-			<Layout breadcrumbAlt={1} date="November 5, 2021" category=" Financial Statement Analysis" breadcrumbText="How to Read and Analyse a Profit & Loss Statement">
+			<Layout breadcrumbAlt={1} date="November 5, 2021" category=" Financial Statement Analysis" breadcrumbText="How to Read & Analyse a Profit & Loss Statement">
 				<BlogDetails2 />
 			</Layout>
 		</>

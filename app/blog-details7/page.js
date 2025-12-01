@@ -4,8 +4,7 @@ export default function Home() {
 
 	return (
 		<>
-			<Layout breadcrumbAlt={1} date="March 10, 2023" category="Income Tax & Compliance" breadcrumbText="Understanding Form 26AS, AIS & TIS 
-Matching Income Before ITR Filing">
+			<Layout breadcrumbAlt={1} date="March 10, 2023" category="Income Reconciliation" breadcrumbText="Understanding Form 26AS, AIS, TIS">
 				<BlogDetails7 />
 			</Layout>
 		</>

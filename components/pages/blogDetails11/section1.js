@@ -58,45 +58,409 @@ export default function Section1() {
 								</div> */}
 								<h3 style={{ color: '#0b1972' }}>Introduction</h3>
 								<p className="text mt-3 mb-20">
-									Tax Deducted at Source (TDS) is one of the key mechanisms by which the government ensures
-									regular tax collection throughout the year.
+									Choosing the right legal structure is one of the most important early decisions for any
+									entrepreneur.
 									<br />
-									It is designed to collect tax at the very moment income is generated — whether through salary,
-									rent, interest, professional fees, or contract payments.
-
+									In India, two of the most popular options for startups and small businesses are the Limited Liability
+									Partnership (LLP) and the Private Limited Company (PLC).
 								</p>
 
 								<p className="text mb-35">
-									For businesses and individuals making payments, understanding the TDS process, rates, and due
-									dates is essential to remain compliant and avoid penalties.
+									While both offer limited liability protection and legal recognition, they differ in ownership,
+									compliance, and operational flexibility.
 									<br />
-									In this guide, Bisways Consulting Group breaks down the fundamentals of TDS, its filing forms, and
-									key deadlines every taxpayer should remember.
+									<br />
+									In this article, Bisways Consulting Group compares LLPs and Private Limited Companies in detail so
+									you can make an informed decision before registration.
 								</p>
 								<br />
 								<br />
-								<h3 style={{ color: '#0b1972' }}>What Is TDS and How It Works</h3>
+								<h3 style={{ color: '#0b1972' }}> Understanding the Two Structures</h3>
+								<br />
+								<h5 style={{ color: '#0b1972' }}> Limited Liability Partnership (LLP)</h5>
 								<p className="text mt-3 mb-20">
-									TDS is a method where a specified percentage of tax is deducted by the payer (known as the
-									deductor) before making payment to the receiver (the deductee).
-									<br />
-									The deductor then deposits this tax directly with the government on behalf of the deductee.
+									An LLP is a hybrid structure combining features of a partnership and a company. It is governed by
+									the Limited Liability Partnership Act 2008, providing partners with limited liability while allowing
+									internal flexibility similar to a partnership firm.
 								</p>
 								<br />
-								<h5 style={{ color: '#0b1972' }}>For example:</h5>
+								<h5 style={{ color: '#0b1972' }}>Private Limited Company (PLC)</h5>
 								<br />
 								<p>
-									If you pay ₹1,00,000 as professional fees and the TDS rate is 10%, you must deduct ₹10,000 and
-									remit ₹90,000 to the professional.
-									<br />
-									The ₹10,000 deducted is then deposited to the government under Section 194J of the Income Tax
-									Act.
+									A PLC is a separate legal entity incorporated under the Companies Act 2013. It offers higher
+									credibility, investor preference, and scalability but comes with stricter regulatory compliance.
 								</p>
 
-								<h3 style={{ marginTop: "40px", color: '#0b1972' }}>Who Should Deduct TDS</h3>
+
+
+
+
+								<h3 style={{ color: '#0b1972' }}> Ownership and Legal Status</h3>
+
+								<br /><br />
+
+								<div className="entry-table mb-40">
+
+									<table
+										style={{
+											width: "100%",
+											borderCollapse: "collapse",
+											fontSize: "18px",
+										}}
+									>
+										<thead>
+											<tr>
+												<th
+													style={{
+														background: "#0b1972",
+														color: "white",
+														padding: "14px 18px",
+														textAlign: "left",
+														fontWeight: 600,
+														fontSize: "20px",
+														borderColor: "white"
+													}}
+												>
+													Aspect
+												</th>
+												<th
+													style={{
+														background: "#0b1972",
+														color: "white",
+														padding: "14px 18px",
+														textAlign: "left",
+														fontWeight: 600,
+														fontSize: "20px",
+														borderColor: "white"
+													}}
+												>
+													LLP
+												</th>
+												<th
+													style={{
+														background: "#0b1972",
+														color: "white",
+														padding: "14px 18px",
+														textAlign: "left",
+														fontWeight: 600,
+														fontSize: "20px",
+														borderColor: "white"
+													}}
+												>
+													Private Limited Company
+												</th>
+
+
+											</tr>
+										</thead>
+
+										<tbody>
+											{[
+												["Legal Entity", " Separate legal entity distinct from partners", "Separate legal entity distinct from shareholders"],
+												["Liability", " Limited to capital contribution", "Limited to unpaid share capital"],
+												["Ownership Units", " Partners’ contribution defined in LLP Agreement", " Shares held by shareholders"],
+												["Minimum Members", " 2 designated partners", "2 directors & 2 shareholders"],
+												["Maximum Members", "No upper limit", "200 shareholders"],
+
+											].map((row, i) => (
+												<tr key={i}>
+													<td
+														style={{
+															background: "#e6ac41",
+															color: "black",
+															padding: "14px 18px",
+															borderBottom: "2px solid black",
+															verticalAlign: "top",
+															fontWeight: 500,
+															color: "#0b1972",
+															textAlign: "center"
+														}}
+													>
+														{row[0]}
+													</td>
+
+													<td
+														style={{
+															background: "#ffffffff",
+															color: "black",
+															padding: "14px 18px",
+															borderBottom: "2px solid black",
+															verticalAlign: "top",
+															fontWeight: 500,
+															color: "#0b1972",
+															textAlign: "center"
+														}}
+													>
+														{row[1]}
+													</td>
+													<td
+														style={{
+															background: "#ffffffff",
+															color: "black",
+															padding: "14px 18px",
+															borderBottom: "2px solid black",
+															verticalAlign: "top",
+															fontWeight: 500,
+															color: "#0b1972",
+															textAlign: "center"
+														}}
+													>
+														{row[2]}
+													</td>
+
+												</tr>
+											))}
+										</tbody>
+									</table>
+
+								</div>
+								<br /><br />
+
+								<h3 style={{ color: '#0b1972' }}>Formation and Compliance</h3>
+
+								<br /><br />
+
+								<div className="entry-table mb-40">
+
+									<table
+										style={{
+											width: "100%",
+											borderCollapse: "collapse",
+											fontSize: "18px",
+										}}
+									>
+										<thead>
+											<tr>
+												<th
+													style={{
+														background: "#0b1972",
+														color: "white",
+														padding: "14px 18px",
+														textAlign: "left",
+														fontWeight: 600,
+														fontSize: "20px",
+														borderColor: "white"
+													}}
+												>
+													Criteria
+												</th>
+												<th
+													style={{
+														background: "#0b1972",
+														color: "white",
+														padding: "14px 18px",
+														textAlign: "left",
+														fontWeight: 600,
+														fontSize: "20px",
+														borderColor: "white"
+													}}
+												>
+													LLP
+												</th>
+												<th
+													style={{
+														background: "#0b1972",
+														color: "white",
+														padding: "14px 18px",
+														textAlign: "left",
+														fontWeight: 600,
+														fontSize: "20px",
+														borderColor: "white"
+													}}
+												>
+													Private Limited Company
+												</th>
+
+
+											</tr>
+										</thead>
+
+										<tbody>
+											{[
+												["Governing Law", " LLP Act 2008", "Companies Act 2013"],
+												["Incorporation Form", " FiLLiP (Form for Incorporation of LLP)", " SPICe+ (Form for Company Incorporation)"],
+												["Statutory Audit", "Mandatory only if turnover > ₹40 lakh or capital > ₹25 lakh", " Mandatory every year irrespective of turnover"],
+												["Annual Filings", "Form 11 & Form 8 to ROC", "AOC-4 & MGT-7/MGT-7A to ROC"],
+												["Tax Return", " ITR-5", " ITR-6"],
+												["Tax Return", "Required for designated partners", "Required for directors and authorised signatories"],
+											].map((row, i) => (
+												<tr key={i}>
+													<td
+														style={{
+															background: "#e6ac41",
+															color: "black",
+															padding: "14px 18px",
+															borderBottom: "2px solid black",
+															verticalAlign: "top",
+															fontWeight: 500,
+															color: "#0b1972",
+															textAlign: "center"
+														}}
+													>
+														{row[0]}
+													</td>
+
+													<td
+														style={{
+															background: "#ffffffff",
+															color: "black",
+															padding: "14px 18px",
+															borderBottom: "2px solid black",
+															verticalAlign: "top",
+															fontWeight: 500,
+															color: "#0b1972",
+															textAlign: "center"
+														}}
+													>
+														{row[1]}
+													</td>
+													<td
+														style={{
+															background: "#ffffffff",
+															color: "black",
+															padding: "14px 18px",
+															borderBottom: "2px solid black",
+															verticalAlign: "top",
+															fontWeight: 500,
+															color: "#0b1972",
+															textAlign: "center"
+														}}
+													>
+														{row[2]}
+													</td>
+
+												</tr>
+											))}
+										</tbody>
+									</table>
+
+								</div>
+
+								<br /><br />
+
+								<h3 style={{ color: '#0b1972' }}>Taxation and Profit Distribution</h3>
+
+								<br /><br />
+
+								<div className="entry-table mb-40">
+
+									<table
+										style={{
+											width: "100%",
+											borderCollapse: "collapse",
+											fontSize: "18px",
+										}}
+									>
+										<thead>
+											<tr>
+												<th
+													style={{
+														background: "#0b1972",
+														color: "white",
+														padding: "14px 18px",
+														textAlign: "left",
+														fontWeight: 600,
+														fontSize: "20px",
+														borderColor: "white"
+													}}
+												>
+													Particulars
+												</th>
+												<th
+													style={{
+														background: "#0b1972",
+														color: "white",
+														padding: "14px 18px",
+														textAlign: "left",
+														fontWeight: 600,
+														fontSize: "20px",
+														borderColor: "white"
+													}}
+												>
+													LLP
+												</th>
+												<th
+													style={{
+														background: "#0b1972",
+														color: "white",
+														padding: "14px 18px",
+														textAlign: "left",
+														fontWeight: 600,
+														fontSize: "20px",
+														borderColor: "white"
+													}}
+												>
+													Private Limited Company
+												</th>
+
+
+											</tr>
+										</thead>
+
+										<tbody>
+											{[
+												["Income Tax Rate", "30 % on profits + surcharge & cess", "22 % (under Sec 115BAA) + cess"],
+												["Dividend Distribution Tax", "Not applicable", " Dividend taxable in shareholders’ hands"],
+												["Remuneration to Partners/Directors", "Allowed as deduction (per Sec 40(b))", "Treated as salary; subject to TDS"],
+												["MAT/AMT Provisions", "AMT @ 18.5 % applies to certain LLPs", "MAT @ 15 % applies to companies (if not under 115BAA)"],
+
+											].map((row, i) => (
+												<tr key={i}>
+													<td
+														style={{
+															background: "#e6ac41",
+															color: "black",
+															padding: "14px 18px",
+															borderBottom: "2px solid black",
+															verticalAlign: "top",
+															fontWeight: 500,
+															color: "#0b1972",
+															textAlign: "center"
+														}}
+													>
+														{row[0]}
+													</td>
+
+													<td
+														style={{
+															background: "#ffffffff",
+															color: "black",
+															padding: "14px 18px",
+															borderBottom: "2px solid black",
+															verticalAlign: "top",
+															fontWeight: 500,
+															color: "#0b1972",
+															textAlign: "center"
+														}}
+													>
+														{row[1]}
+													</td>
+													<td
+														style={{
+															background: "#ffffffff",
+															color: "black",
+															padding: "14px 18px",
+															borderBottom: "2px solid black",
+															verticalAlign: "top",
+															fontWeight: 500,
+															color: "#0b1972",
+															textAlign: "center"
+														}}
+													>
+														{row[2]}
+													</td>
+
+												</tr>
+											))}
+										</tbody>
+									</table>
+
+								</div>
+
+								<h3 style={{ marginTop: "40px", color: '#0b1972' }}> Taxation and Profit Distribution</h3>
 								<br />
 								<h6 style={{ color: '#0b1972' }}>TDS is applicable to:</h6>
-
+								<br />
 
 								<ul className="benefit-list style-2">
 									<li>
@@ -104,7 +468,8 @@ export default function Section1() {
 											<i className="icon-check" />
 										</div>
 										<p>
-											All companies, LLPs, and partnership firms.
+											<span style={{ color: '#0b1972', marginTop: "15px" }}>LLP:</span> Generally self-funded; cannot issue shares or attract equity investors. Suitable for
+											professional firms and small service businesses.
 										</p>
 									</li>
 									<li>
@@ -112,26 +477,18 @@ export default function Section1() {
 											<i className="icon-check" />
 										</div>
 										<p>
-											Individuals and HUFs whose business turnover exceeds ₹1 crore or professional receipts
-											exceed ₹50 lakh.
+											<span style={{ color: '#0b1972' }}>PLC:</span> Can raise equity or venture capital, issue ESOPs, and convert into a public company when
+											scaling. Favoured by investors and lenders.
 										</p>
 									</li>
-									<li>
-										<div className="icon">
-											<i className="icon-check" />
-										</div>
-										<p>
-											Government bodies and local authorities.
-										</p>
-									</li>
+
 
 								</ul>
 
-								<p>Even individuals not covered under tax audit may have to deduct TDS in certain cases such as
-									property purchase (under Section 194-IA).
-								</p>
 
-								<h3 style={{ color: '#0b1972' }}>Common TDS Sections and Rates</h3>
+								<br /><br />
+
+								<h3 style={{ color: '#0b1972' }}>Taxation and Profit Distribution</h3>
 
 								<br /><br />
 
@@ -157,7 +514,7 @@ export default function Section1() {
 														borderColor: "white"
 													}}
 												>
-													Section
+													Parameter
 												</th>
 												<th
 													style={{
@@ -170,7 +527,7 @@ export default function Section1() {
 														borderColor: "white"
 													}}
 												>
-													Nature of Payment
+													LLP
 												</th>
 												<th
 													style={{
@@ -183,7 +540,7 @@ export default function Section1() {
 														borderColor: "white"
 													}}
 												>
-													TDS Rate
+													Private Limited Company
 												</th>
 
 
@@ -192,13 +549,10 @@ export default function Section1() {
 
 										<tbody>
 											{[
-												["192", "Salary", "As per applicable income taxslab"],
-												["194C", "Contractor / Sub-contractor", "1% (Individual), 2% (Company)"],
-												["194J", "Professional / Technical Fees", "10%"],
-												["194H", "Commission or Brokerage", "5%"],
-												["194-IA", "Sale of Immovable Property", "1%"],
-												["194-IB", "Rent (Individual > ₹50,000 p.m.)", "5%"],
-												["194N", "Cash Withdrawal (above ₹1crore)", "2%"],
+												["Decision Making", "Flexible; based on LLP Agreement", "Formal board meetings & resolutions"],
+												["Record Keeping", "Less stringent", "Detailed statutory registers & minutes"],
+												["Conversion Option", "Can convert to Company", "Can convert to LLP (if eligible)"],
+												["Closing Procedure", "Simplified strike-off via Form 24", "Lengthier under Section 248 of Companies Act"],
 
 											].map((row, i) => (
 												<tr key={i}>
@@ -252,273 +606,100 @@ export default function Section1() {
 									</table>
 
 								</div>
-								<p>💡 Tip: Always verify PAN of the payee. If invalid or not furnished, TDS must be deducted at 20% (Section 206AA).</p>
 
-
-
-
-
-
-								<h3 style={{ marginTop: "40px", color: '#0b1972' }}>Common TDS Sections and Rates</h3>
+								<h3 style={{ marginTop: "40px", color: '#0b1972' }}> When to Choose Which</h3>
 								<br />
-
-
-								<p>1. Deduct TDS at the time of payment or credit, whichever is earlier.</p>
-								<br />
-								<p>2. Deposit the amount to the government using Challan ITNS 281 within the due date.</p>
-								<br />
-								<p>3. File quarterly TDS returns using the correct form:</p>
 								<ul className="benefit-list style-2">
 									<li>
 										<div className="icon">
 											<i className="icon-check" />
 										</div>
-										<p>
-											Form 24Q: Salary TDS
-										</p>
+										<h6 style={{ color: '#0b1972' }}>
+											Choose LLP if:
+										</h6>
 									</li>
-									<li>
-										<div className="icon">
-											<i className="icon-check" />
-										</div>
-										<p>
-											Form 26Q: Non-salary TDS (domestic payments)
-										</p>
-									</li>
-									<li>
-										<div className="icon">
-											<i className="icon-check" />
-										</div>
-										<p>
-											Form 27Q: Non-resident TDS
-										</p>
-									</li>
-									<li>
-										<div className="icon">
-											<i className="icon-check" />
-										</div>
-										<p>
-											Form 27EQ: For TCS
-										</p>
-									</li>
+									<ul className="benefit-list style-2" style={{ marginLeft: "20px" }}>
+										<li>
+											<div className="icon">
+												<i className="icon-check" />
+											</div>
+											<p>
+												You want flexibility and minimal compliance.
+											</p>
+										</li>
+										<li>
+											<div className="icon">
+												<i className="icon-check" />
+											</div>
+											<p>
+												You run a small or medium professional service firm.
+											</p>
+										</li>
+										<li>
+											<div className="icon">
+												<i className="icon-check" />
+											</div>
+											<p>
+												External funding is not a priority.
+											</p>
+										</li>
+
+
+									</ul>
 								</ul>
 
-								<p>4. File quarterly TDS returns using the correct form:</p>
 								<ul className="benefit-list style-2">
 									<li>
 										<div className="icon">
 											<i className="icon-check" />
 										</div>
-										<p>
-											Form 16: For salary employees (annually).
-										</p>
+										<h6 style={{ color: '#0b1972' }}>
+											Choose Private Limited Company if:
+										</h6>
 									</li>
-									<li>
-										<div className="icon">
-											<i className="icon-check" />
-										</div>
-										<p>
-											Form 16A: For all other payments (quarterly).
-										</p>
-									</li>
-								</ul>
+									<ul className="benefit-list style-2" style={{ marginLeft: "20px" }}>
+										<li>
+											<div className="icon">
+												<i className="icon-check" />
+											</div>
+											<p>
+												You plan to raise investment or expand operations.
+											</p>
+										</li>
+										<li>
+											<div className="icon">
+												<i className="icon-check" />
+											</div>
+											<p>
+												You want higher market credibility and structured governance.
+											</p>
+										</li>
+										<li>
+											<div className="icon">
+												<i className="icon-check" />
+											</div>
+											<p>
+												You expect rapid growth requiring multiple shareholders.
+											</p>
+										</li>
 
 
-								<h3 style={{ color: '#0b1972' }}>TDS Due Dates to Remembers</h3>
-
-								<br /><br />
-
-								<div className="entry-table mb-40">
-
-									<table
-										style={{
-											width: "100%",
-											borderCollapse: "collapse",
-											fontSize: "18px",
-										}}
-									>
-										<thead>
-											<tr>
-												<th
-													style={{
-														background: "#0b1972",
-														color: "white",
-														padding: "14px 18px",
-														textAlign: "left",
-														fontWeight: 600,
-														fontSize: "20px",
-														borderColor: "white"
-													}}
-												>
-													Activity
-												</th>
-												<th
-													style={{
-														background: "#0b1972",
-														color: "white",
-														padding: "14px 18px",
-														textAlign: "left",
-														fontWeight: 600,
-														fontSize: "20px",
-														borderColor: "white"
-													}}
-												>
-													Frequency
-												</th>
-												<th
-													style={{
-														background: "#0b1972",
-														color: "white",
-														padding: "14px 18px",
-														textAlign: "left",
-														fontWeight: 600,
-														fontSize: "20px",
-														borderColor: "white"
-													}}
-												>
-													Due Date
-												</th>
-
-
-											</tr>
-										</thead>
-
-										<tbody>
-											{[
-												["TDS deposit (monthly)", "Monthly", "7th of next month"],
-												["TDS return for Q1", "Quarterly", "31st July"],
-												["TDS return for Q2", "Quarterly", "31st October"],
-												["TDS return for Q3", "Quarterly", "31st January"],
-												["TDS return for Q4", "Quarterly", "31st May (following FY)"],
-												["Form 16 / 16A issue ", "Annual /Quarterly", "15th June / 15 days from filing"],
-
-											].map((row, i) => (
-												<tr key={i}>
-													<td
-														style={{
-															background: "#e6ac41",
-															color: "black",
-															padding: "14px 18px",
-															borderBottom: "2px solid black",
-															verticalAlign: "top",
-															fontWeight: 500,
-															color: "#0b1972",
-															textAlign: "center"
-														}}
-													>
-														{row[0]}
-													</td>
-
-													<td
-														style={{
-															background: "#ffffffff",
-															color: "black",
-															padding: "14px 18px",
-															borderBottom: "2px solid black",
-															verticalAlign: "top",
-															fontWeight: 500,
-															color: "#0b1972",
-															textAlign: "center"
-														}}
-													>
-														{row[1]}
-													</td>
-													<td
-														style={{
-															background: "#ffffffff",
-															color: "black",
-															padding: "14px 18px",
-															borderBottom: "2px solid black",
-															verticalAlign: "top",
-															fontWeight: 500,
-															color: "#0b1972",
-															textAlign: "center"
-														}}
-													>
-														{row[2]}
-													</td>
-
-												</tr>
-											))}
-										</tbody>
-									</table>
-
-								</div>
-								<br />
-								<br />
-
-								<p>⚠️ Late Payment Penalties:</p>
-								<ul className="benefit-list style-2">
-									<li>
-										<div className="icon">
-											<i className="icon-check" />
-										</div>
-										<p>
-											Interest @1% per month for non-deduction.
-										</p>
-									</li>
-									<li>
-										<div className="icon">
-											<i className="icon-check" />
-										</div>
-										<p>
-											Interest @1.5% per month for late deposit.
-										</p>
-									</li>
-									<li>
-										<div className="icon">
-											<i className="icon-check" />
-										</div>
-										<p>
-											Penalty of ₹200 per day for late filing of return under Section 234E.
-										</p>
-									</li>
-								</ul>
-
-
-								<h3 style={{ marginTop: "40px", color: '#0b1972' }}> Verification & Reconciliation</h3>
-								<br />
-
-								<ul className="benefit-list style-2">
-									<li>
-										<div className="icon">
-											<i className="icon-check" />
-										</div>
-										<p>
-											Check all TDS credits on the Income Tax Portal using Form 26AS or Annual Information
-											Statement (AIS).
-
-										</p>
-									</li>
-									<li>
-										<div className="icon">
-											<i className="icon-check" />
-										</div>
-										<p>
-											Match TDS entries with your TDS certificates before filing ITR.
-
-										</p>
-									</li>
-									<li>
-										<div className="icon">
-											<i className="icon-check" />
-										</div>
-										<p>
-											Report any discrepancies to the deductor immediately to file a correction statement (Form
-											27A).
-										</p>
-									</li>
-
+									</ul>
 								</ul>
 
 								<br />
 								<h3 style={{ color: '#0b1972' }}>Conclusion</h3>
 								<br />
-								<p> TDS compliance is not just about deduction — it’s about timely deposit, accurate reporting, and
-									error-free reconciliation.
+								<p>  Both LLPs and Private Limited Companies offer the benefit of limited liability, but they cater to
+									different business goals.
 									<br />
-									By maintaining discipline and following the correct forms and due dates, businesses can ensure
-									smooth tax compliance and avoid unnecessary interest or penalties.</p>
+									An LLP suits small partnerships focused on operational simplicity, while a Private Limited Company
+									is ideal for ambitious ventures seeking scalability, investment, and formal governance.
+									<br />
+									<br />
+									Choosing the right structure at the start saves time, cost, and complexity in future restructuring.
+								</p>
+
 
 								<br />
 								<br /><span className="line" />
@@ -528,7 +709,7 @@ export default function Section1() {
 											Tags :
 										</h6>
 										<Link href="" >
-											TDS | Quarterly Filing | Tax Deduction Process</Link>
+											LLP vs Pvt Ltd | Business Formation | Legal Comparison</Link>
 										{/* <ul className="tag-popular-list style-2">
 											<li>
 												<Link href="/#">Business</Link>
@@ -945,8 +1126,8 @@ export default function Section1() {
 								margin: 0,
 							}}
 						>
-							Need help managing your TDS compliance or quarterly
-							return filing?
+							Need help choosing the right structure or registering your
+							business?
 						</p>
 
 						<p
@@ -958,8 +1139,8 @@ export default function Section1() {
 								lineHeight: "1.5",
 							}}
 						>
-							Connect with Bisways Consulting Group — your trusted partner for TDS Filing,
-							Tax Deduction Compliance, and Income Tax Advisory Services
+							Connect with Bisways Consulting Group — your trusted partner for Company
+							Incorporation, LLP Registration, and Compliance Advisory Services.
 						</p>
 
 						<div style={{ display: "flex", justifyContent: "center" }}>

@@ -14,10 +14,10 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<Link href="/blog-details11" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Key Differences Between LLP and Private
 											Limited Company
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
 										<ul className="meta-list ">
@@ -59,7 +59,7 @@ export default function Section1() {
 											<p style={{ color: "black" }}> <span style={{ fontWeight: "bold", color: "black" }}>Tags : </span>  LLP vs Pvt Ltd | Business Formation | Legal Comparison</p>
 										</div>
 										<div>
-											<Link href="" className="tf-btn small text-anime-style-1">
+											<Link href="/blog-details11" className="tf-btn small text-anime-style-1">
 												Read More
 												<i className="icon-chevron-right" />
 											</Link>
@@ -72,10 +72,10 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
-											Understanding MCA Form INC-20A – Declaration
+										<Link href="/blog-details12" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
+											Understanding MCA Form INC-20A – Declaratio
 											for Commencement of Business
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
 										<ul className="meta-list ">
@@ -117,7 +117,7 @@ export default function Section1() {
 											<p style={{ color: "black" }}> <span style={{ fontWeight: "bold", color: "black" }}>Tags : </span>Form INC-20A | Commencement of Business | Company Law</p>
 										</div>
 										<div>
-											<Link href="" className="tf-btn small text-anime-style-1">
+											<Link href="/blog-details12" className="tf-btn small text-anime-style-1">
 												Read More
 												<i className="icon-chevron-right" />
 											</Link>
@@ -130,10 +130,10 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<Link href="/blog-details13" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Important Due Dates for Tax & ROC Filings in
 											FY 2022-23
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
 										<ul className="meta-list ">
@@ -188,10 +188,10 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<Link href="/blog-details14" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Form DPT-3 Filing – Loans and Advances
 											Reporting for Companies
-										</p>
+									</Link>
 									</div>
 									<div className="entry-meta">
 										<ul className="meta-list ">
@@ -245,10 +245,10 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<Link href="" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Difference Between 80G and 12A Registration
 											for NGOs and Trusts
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
 										<ul className="meta-list ">
@@ -300,10 +300,10 @@ export default function Section1() {
 								</div>
 								<div className="article-blog-item mb-50 tf-hover">
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<Link href="" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Understanding Form CSR-1 – Mandatory Filing for
 											Corporate Social Responsibility
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
 										<ul className="meta-list ">
@@ -355,10 +355,10 @@ export default function Section1() {
 								</div>
 								<div className="article-blog-item mb-50 tf-hover">
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<Link href="" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Form MSME-1 Filing – Reporting of Vendor
 											Payments Beyond 45 Days
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
 										<ul className="meta-list ">
@@ -412,10 +412,10 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<Link href="" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											DIR-3 KYC – Director Verification and Annual
 											KYC Process
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
 										<ul className="meta-list ">
@@ -469,10 +469,10 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<Link href="" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Understanding Form ADT-1 – Auditor
 											Appointment Filing
-										</p>
+									</Link>
 									</div>
 									<div className="entry-meta">
 										<ul className="meta-list ">
@@ -526,10 +526,10 @@ export default function Section1() {
 
 
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<Link href="" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}>
 											Digital Signature Certificate (DSC) – Types,
 											Uses & How to Apply (2025 Guide)
-										</p>
+										</Link>
 									</div>
 									<div className="entry-meta">
 										<ul className="meta-list ">
@@ -620,7 +620,7 @@ export default function Section1() {
 										</ul>
 									</div>
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<Link href="" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}></Link>
 											Role of a Business Consulting Agency in Driving Innovation Key to Business
 											Success
 										</p>
@@ -693,7 +693,7 @@ export default function Section1() {
 										</ul>
 									</div>
 									<div className="entry-title">
-										<p className="font-main-2 text-anime-wave">
+										<Link href="" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}></Link>
 											Role of a Business Consulting Agency in Driving Innovation Key to Business
 											Success
 										</p>
@@ -929,7 +929,7 @@ export default function Section1() {
 											src="/images/blog/service-sidebar.jpg" alt="" />
 									</div>
 									<div className="content">
-										<p className="font-main-2 text-anime-wave">
+										<Link href="" className="font-main-2 text-anime-wave" style={{ color: '#0b1972',fontSize:"35px",fontWeight:"900" }}></Link>
 											Professional &amp; Experience Business
 											<span>
 												Services

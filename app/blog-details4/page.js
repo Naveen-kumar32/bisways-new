@@ -4,8 +4,7 @@ export default function Home() {
 
 	return (
 		<>
-			<Layout breadcrumbAlt={1} date="December 5, 2022" category="GST Input Tax Credit" breadcrumbText="Input Tax Credit (ITC) – Eligibility,
- Conditions & Common Mistakes">
+			<Layout breadcrumbAlt={1} date="December 5, 2022" category="GST Input Tax Credit" breadcrumbText="Input Tax Credit (ITC)">
 				<BlogDetails4 />
 			</Layout>
 		</>

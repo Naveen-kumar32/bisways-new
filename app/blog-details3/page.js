@@ -4,8 +4,7 @@ export default function Home() {
 
 	return (
 		<>
-			<Layout breadcrumbAlt={1} date="February 20, 2023 " category="GST Annual Returns" breadcrumbText="GST Annual Return (Form GSTR-9)- 
-                     Who Should File & How?">
+			<Layout breadcrumbAlt={1} date="February 20, 2023 " category="GST Annual Returns" breadcrumbText="GST Annual Return (GSTR-9)">
 				<BlogDetails3 />
 			</Layout>
 		</>
