@@ -33,11 +33,43 @@ export default function Section1() {
 										provides:
 									</p>
 									<br/>	
-										<p className="text ">● Limited liability to shareholders</p>
-										<p className="text ">● Separate legal identity</p>
-										<p className="text ">● Better funding options</p>
-										<p className="text ">● Perpetual succession</p>
-										<p className="text ">● Structured compliance</p>
+										<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Limited liability to shareholders</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Separate legal identity</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Better funding options</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Perpetual succession</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Structured compliance</p>
+    </li>
+</ul>
+
 									<br/>
 									<p className ="text">It is ideal for startups planning to raise investment, scale, or operate professionally.</p>
 									<br/>
@@ -49,10 +81,36 @@ export default function Section1() {
 								<p className="text ">DSC is mandatory for signing incorporation documents online</p>
 								<br />
 								<p className="text ">Documents needed:</p>
-									<p className="text "> ● PAN</p>
-									<p className="text "> ● Aadhaar</p>
-									<p className="text "> ● Photo</p>
-									<p className="text "> ● Email & Mobile</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>PAN</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Aadhaar</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Photo</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Email & Mobile</p>
+    </li>
+</ul>
+
 								<p className="text ">Time required: 1–2 days</p>	
 								<br/>	
 
@@ -65,39 +123,154 @@ export default function Section1() {
 								<br />	
 								<p className="text ">Propose two names based on:</p>
 								<br />
-									<p className="text "> ● Uniqueness</p>
-									<p className="text "> ● Trademark availability</p>
-									<p className="text "> ● Business relevance</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Uniqueness</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Trademark availability</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Business relevance</p>
+    </li>
+</ul>
+
 								<p className="text "> MCA approves names within 1–2 working days.</p>
 								<br/>
 								<p className="text "><strong>Step 4: File SPICe+ Part B (Main Incorporation Form)</strong></p>
 								<br />	
 								<p className="text ">This includes:</p>
 								<br />
-									<p className="text "> ● Uniqueness</p>
-									<p className="text "> ● Registered office address</p>
-									<p className="text "> ● Directors & shareholders</p>
-									<p className="text "> ● Capital structure</p>
-									<p className="text "> ● PAN & TAN</p>
-									<p className="text "> ● EPFO & ESIC registration</p>
-									<p className="text "> ● Professional Tax (where applicable)</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Uniqueness</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Registered office address</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Directors & shareholders</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Capital structure</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>PAN & TAN</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>EPFO & ESIC registration</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Professional Tax (where applicable)</p>
+    </li>
+</ul>
 									<p className="text "> Bank account creation (via AGILE-PRO-S)</p>
 								<br/>
 								<p className="text "><strong>Mandatory attachments:</strong></p>
-									<p className="text "> ● ID & address proofs</p>
-									<p className="text "> ● Utility bill (not older than 2 months)</p>
-									<p className="text "> ● NOC from property owner</p>
-									<p className="text "> ● MOA & AOA</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>ID & address proofs</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Utility bill (not older than 2 months)</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>NOC from property owner</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>MOA & AOA</p>
+    </li>
+</ul>
+
 								<p className="text "> Time required: 3–5 days</p>
 
 								<p className="text "><strong>Step 5: Issue of COI (Certificate of Incorporation)</strong></p>
 								<br />	
 								<p className="text ">Once approved, MCA issues:</p>
 								<br/>
-									<p className="text "> ● Certificate of Incorporation (COI)</p>
-									<p className="text "> ● Corporate Identification Number (CIN)</p>
-									<p className="text "> ● DIN for directors</p>
-									<p className="text "> ● PAN & TAN automatically</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Certificate of Incorporation (COI)</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Corporate Identification Number (CIN)</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>DIN for directors</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>PAN & TAN automatically</p>
+    </li>
+</ul>
+
 								<p className="text ">This completes the incorporation process.</p>
 								<br/>
 							
@@ -106,10 +279,36 @@ export default function Section1() {
 							<br/>
 							<p className="text">Typical cost components:</p>
 
-									<p className="text "> ● DSC cost</p>
-									<p className="text "> ● Professional charges</p>
-									<p className="text "> ● MCA filing fees</p>
-									<p className="text "> ● Stamp duty (varies by state)</p>
+								<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>DSC cost</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Professional charges</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>MCA filing fees</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Stamp duty (varies by state)</p>
+    </li>
+</ul>
+
 
 								<p className="text">Estimated total: ₹7,000 – ₹20,000 depending on state & professional fee.</p>
 								<br/>
@@ -215,11 +414,43 @@ export default function Section1() {
 
 							<h3 style={{ marginTop: "40px", color: '#0b1972' }}>Why Startups Prefer Private Limited Company Structure</h3>
 							<br/>	
-								<p className="text ">● Angel & VC investment friendly </p>
-								<p className="text ">● Easy ESOP allocation </p>
-								<p className="text ">● Strong brand credibility</p>
-								<p className="text ">● Tax benefits & structured governance</p>
-								<p className="text ">● Scalability for multi-city operations</p>
+								<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Angel & VC investment friendly</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Easy ESOP allocation</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Strong brand credibility</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Tax benefits & structured governance</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Scalability for multi-city operations</p>
+    </li>
+</ul>
+
 
 								<h3 style={{ color: '#0b1972' }}>Conclusion</h3>
 								<br />

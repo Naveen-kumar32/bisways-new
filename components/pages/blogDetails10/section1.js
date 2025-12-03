@@ -10,52 +10,8 @@ export default function Section1() {
 					<div className="row">
 						<div className="col-lg-8">
 							<div className="content ">
-								{/* <div className="entry-image tf-hover mb-40 ">
-									<div className="hover-1">
-										<Image
-											width="0"
-											height="0"
-											sizes="100vw"
-											style={{ width: "100%", height: "auto" }}
-											className="lazyload" data-src="/images/blog/blog-details.jpg" src="/images/blog/blog-details.jpg" alt="" />
-									</div>
-									<div className="tag-wrap">
-										<p>Consulting</p>
-									</div>
-								</div> */}
-								{/* <p className="title font-main-2 s1 text-anime-wave" style={{ color: '#0b1972' }}>
-									Understanding the Role of a Virtual CFO
-									in Modern Businesses
-								</p>
-								<div className="entry-meta">
-									<ul className="meta-list ">
-										<li className="entry author">
-											<div className="icon">
-												<i className="icon-calendar-days" style={{ color: '#ba1616ff' }} />
-
-											</div>
-											<p style={{ fontWeight: "600", fontStyle: "bold" }}>
-												Published :
-											</p>
-											<p style={{ paddingLeft: "15px" }}>
-												August 14, 2021
-											</p>
-										</li>
-
-										<li>
-											<div style={{ width: "3px", height: "20px", backgroundColor: "black" }}>
-											</div>
-										</li>
-										<li className="entry comment">
-											By Bisways Consulting Group
-										</li>
-									</ul>
-								</div>
-								<div className="entry-btn" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
-									<div>
-										<p style={{ color: "black" }}> <span style={{ fontWeight: "bold", color: "black" }}>Category : </span> <Link href="/virtual-cfo"> Virtual CFO</Link> </p>
-									</div>
-								</div> */}
+								
+								
 								<h3 style={{ color: '#0b1972' }}>Introduction</h3>
 								<p className="text mt-3 mb-20">
 									Tax Deducted at Source (TDS) is one of the key mechanisms by which the government ensures
@@ -211,7 +167,7 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
+															
 														}}
 													>
 														{row[0]}
@@ -226,7 +182,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[1]}
@@ -240,7 +195,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[2]}

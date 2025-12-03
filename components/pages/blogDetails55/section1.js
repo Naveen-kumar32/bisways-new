@@ -35,10 +35,36 @@ export default function Section1() {
 									<br/>
 									<p className="text "><strong>It captures:</strong></p>
 									<br />	
-										<p className="text ">● Who performed the action</p>
-										<p className="text ">● What action was taken</p>
-										<p className="text ">● When it was performed</p>
-										<p className="text ">● Changes made before and after the action</p>
+										<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Who performed the action</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>What action was taken</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>When it was performed</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Changes made before and after the action</p>
+    </li>
+</ul>
+
 									<br/>
 									<p className='text'>Audit trails help create a transparent financial environment and prevent manipulation of records.</p>
 								
@@ -46,11 +72,43 @@ export default function Section1() {
 								<br/>
 								<p className="text ">MCA requires that:</p>
 								<br />	
-									<p className="text "> ✔ All companies must use accounting software with a built-in audit trail feature</p>
-									<p className="text "> ✔ Every transaction must be recorded with date and user identification</p>
-									<p className="text "> ✔ Any editing or deletion must be logged</p>
-									<p className="text "> ✔ Audit trail must be enabled and not tampered with</p>
-									<p className="text "> ✔ Audit trail records must be preserved for minimum 8 years</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>All companies must use accounting software with a built-in audit trail feature</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Every transaction must be recorded with date and user identification</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Any editing or deletion must be logged</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Audit trail must be enabled and not tampered with</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Audit trail records must be preserved for minimum 8 years</p>
+    </li>
+</ul>
+
 								<br/>
 								<p className="text ">This requirement applies to all companies, including private, public, small, and OPCs</p>
 								<br />	
@@ -75,11 +133,43 @@ export default function Section1() {
 							<br/>
 							<p className='text'>Internal controls are policies, procedures, and systems designed to:</p>
 
-									<p className="text">● Protect assets</p>
-									<p className="text">● Ensure accuracy of financial records</p>
-									<p className="text">● Promote operational efficiency</p>
-									<p className="text">● Prevent fraud</p>
-									<p className="text">● Ensure compliance with laws and regulations</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Protect assets</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Ensure accuracy of financial records</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Promote operational efficiency</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Prevent fraud</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Ensure compliance with laws and regulations</p>
+    </li>
+</ul>
+
 								<br/>
 								<p className="text">Strong internal controls complement audit trails, creating a reliable financial environment</p>
 								

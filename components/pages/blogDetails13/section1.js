@@ -104,7 +104,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[0]}
@@ -119,7 +118,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[1]}
@@ -133,7 +131,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[2]}
@@ -217,7 +214,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[0]}
@@ -232,7 +228,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[1]}
@@ -326,7 +321,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[0]}
@@ -341,7 +335,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[1]}
@@ -355,7 +348,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[2]}
@@ -451,7 +443,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[0]}
@@ -466,7 +457,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[1]}
@@ -480,7 +470,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[2]}
@@ -561,7 +550,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[0]}
@@ -576,7 +564,6 @@ export default function Section1() {
 															verticalAlign: "top",
 															fontWeight: 500,
 															color: "#0b1972",
-															textAlign: "center"
 														}}
 													>
 														{row[1]}

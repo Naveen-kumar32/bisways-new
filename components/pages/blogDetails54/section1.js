@@ -37,12 +37,50 @@ export default function Section1() {
 								<br/>
 								<p className="text "><strong>Key Responsibilities:</strong></p>
 								<br />	
-									<p className="text ">●  Recording sales and purchase invoices</p>
-									<p className="text ">●  Maintaining cash books and ledgers</p>
-									<p className="text ">● Tracking receipts and payments</p>
-									<p className="text ">● Reconciling bank statements</p>
-									<p className="text ">● Managing accounts receivable and payable</p>
-									<p className="text ">● Filing basic compliance documents</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Recording sales and purchase invoices</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Maintaining cash books and ledgers</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Tracking receipts and payments</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Reconciling bank statements</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Managing accounts receivable and payable</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Filing basic compliance documents</p>
+    </li>
+</ul>
+
 								
 								<p className="text "><strong>Primary Objective:</strong></p>
 								<br />	
@@ -50,11 +88,43 @@ export default function Section1() {
 								<br/>
 								<p className="text "><strong>Tools Commonly Used:</strong></p>
 								<br />	
-									<p className="text "> ●  Tally</p>
-									<p className="text "> ●  Zoho Books</p>
-									<p className="text "> ●  QuickBooks</p>
-									<p className="text "> ●  Excel</p>
-									<p className="text "> ●  Accounting ERPs</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Tally</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Zoho Books</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>QuickBooks</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Excel</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Accounting ERPs</p>
+    </li>
+</ul>
+
 								<p className="text ">Bookkeeping forms the essential groundwork on which accounting insights are built.</p>
 								<br />	
 
@@ -65,22 +135,86 @@ export default function Section1() {
 							<br/>
 								<p className="text "><strong>Key Responsibilities:</strong></p>
 								<br/>
-									<p className="text">● Preparing financial statements (P&L, Balance Sheet, Cash Flow)</p>
-									<p className="text">● Analysing profitability and performance</p>
-									<p className="text">● Budgeting and forecasting</p>
-									<p className="text">● Tax planning and advisory</p>
-									<p className="text">● Auditing and error detection</p>
-									<p className="text">● Providing insights for strategic decision-making</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Preparing financial statements (P&L, Balance Sheet, Cash Flow)</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Analysing profitability and performance</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Budgeting and forecasting</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Tax planning and advisory</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Auditing and error detection</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Providing insights for strategic decision-making</p>
+    </li>
+</ul>
+
 								
 								<p className="text "><strong>Primary Objective:</strong></p>
 								<br/>
 								<p className="text">To transform financial data into meaningful insights for business planning and control.</p>
 								<br/>
 								<p className="text "><strong>Tools Used:</strong></p>
-									<p className="text">● Advanced accounting software</p>
-									<p className="text">● MIS dashboards</p>
-									<p className="text">● ERP systems</p>
-									<p className="text">● Analytical tools</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Advanced accounting software</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>MIS dashboards</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>ERP systems</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Analytical tools</p>
+    </li>
+</ul>
+
 
 
 							<h3 style={{ marginTop: "40px", color: '#0b1972' }}>Key Differences Between Bookkeeping and Accounting</h3>
@@ -210,10 +344,36 @@ export default function Section1() {
 								<p className='text'>✔ Without accounting → bookkeeping becomes just data storage.</p>
 							<p className='text'>Together, they ensure:</p>
 							<br/>
-								<p className="text">● Error-free records</p>
-								<p className="text">● Accurate statutory compliance</p>
-								<p className="text">● Informed management decisions</p>
-								<p className="text">● Better financial control</p>
+								<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Error-free records</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Accurate statutory compliance</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Informed management decisions</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Better financial control</p>
+    </li>
+</ul>
+
 							<br/>
 							<h3 style={{ marginTop: "40px", color: '#0b1972' }}>Practical Example</h3>
 							<br/>
@@ -221,17 +381,69 @@ export default function Section1() {
 							<br/>
 							<p className='text'>Bookkeeper’s Role:</p>
 							<br/>
-								<p className="text">● Record sales invoices</p>
-								<p className="text">● Update customer ledgers</p>
-								<p className="text">● Reconcile receipts</p>
-								<p className="text">● Track outstanding amounts</p>
+							<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Record sales invoices</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Update customer ledgers</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Reconcile receipts</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Track outstanding amounts</p>
+    </li>
+</ul>
+
 							<br/>
 							<p className='text'>Accountant’s Role:</p>
 							<br/>
-								<p className="text">● Analyse if sales increased compared to last month</p>
-								<p className="text">● Check profitability margin</p>
-								<p className="text">● Prepare MIS report for management</p>
-								<p className="text">● Suggest strategies to improve collections</p>
+								<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Analyse if sales increased compared to last month</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Check profitability margin</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Prepare MIS report for management</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Suggest strategies to improve collections</p>
+    </li>
+</ul>
+
 							<br/>
 							<p className="text">This example shows how both roles play a part in overall financial management.</p>
 							<br/>

@@ -50,12 +50,50 @@ export default function Section1() {
 								<br />	
 								<p className="text ">Prepare and organise:</p>
 								<br />
-									<p className="text "> ● Certificate of Incorporation</p>
-									<p className="text "> ● MoA & AoA</p>
-									<p className="text "> ● Board resolutions</p>
-									<p className="text "> ● Shareholding register</p>
-									<p className="text "> ● Minutes of Board & AGM meetings</p>
-									<p className="text "> ● Statutory registers (as applicable)</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Certificate of Incorporation</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>MoA & AoA</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Board resolutions</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Shareholding register</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Minutes of Board & AGM meetings</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Statutory registers (as applicable)</p>
+    </li>
+</ul>
+
 
 								<br/>
 								<p className="text ">This requirement applies to all companies, including private, public, small, and OPCs</p>
@@ -65,11 +103,43 @@ export default function Section1() {
 								<br />	
 								<p className="text ">Ensure the following are ready:</p>
 								<br />
-									<p className="text "> ● Current year trial balance</p>
-									<p className="text "> ● Ledger-wise details</p>
-									<p className="text "> ● Adjusting entries (provisions, depreciation, accruals)</p>
-									<p className="text "> ● Opening balance verification</p>
-									<p className="text "> ● Year-end closing entries</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Current year trial balance</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Ledger-wise details</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Adjusting entries (provisions, depreciation, accruals)</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Opening balance verification</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Year-end closing entries</p>
+    </li>
+</ul>
+
 								<br/>
 								<p className="text "><strong>3. Bank Records & Reconciliation</strong></p>
 								<br />	
@@ -86,113 +156,447 @@ export default function Section1() {
 								<br/>
 								<p className="text ">Ensure availability of:</p>
 								<br/>
-									<p className="text "> ● GSTR-1, GSTR-3B, GSTR-9, GSTR-2A/2B</p>
-									<p className="text "> ● Sales & purchase registers</p>
-									<p className="text "> ● E-way bill summaries</p>
-									<p className="text "> ● Reconciliation of books vs. GST portal</p>
-									<p className="text "> ● Input tax credit (ITC) workings</p>
-									<p className="text "> ● Ledger match: output tax, ITC, liabilities</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>GSTR-1, GSTR-3B, GSTR-9, GSTR-2A/2B</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Sales & purchase registers</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>E-way bill summaries</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Reconciliation of books vs. GST portal</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Input tax credit (ITC) workings</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Ledger match: output tax, ITC, liabilities</p>
+    </li>
+</ul>
+
 								<br/>
 
 								<p className="text "><strong>5. TDS & Income Tax Records</strong></p>
 								<br />	
 								<p className="text ">Keep ready:</p>
 								<br/>
-									<p className="text "> ● TDS returns (24Q, 26Q, 27Q)</p>
-									<p className="text "> ● Challans & deductions summary</p>
-									<p className="text "> ● Form 16 & 16A issued</p>
-									<p className="text "> ● Advance tax workings</p>
-									<p className="text "> ● Income tax computation report</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>TDS returns (24Q, 26Q, 27Q)</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Challans & deductions summary</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Form 16 & 16A issued</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Advance tax workings</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Income tax computation report</p>
+    </li>
+</ul>
+
 								<br/>
 								<p className="text "><strong>6. Fixed Assets Register</strong></p>
 								<br />	
 								<p className="text ">Includes:</p>
 								<br/>
-									<p className="text "> ● Asset addition & disposal details</p>
-									<p className="text "> ● Depreciation schedule</p>
-									<p className="text "> ● Supporting invoices</p>
-									<p className="text "> ● Physical verification report</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Asset addition & disposal details</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Depreciation schedule</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Supporting invoices</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Physical verification report</p>
+    </li>
+</ul>
+
 								<br/>
 
 								<p className="text "><strong>7. Accounts Receivable (Debtors)</strong></p>
 								<br />	
 								<p className="text ">Prepare:</p>
 								<br/>
-									<p className="text "> ● Customer-wise ageing report</p>
-									<p className="text "> ● Debtor balance confirmations</p>
-									<p className="text "> ● Doubtful debts provision</p>
-									<p className="text "> ● Reconciliation with sales ledger</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Customer-wise ageing report</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Debtor balance confirmations</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Doubtful debts provision</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Reconciliation with sales ledger</p>
+    </li>
+</ul>
+
 								<br/>
 								<p className="text "><strong>8. Accounts Payable (Creditors)</strong></p>
 								<br />	
 								<p className="text ">Prepare:</p>
 								<br/>
-									<p className="text "> ● Vendor-wise ageing summary</p>
-									<p className="text "> ● Advance payments list</p>
-									<p className="text "> ● Vendor balance confirmations</p>
-									<p className="text "> ● Reconciliation with purchase ledger</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Vendor-wise ageing summary</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Advance payments list</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Vendor balance confirmations</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Reconciliation with purchase ledger</p>
+    </li>
+</ul>
+
 								<br/>
 								<p className="text "><strong>9. Inventory Verification</strong></p>
 								<br />	
 								<p className="text ">Important for product-based companies.</p>
 								<p className="text ">Documents required:</p>
 								<br/>
-									<p className="text "> ● Stock register</p>
-									<p className="text "> ● Physical stock count report</p>
-									<p className="text "> ● Valuation workings</p>
-									<p className="text "> ● Slow-moving/obsolete inventory summary</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Stock register</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Physical stock count report</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Valuation workings</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Slow-moving/obsolete inventory summary</p>
+    </li>
+</ul>
+
 								<br/>
 								<p className="text "><strong>10. Payroll & HR Records</strong></p>
 								<br />	
 								<p className="text ">Keep ready:</p>
 								<br/>
-									<p className="text "> ● Salary register</p>
-									<p className="text "> ● Attendance records</p>
-									<p className="text "> ● PF/ESI challans</p>
-									<p className="text "> ● Employment contracts</p>
-									<p className="text "> ● Bonus, gratuity, leave encashment provisions</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Salary register</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Attendance records</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>PF/ESI challans</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Employment contracts</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Bonus, gratuity, leave encashment provisions</p>
+    </li>
+</ul>
+
 
 								<br/>
 								<p className="text "><strong>11. Loan, Borrowings & Interest Records</strong></p>
 								<br />	
 								<p className="text ">Include:</p>
 								<br/>
-									<p className="text "> ● Loan agreements</p>
-									<p className="text "> ● Interest calculation sheets</p>
-									<p className="text "> ● Bank sanction letters</p>
-									<p className="text "> ● Outstanding loan summaries</p>
-									<p className="text "> ● EMI schedules</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Loan agreements</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Interest calculation sheets</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Bank sanction letters</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Outstanding loan summaries</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>EMI schedules</p>
+    </li>
+</ul>
+
 								<br/>
 
 								<p className="text "><strong>12. Internal Controls & Audit Trail Logs</strong></p>
 								<br />	
 								<p className="text ">As per MCA guidelines:</p>
 								<br/>
-									<p className="text "> ● Audit trail logs must be maintained</p>
-									<p className="text "> ● Access control policies</p>
-									<p className="text "> ● Maker-checker workflows</p>
-									<p className="text "> ● Internal audit reports (if any)</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Audit trail logs must be maintained</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Access control policies</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Maker-checker workflows</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Internal audit reports (if any)</p>
+    </li>
+</ul>
+
 								<br/>
 								<p className="text "><strong>13. Supporting Financial Documents</strong></p>
 								<br />	
 								<p className="text ">Prepare:</p>
 								<br/>
-									<p className="text "> ● Vendor bills & purchase vouchers</p>
-									<p className="text "> ● Sales invoices & delivery challans</p>
-									<p className="text "> ● Expense receipts</p>
-									<p className="text "> ● Asset purchase bills</p>
-									<p className="text "> ● Rent agreements</p>
-									<p className="text "> ● Insurance policies</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Vendor bills & purchase vouchers</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Sales invoices & delivery challans</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Expense receipts</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Asset purchase bills</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Rent agreements</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Insurance policies</p>
+    </li>
+</ul>
+
 								<br/>
 								<p className="text "><strong>14. Year-End Financial Statements</strong></p>
 								<br />	
 								<p className="text ">Final reporting pack should include:</p>
 								<br/>
-									<p className="text "> ● Profit & Loss statement</p>
-									<p className="text "> ● Balance sheet</p>
-									<p className="text "> ● Cash flow statement</p>
-									<p className="text "> ● Notes to accounts</p>
-									<p className="text "> ● Audited statements of previous year</p>
+									<ul className="benefit-list style-2">
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Profit & Loss statement</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Balance sheet</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Cash flow statement</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Notes to accounts</p>
+    </li>
+
+    <li>
+        <div className="icon">
+            <i className="icon-check" />
+        </div>
+        <p>Audited statements of previous year</p>
+    </li>
+</ul>
+
 
 							<h3 style={{ marginTop: "40px", color: '#0b1972' }}>Best Practices for Smooth Audit Completion</h3>
 							<br/>

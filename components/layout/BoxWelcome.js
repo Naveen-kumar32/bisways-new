@@ -15,12 +15,10 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
   };
 
   const arrowVariants = {
-    // NOTE: negative rotation -> up-right (↗)
     rest: { rotate: -45, transition: syncTransition },
-    hover: { rotate: 0, transition: syncTransition }, // to right (→)
+    hover: { rotate: 0, transition: syncTransition },
   };
 
-  // optional: close on Escape key for accessibility
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === "Escape" && isWelcomeBox) handleWelcomeBox?.();
@@ -29,28 +27,24 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
     return () => window.removeEventListener("keydown", onKey);
   }, [isWelcomeBox, handleWelcomeBox]);
 
-  // ----------------- state & refs for submit/validation -----------------
   const [phone, setPhone] = useState("");
   const [phoneError, setPhoneError] = useState("");
   const [submitted, setSubmitted] = useState(false);
-  // store timeout id (null or number)
+  const [isLoading, setIsLoading] = useState(false);
   const submitTimeoutRef = useRef(null);
   const phoneInputRef = useRef(null);
 
-  // Whenever the modal opens, reset the form state (hide thank-you, clear errors & phone)
   useEffect(() => {
     if (isWelcomeBox) {
-      // modal opened -> reset
       setSubmitted(false);
       setPhone("");
       setPhoneError("");
-      // clear any leftover timeout
+      setIsLoading(false);
       if (submitTimeoutRef.current) {
         clearTimeout(submitTimeoutRef.current);
         submitTimeoutRef.current = null;
       }
     } else {
-      // modal closed -> also clear timeout if any
       if (submitTimeoutRef.current) {
         clearTimeout(submitTimeoutRef.current);
         submitTimeoutRef.current = null;
@@ -58,7 +52,6 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
     }
   }, [isWelcomeBox]);
 
-  // cleanup on unmount
   useEffect(() => {
     return () => {
       if (submitTimeoutRef.current) {
@@ -68,81 +61,111 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
     };
   }, []);
 
-  // helper to extract digits only
   const digitsOnly = (value) => (value || "").replace(/\D/g, "");
 
   const handlePhoneChange = (e) => {
-    // allow typing but keep only digits in state
     const raw = e.target.value || "";
-    const digits = digitsOnly(raw).slice(0, 10); // enforce max 10 digits in state
+    const digits = digitsOnly(raw).slice(0, 10);
     setPhone(digits);
     if (phoneError) setPhoneError("");
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const d = digitsOnly(phone);
     if (d.length !== 10) {
       setPhoneError("Please enter a valid 10-digit mobile number.");
-      // focus phone input
       if (phoneInputRef.current && typeof phoneInputRef.current.focus === "function") {
         phoneInputRef.current.focus();
       }
       return;
     }
 
-    // Passed validation: show confirmation message
-    setSubmitted(true);
+    setIsLoading(true);
 
-    // Close the tab after 3 seconds (may be blocked by browser if not opened by script)
-    if (submitTimeoutRef.current) clearTimeout(submitTimeoutRef.current);
-    submitTimeoutRef.current = window.setTimeout(() => {
-      try {
-        handleWelcomeBox?.();
-      } catch (err) {
-        // ignore if browser blocks it
+    try {
+      // Get form data
+      const formData = new FormData(formRef.current);
+      const data = {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        phone: formData.get("phone"),
+        company: formData.get("company"),
+        subject: formData.get("subject"),
+      };
+
+      // Send email
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send email");
       }
-    }, 3000);
+
+      // Trigger PDF download
+      const pdfUrl = "/files/Bisways_BK_Profile.pdf";
+      const link = document.createElement("a");
+      link.href = pdfUrl;
+      link.download = "Bisways_BK_Profile.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // Show confirmation message
+      setSubmitted(true);
+
+      // Close modal after 3 seconds
+      if (submitTimeoutRef.current) clearTimeout(submitTimeoutRef.current);
+      submitTimeoutRef.current = window.setTimeout(() => {
+        try {
+          handleWelcomeBox?.();
+        } catch (err) {
+          // ignore
+        }
+      }, 3000);
+    } catch (error) {
+      console.error("Error:", error);
+      setPhoneError("An error occurred. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   useEffect(() => {
     if (isWelcomeBox) {
-      // Reset all form data when modal opens
       setSubmitted(false);
       setPhone("");
       setPhoneError("");
+      setIsLoading(false);
 
-      // Clear form fields completely
       if (formRef.current) {
         formRef.current.reset();
       }
 
-      // Clear any leftover timeout
       if (submitTimeoutRef.current) {
         clearTimeout(submitTimeoutRef.current);
         submitTimeoutRef.current = null;
       }
     } else {
-      // Modal closed → clear timeout if any
       if (submitTimeoutRef.current) {
         clearTimeout(submitTimeoutRef.current);
         submitTimeoutRef.current = null;
       }
     }
   }, [isWelcomeBox]);
-  // -------------------------------------------------------------------------
 
   return (
     <>
-      {/* Modal container - only shown when isWelcomeBox is true */}
       <div className={`box-welcome ${isWelcomeBox ? "active" : ""}`} role="dialog" aria-modal="true">
-        {/* overlay */}
         <div className="tf-overlay" onClick={handleWelcomeBox} />
 
-        {/* Modal box centered */}
         <div className="modal-wrapper">
           <div className="comment-wrap style-2 modal-content" style={{ width: 700 }}>
-            {/* Close button placed INSIDE modal (top-right) */}
             <button
               className="btn-close-welcome"
               onClick={handleWelcomeBox}
@@ -157,10 +180,9 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
             </h3>
 
             <p className="note centered-note mb-20">
-              Fields marked with *  <span aria-hidden="true">*</span> are mandatory.
+              Fields marked with *  <span aria-hidden="true">*</span> are mandatory.
             </p>
 
-            {/* ---------- NOTE: replaced form submission with our handler ---------- */}
             <form ref={formRef} action="#" className="form-comment style-3" onSubmit={handleSubmit}>
               <div className="cols mb-20 two-cols">
                 <fieldset>
@@ -196,7 +218,6 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
                   <label htmlFor="phone" className="form-label">
                     Phone <span className="required-star">*</span>
                   </label>
-                  {/* ---------- PHONE INPUT: only digits, maxLength=10 ---------- */}
                   <input
                     id="phone"
                     ref={phoneInputRef}
@@ -223,22 +244,19 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
                 </fieldset>
               </div>
 
-              {/* ---------- Styled Submit Button (animated circle + arrow) ---------- */}
               <div className="bot flex justify-center mb-10">
-                <button type="submit" className="tf-btn text-anime-style-1">
-                  Submit & Download
+                <button type="submit" className="tf-btn text-anime-style-1" disabled={isLoading}>
+                  {isLoading ? "Processing..." : "Submit & Download"}
                   <i className="icon-chevron-right" />
                 </button>
               </div>
 
-              {/* show phone validation error inline */}
               {phoneError && (
                 <div style={{ color: "#b91c1c", textAlign: "center", marginBottom: 8 }} role="alert">
                   {phoneError}
                 </div>
               )}
 
-              {/* this is the confirmation block you provided — we toggle its visibility and center it */}
               {submitted && (
                 <div
                   className="checkbox-item mb-30 confirmation"
@@ -254,16 +272,12 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
                   </label>
                 </div>
               )}
-
-              {/* --------------------------------------------------------------------- */}
             </form>
-            {/* --------------------------------------------------------------------- */}
           </div>
         </div>
       </div>
 
       <style jsx>{`
-        /* full-screen modal container (hidden by default) */
         .box-welcome {
           display: none;
         }
@@ -274,7 +288,6 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
           z-index: 9998;
         }
 
-        /* overlay behind modal */
         .tf-overlay {
           position: absolute;
           inset: 0;
@@ -283,7 +296,6 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
           z-index: 1;
         }
 
-        /* modal wrapper centers content */
         .modal-wrapper {
           position: absolute;
           inset: 0;
@@ -291,10 +303,9 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
           align-items: center;
           justify-content: center;
           z-index: 2;
-          padding: 20px; /* ensure spacing on small screens */
+          padding: 20px;
         }
 
-        /* the actual modal card */
         .modal-content {
           position: relative;
           background: #fff;
@@ -302,11 +313,10 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
           box-shadow: 0 10px 40px rgba(2, 6, 23, 0.12);
           padding: 28px 36px;
           max-width: 95%;
-          width: 700px; /* same as your inline width */
+          width: 700px;
           box-sizing: border-box;
         }
 
-        /* close button inside modal top-right */
         .btn-close-welcome {
           position: absolute;
           top: 12px;
@@ -323,12 +333,11 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
           z-index: 3;
         }
         .btn-close-welcome i {
-          color: #b91c1c; /* red color similar to your previous inline style */
+          color: #b91c1c;
           font-size: 18px;
           display: inline-block;
         }
 
-        /* ensure form elements are visible and usable */
         .form-comment .cols fieldset input,
         .form-comment .cols fieldset textarea {
           width: 100%;
@@ -353,14 +362,12 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
           font-weight: 700;
         }
 
-        /* Two-column layout for wider screens (keeps stacked on small screens) */
         .two-cols {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 12px;
         }
 
-        /* center the confirmation block */
         .confirmation {
           display: flex;
           align-items: center;
@@ -372,7 +379,6 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
           display: inline-block;
         }
 
-        /* center heading & note */
         .centered-header {
           text-align: center;
           margin: 6px 0 6px 0;
@@ -382,7 +388,6 @@ export default function BoxWelcome({ handleWelcomeBox, isWelcomeBox }) {
           margin: 0 0 18px 0;
         }
 
-        /* responsive tweaks */
         @media (max-width: 720px) {
           .modal-content {
             padding: 18px;
