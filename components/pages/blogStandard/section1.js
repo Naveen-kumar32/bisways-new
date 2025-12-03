@@ -7,55 +7,55 @@ export default function Section1() {
 			title: "Understanding the Role of a Virtual CFO in Modern Businesses",
 			date: "November 5, 2021",
 			desc: "A Virtual CFO provides strategic financial guidance, reporting, and cost control for growing businesses that don’t have a full-time finance head.",
-			link: "/blog-details01"
+			link: "/blog-details1"
 		},
 		{
 			title: "How to Read and Analyse a Profit & Loss Statement",
 			date: "August 14, 2021",
 			desc: "Learn how to interpret your P&L statement effectively — identify revenue patterns, track costs, and assess business profitability.",
-			link: "/blog-details02"
+			link: "/blog-details2"
 		},
 		{
 			title: "GST Annual Return (Form GSTR-9) – Who Should File & How?",
 			date: "February 20, 2023",
 			desc: "A complete guide to GSTR-9 filing for FY 2021-22 — eligibility, deadlines, reconciliation, and how to avoid late fees or mismatches.",
-			link: "/blog-details03"
+			link: "/blog-details3"
 		},
 		{
 			title: "Input Tax Credit (ITC) – Eligibility, Conditions & Common Mistakes",
 			date: "December 5, 2022",
 			desc: "Understand how to claim ITC correctly under amended Rule 36(4), including documentation, restrictions, and reconciliation tips.",
-			link: "/blog-details04"
+			link: "/blog-details4"
 		},
 		{
 			title: "ROC Annual Filings for Companies & LLPs – A Complete Checklist",
 			date: "October 12, 2022",
 			desc: "Step-by-step ROC filing guide covering AOC-4, MGT-7 and ADT-1 under the MCA V3 portal update.",
-			link: "/blog-details05"
+			link: "/blog-details5"
 		},
 		{
 			title: "How to File Your Income Tax Return (ITR) – A Step-by-Step Guide",
 			date: "July 18, 2023",
 			desc: "Covers ITR types, filing process, deadlines, and common errors for AY 2023-24 individual and business taxpayers.",
-			link: "/blog-details06"
+			link: "/blog-details6"
 		},
 		{
 			title: "Understanding Form 26AS, AIS & TIS – Matching Income Before ITR Filing",
 			date: "March 10, 2023",
 			desc: "Explains how to reconcile income data using 26AS, AIS and TIS reports after the CBDT 2022 update to avoid ITR mismatches.",
-			link: "/blog-details07"
+			link: "/blog-details7"
 		},
 		{
 			title: "How to Draft a Founders’ Agreement – Must-Have Clauses & Common Mistakes",
 			date: "September 25, 2023",
 			desc: "Outlines key clauses in founders’ agreements, equity distribution, and legal safeguards for early-stage startups.",
-			link: "/blog-details08"
+			link: "/blog-details8"
 		},
 		{
 			title: "GST Registration – Who Needs It and How to Apply (2025 Edition)",
 			date: "January 12, 2025",
 			desc: "Step-by-step GST registration guide updated for 2025 Budget revisions — eligibility, documents, and approval workflow.",
-			link: "/blog-details09"
+			link: "/blog-details9"
 		},
 		{
 			title: "Understanding TDS (Tax Deducted at Source) – Process, Forms & Due Dates",
