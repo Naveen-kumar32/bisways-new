@@ -16441,3 +16441,16 @@ a.mapboxgl-ctrl-logo {
 .marquee-text-color {
 	color: #0b0b0b;
 }
+
+.policy-link-disabled {
+    display: inline;
+    cursor: not-allowed;
+    pointer-events: none;
+    text-decoration: none;
+    opacity: 0.7;
+    /* Keep all Link styles */
+    color: #ffffff;
+    font-weight: inherit;
+    font-size: inherit;
+}
+

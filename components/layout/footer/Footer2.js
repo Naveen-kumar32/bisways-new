@@ -149,13 +149,7 @@ export default function Footer2() {
 										<button type="submit" className="tf-btn style-11">
 											<i className="icon-envelope" />
 										</button>
-										<div className="checkbox-item mb-30 style-2">
-											<label>
-												<span className="text">Proacted your privacy</span>
-												<input type="checkbox" className="checkbox-item" defaultChecked />
-												<span className="btn-checkbox" />
-											</label>
-										</div>
+										
 									</form>
 								</div>
 
@@ -177,12 +171,12 @@ export default function Footer2() {
 								</p>
 
 								<div className="policy-list">
-									<ul className="list">
-										<li><Link href="/faqs">Privacy Policy</Link></li>
-										<li><Link href="/faqs">Terms and Conditions</Link></li>
-										<li><Link href="/faqs">FAQ</Link></li>
-									</ul>
-								</div>
+    <ul className="list">
+        <li><span className="policy-link-disabled">Privacy Policy</span></li>
+        <li><span className="policy-link-disabled">Terms and Conditions</span></li>
+        <li><span className="policy-link-disabled">FAQ</span></li>
+    </ul>
+</div>
 
 							</div>
 						</div>

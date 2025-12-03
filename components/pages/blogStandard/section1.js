@@ -63,66 +63,7 @@ export default function Section1() {
 			desc: "Covers TDS deduction mechanism, quarterly return forms and penalty rules as per FY 2023-24 updates.",
 			link: "/blog-details10"
 		},
-		{
-			title: "Key Differences Between LLP and Private Limited Company",
-			date: "March 22, 2022",
-			desc: "Explains how LLPs and Private Limited Companies differ in compliance, ownership, and taxation to help you choose the right structure.",
-			link: "/blog-details11"
-		},
-		{
-			title: "Understanding MCA Form INC-20A – Declaration for Commencement of Business",
-			date: "May 9, 2022",
-			desc: "Covers the importance of filing INC-20A within 180 days, required documents, and penalties for delay after company incorporation.",
-			link: "/blog-details12"
-		},
-		{
-			title: "Important Due Dates for Tax & ROC Filings in FY 2022-23",
-			date: "October 1, 2022",
-			desc: "A comprehensive calendar of ITR, GST, TDS, and ROC filing deadlines to help businesses stay compliant throughout FY 2022-23.",
-			link: "/blog-details13"
-		},
-		{
-			title: "Form DPT-3 Filing – Loans and Advances Reporting for Companies",
-			date: "June 17, 2023",
-			desc: "Explains when DPT-3 is required, how to calculate outstanding loans, and what details companies must report each June.",
-			link: "/blog-details14"
-		},
-		{
-			title: "Difference Between 80G and 12A Registration for NGOs and Trusts",
-			date: "July 4, 2023",
-			desc: "Clarifies the purpose and benefits of 80G and 12A registrations, their renewal timelines, and how they affect donor tax benefits.",
-			link: "/blog-details15"
-		},
-		{
-			title: "Understanding Form CSR-1 – Mandatory Filing for Corporate Social Responsibility",
-			date: "August 21, 2023",
-			desc: "Describes CSR-1 filing procedure, eligibility, and CSR fund utilisation norms under MCA rules and Companies Act 2023.",
-			link: "/blog-details16"
-		},
-		{
-			title: "Form MSME-1 Filing – Reporting of Vendor Payments Beyond 45 Days",
-			date: "November 16, 2023",
-			desc: "Outlines MSME-1 filing steps for companies delaying vendor payments, including due dates and penalties under MSMED Act.",
-			link: "/blog-details17"
-		},
-		{
-			title: "DIR-3 KYC – Director Verification and Annual KYC Process",
-			date: "April 8, 2024",
-			desc: "Explains DIR-3 KYC requirements, forms (online vs web), and deactivation consequences for non-filing by directors.",
-			link: "/blog-details18"
-		},
-		{
-			title: "Understanding Form ADT-1 – Auditor Appointment Filing",
-			date: "June 3, 2024",
-			desc: "Details the process for auditor appointment under Section 139 of the Companies Act and how to file Form ADT-1 on the MCA portal.",
-			link: "/blog-details19"
-		},
-		{
-			title: "Digital Signature Certificate (DSC) – Types, Uses & How to Apply (2025 Guide)",
-			date: "January 17, 2025",
-			desc: "Explains the role of DSCs in MCA, GST and tender filings, including renewal and certifying authority guidelines for 2025.",
-			link: "/blog-details20"
-		},
+		
 	];
 
 	return (
@@ -204,6 +145,7 @@ export default function Section1() {
 
 								<li><Link href="/#" className="active">1</Link></li>
 								<li><Link href="/blog-2" >2</Link></li>
+								<li><Link href="/blog-3" >3</Link></li>
 							</ul>
 							<Link href="/blog-2" className="btn-next-pagination">
 								Next

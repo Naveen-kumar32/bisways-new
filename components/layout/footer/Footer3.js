@@ -149,13 +149,7 @@ export default function Footer3() {
 										<button type="submit" className="tf-btn style-11">
 											<i className="icon-envelope" />
 										</button>
-										<div className="checkbox-item mb-30 style-2">
-											<label>
-												<span className="text">Proacted your privacy</span>
-												<input type="checkbox" className="checkbox-item" defaultChecked />
-												<span className="btn-checkbox" />
-											</label>
-										</div>
+										
 									</form>
 								</div>
 
