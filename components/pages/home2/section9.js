@@ -66,9 +66,7 @@ export default function Section9() {
               {/* Button + Arrow */}
               <a
                 href="https://bisways.zohobookings.com/#/booking"
-                onClick={disableNav}
-                onKeyDown={handleKey}
-                role="button"
+                target="_blank"
                 rel="noopener noreferrer"
                 style={{
                   display: 'flex',
@@ -101,7 +99,7 @@ export default function Section9() {
                       border: 'none',
                     }}
                     aria-label="Get Started"
-                    onClick={(e) => e.preventDefault()}
+                    
                   >
                     Get Started
                   </button>

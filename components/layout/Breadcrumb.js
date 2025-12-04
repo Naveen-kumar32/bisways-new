@@ -83,9 +83,8 @@ export default function Breadcrumb({ date, breadcrumbTitle, breadcrumbAlt, categ
 											<div className="icon">
 												<i className="icon-chevron-r" />
 											</div>
-											<span style={{ fontSize: "24px", fontWeight: "500", color: "#fdfdfdff" }} className="current">
-												Blog
-											</span>
+											
+											<Link href="/blog-standard"> Blog </Link>
 											<div className="icon">
 												<i className="icon-chevron-r" />
 											</div>

@@ -74,8 +74,12 @@ export default function Section6() {
                     >
                       <p className="cap" style={{ color: "#0b1972" }}>Contact Us</p>
                       <p className="infor">
-                        info@bisways.com
-                        +91 99403 44774
+                       <Link style={{ color: "#0b1972",fontWeight:"500" }} href="mailto:info@bisways.com" className="infor">
+												info@bisways.com
+											</Link> <br />
+											<Link style={{ color: "#0b1972",fontWeight:"500" }} href="tel:+919940344774" className="infor">
+												+91 99403 44774
+											</Link>
                       </p>
                     </li>
                   </ul>
