@@ -10,9 +10,8 @@ const circleVariants = {
 };
 
 const arrowVariants = {
-  // NOTE: negative rotation -> up-right (↗)
   rest: { rotate: -45, transition: syncTransition },
-  hover: { rotate: 0, transition: syncTransition }, // to right (→)
+  hover: { rotate: 0, transition: syncTransition },
 };
 
 export default function Section2() {
@@ -21,7 +20,8 @@ export default function Section2() {
       <section className="s-map">
         <div className="box-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.409579451537!2d80.17940090886947!3d13.07320868719837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526559eacb8133%3A0xfe5001556ce6804!2sBisways%20Consulting%20Group!5e0!3m2!1sen!2sin!4v1762494818616!5m2!1sen!2sin" height={825}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.409579451537!2d80.17940090886947!3d13.07320868719837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526559eacb8133%3A0xfe5001556ce6804!2sBisways%20Consulting%20Group!5e0!3m2!1sen!2sin!4v1762494818616!5m2!1sen!2sin"
+            height={825}
             style={{ border: 0, width: "100%" }}
             allowFullScreen
             loading="lazy"
@@ -32,7 +32,7 @@ export default function Section2() {
         <div className="content-wrap">
           <div className="tf-container">
             <div className="row">
-              <div className="col-lg-8 offset-lg-4">
+              <div className="col-lg-5 offset-lg-7">
                 <div className="content">
                   <div className="comment-wrap style-2">
                     <h3 className="text-anime-wave" style={{ color: "#0b1972" }}>
@@ -77,11 +77,10 @@ export default function Section2() {
                         </label>
                       </div>
 
-                      {/* ---------- Styled Submit Button (animated circle + arrow) ---------- */}
                       <div
                         style={{
                           display: "flex",
-                          gap: "36px", // gap between button+circle pairs (if multiple)
+                          gap: "36px",
                           flexWrap: "wrap",
                           justifyContent: "center",
                           marginTop: "50px",
@@ -93,7 +92,6 @@ export default function Section2() {
                           animate="rest"
                           style={{ display: "flex", alignItems: "center", cursor: "pointer" }}
                         >
-                          {/* the real submit button */}
                           <button
                             type="submit"
                             aria-label="Send message"
@@ -112,7 +110,6 @@ export default function Section2() {
                             Send Message Us
                           </button>
 
-                          {/* animated circle touching the button */}
                           <motion.div
                             variants={circleVariants}
                             style={{
@@ -124,12 +121,9 @@ export default function Section2() {
                               justifyContent: "center",
                               marginLeft: 0,
                               background: "#e6ac41",
-                              // ensure circle doesn't block pointer events for the button
-                              // but still responds to hover (parent handles hover)
                               pointerEvents: "auto",
                             }}
                           >
-                            {/* arrow rotates from ↗ to → */}
                             <motion.svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="22"
@@ -153,7 +147,6 @@ export default function Section2() {
                           </motion.div>
                         </motion.div>
                       </div>
-                      {/* --------------------------------------------------------------------- */}
                     </form>
                   </div>
                 </div>
@@ -163,7 +156,6 @@ export default function Section2() {
         </div>
       </section>
 
-      {/* optional local styles to keep layout tidy — remove if you already have them globally */}
       <style jsx>{`
         .form-comment .cols fieldset input,
         .form-comment .cols fieldset textarea {
