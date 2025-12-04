@@ -559,7 +559,7 @@ export default function Section1() {
   <li><i   className="icon-facebook" /></li>
   <li><i  className="icon-twitter" /></li>
   <li><i className="fab fa-instagram" /></li>
-  <li><i  className="icon-youtube" /></li>
+  <li><i  className="icon-linkedin" /></li>
 </ul>
 									</div>
 								</div>

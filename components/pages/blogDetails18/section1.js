@@ -390,7 +390,7 @@ DSCs, and completing ROC 		filings accurately through end-to-end MCA support.</p
   <li><i   className="icon-facebook" /></li>
   <li><i  className="icon-twitter" /></li>
   <li><i className="fab fa-instagram" /></li>
-  <li><i  className="icon-youtube" /></li>
+  <li><i  className="icon-linkedin" /></li>
 </ul>
 									</div>
 								</div>

@@ -656,27 +656,11 @@ export default function Section1() {
 											Share
 										</h6>
 										<ul className="social-list style-2">
-											<li>
-												<Link href="">
-													<i className="icon-facebook" />
-												</Link>
-											</li>
-											<li>
-												<Link href="">
-													<i className="icon-twitter" />
-												</Link>
-											</li>
-											<li>
-												<Link href="">
-													<i className="icon-linkedin" />
-												</Link>
-											</li>
-											<li>
-												<Link href="">
-													<i className="icon-youtube" />
-												</Link>
-											</li>
-										</ul>
+  <li><i   className="icon-facebook" /></li>
+  <li><i  className="icon-twitter" /></li>
+  <li><i className="fab fa-instagram" /></li>
+  <li><i  className="icon-linkedin" /></li>
+</ul>
 									</div>
 								</div>
 								{/* <div className="author-post mb-70">
