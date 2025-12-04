@@ -41,9 +41,9 @@ export default function Breadcrumb({ date, breadcrumbTitle, breadcrumbAlt, categ
 											<div className="icon">
 												<i className="icon-chevron-r" />
 											</div>
-											<Link href="/#" className="current">
+											<p style={{color:"white",fontSize:"24px"}} className="current">
 												{formattedTitle}
-											</Link>
+											</p>
 
 										</div>
 									</div>

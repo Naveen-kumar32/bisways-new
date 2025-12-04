@@ -1,4 +1,5 @@
-
+'use client'
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 export default function Section1() {
@@ -10,52 +11,7 @@ export default function Section1() {
 					<div className="row">
 						<div className="col-lg-8">
 							<div className="content ">
-								{/* <div className="entry-image tf-hover mb-40 ">
-									<div className="hover-1">
-										<Image
-											width="0"
-											height="0"
-											sizes="100vw"
-											style={{ width: "100%", height: "auto" }}
-											className="lazyload" data-src="/images/blog/blog-details.jpg" src="/images/blog/blog-details.jpg" alt="" />
-									</div>
-									<div className="tag-wrap">
-										<p>Consulting</p>
-									</div>
-								</div> */}
-								{/* <p className="title font-main-2 s1 text-anime-wave" style={{ color: '#0b1972' }}>
-									Understanding the Role of a Virtual CFO
-									in Modern Businesses
-								</p>
-								<div className="entry-meta">
-									<ul className="meta-list ">
-										<li className="entry author">
-											<div className="icon">
-												<i className="icon-calendar-days" style={{ color: '#ba1616ff' }} />
-
-											</div>
-											<p style={{ fontWeight: "600", fontStyle: "bold" }}>
-												Published :
-											</p>
-											<p style={{ paddingLeft: "15px" }}>
-												August 14, 2021
-											</p>
-										</li>
-
-										<li>
-											<div style={{ width: "3px", height: "20px", backgroundColor: "black" }}>
-											</div>
-										</li>
-										<li className="entry comment">
-											By Bisways Consulting Group
-										</li>
-									</ul>
-								</div>
-								<div className="entry-btn" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
-									<div>
-										<p style={{ color: "black" }}> <span style={{ fontWeight: "bold", color: "black" }}>Category : </span> <Link href="/virtual-cfo"> Virtual CFO</Link> </p>
-									</div>
-								</div> */}
+								
 								<h3 style={{ color: '#0b1972' }}>Introduction</h3>
 								<p className="text mt-3 mb-20">
 									As modern businesses grow, so do their financial complexities — cash flow, budgeting, compliance,
@@ -612,27 +568,11 @@ export default function Section1() {
 											Share
 										</h6>
 										<ul className="social-list style-2">
-											<li>
-												<Link href="">
-													<i className="icon-facebook" />
-												</Link>
-											</li>
-											<li>
-												<Link href="">
-													<i className="icon-twitter" />
-												</Link>
-											</li>
-											<li>
-												<Link href="">
-													<i className="icon-linkedin" />
-												</Link>
-											</li>
-											<li>
-												<Link href="">
-													<i className="icon-youtube" />
-												</Link>
-											</li>
-										</ul>
+  <li><i   className="icon-facebook" /></li>
+  <li><i  className="icon-twitter" /></li>
+  <li><i className="fab fa-instagram" /></li>
+  <li><i  className="icon-youtube" /></li>
+</ul>
 									</div>
 								</div>
 								{/* <div className="author-post mb-70">
@@ -1098,6 +1038,60 @@ export default function Section1() {
 					</div>
 				</div>
 			</div>
+			<style jsx>{`
+  .social-list.style-2 li {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1.2px solid var(--Border-2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .social-list.style-2 li:hover {
+    background-color: black;
+    border-color: black;
+  }
+
+  .social-list.style-2 li i {
+    font-size: 12px;
+    color: black;
+  }
+
+  .social-list.style-2 li:hover i {
+    color: white;
+  }
+`}</style>
+			<style jsx>{`
+  .social-list.style-2 li {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1.2px solid var(--Border-2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .social-list.style-2 li:hover {
+    background-color: black;
+    border-color: black;
+  }
+
+  .social-list.style-2 li i {
+    font-size: 12px;
+    color: black;
+  }
+
+  .social-list.style-2 li:hover i {
+    color: white;
+  }
+`}</style>
 
 		</>
 	)

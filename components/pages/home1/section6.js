@@ -101,26 +101,10 @@ export default function Section6() {
 									<Link href="/team-details" className="name"> Daniel L. Braddock </Link>
 									<p className="duty">Business Consultant</p>
 									<ul className="social-list style-5 style-4">
-										<li>
-											<Link href="/team-details">
-												<i className="icon-facebook" />
-											</Link>
-										</li>
-										<li>
-											<Link href="/team-details">
-												<i className="icon-twitter" />
-											</Link>
-										</li>
-										<li>
-											<Link href="/team-details">
-												<i className="icon-linkedin" />
-											</Link>
-										</li>
-										<li>
-											<Link href="/team-details">
-												<i className="icon-youtube" />
-											</Link>
-										</li>
+										<li><Link href="https://www.facebook.com/profile.php?id=100081860504520"><i className="icon-facebook" /></Link></li>
+										<li><Link href="https://x.com/BiswaysG"><i className="icon-twitter" /></Link></li>
+										<li><Link href="https://www.instagram.com/biswaysconsultinggroup/"><i className="fab fa-instagram" /></Link></li>
+										<li><Link href="https://www.youtube.com/channel/UCU7bc30DWlFt-stqjuUCGWA"><i className="icon-youtube" /></Link></li>
 									</ul>
 								</div>
 							</div>

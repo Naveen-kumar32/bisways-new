@@ -42,7 +42,7 @@ export default function Section1() {
 		{
 			title: "Understanding Form 26AS, AIS & TIS – Matching Income Before ITR Filing",
 			date: "March 10, 2023",
-			desc: "Explains how to reconcile income data using 26AS, AIS and TIS reports after the CBDT 2022 update to avoid ITR mismatches.",
+			desc: "Explains how to recosncile income data using 26AS, AIS and TIS reports after the CBDT 2022 update to avoid ITR mismatches.",
 			link: "/blog-details7"
 		},
 		{

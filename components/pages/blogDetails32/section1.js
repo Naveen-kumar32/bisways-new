@@ -1,4 +1,5 @@
 
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 export default function Section1() {
@@ -507,27 +508,11 @@ export default function Section1() {
 											Share
 										</h6>
 										<ul className="social-list style-2">
-											<li>
-												<Link href="">
-													<i className="icon-facebook" />
-												</Link>
-											</li>
-											<li>
-												<Link href="">
-													<i className="icon-twitter" />
-												</Link>
-											</li>
-											<li>
-												<Link href="">
-													<i className="icon-linkedin" />
-												</Link>
-											</li>
-											<li>
-												<Link href="">
-													<i className="icon-youtube" />
-												</Link>
-											</li>
-										</ul>
+  <li><i   className="icon-facebook" /></li>
+  <li><i  className="icon-twitter" /></li>
+  <li><i className="fab fa-instagram" /></li>
+  <li><i  className="icon-youtube" /></li>
+</ul>
 									</div>
 								</div>
 
@@ -864,6 +849,33 @@ export default function Section1() {
 					</div>
 				</div>
 			</div>
+			<style jsx>{`
+  .social-list.style-2 li {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1.2px solid var(--Border-2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .social-list.style-2 li:hover {
+    background-color: black;
+    border-color: black;
+  }
+
+  .social-list.style-2 li i {
+    font-size: 12px;
+    color: black;
+  }
+
+  .social-list.style-2 li:hover i {
+    color: white;
+  }
+`}</style>
 
 		</>
 	)

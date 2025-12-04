@@ -1,5 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 const leftVariants = {
   hidden: { x: -100, opacity: 0 },
@@ -47,13 +48,19 @@ export default function Section6() {
                       }}
                     >
                       <p className="cap" style={{ color: "#0b1972" }}>Office Address</p>
-                      <p className="infor">
-                        Plot no. 31,
-                        Lisa Ponnammal St, 3rd
-                        Floor, Golden George Nagar,
-                        Nerkundram, Chennai,
-                        Tamil Nadu 600107
-                      </p>
+                      <Link
+											href="https://maps.app.goo.gl/DBK8NaH68CQ6wkeg8"
+											className="infor"
+											target="_blank"
+										>
+											<p className="infor" style={{ color: "#0b1972",fontWeight:"500",fontSize:"15px" }}>
+												Plot no. 31, Lisa Ponnammal St, 3rd Floor,
+												<br />
+												Golden George Nagar, Nerkundram,
+												<br />
+												Chennai, Tamil Nadu - 600107
+											</p>
+										</Link>
                     </li>
                     <li
                       className="wow fadeInUp"

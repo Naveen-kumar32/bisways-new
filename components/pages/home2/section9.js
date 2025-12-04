@@ -65,7 +65,7 @@ export default function Section9() {
 
               {/* Button + Arrow */}
               <a
-                href="#"
+                href="https://bisways.zohobookings.com/#/booking"
                 onClick={disableNav}
                 onKeyDown={handleKey}
                 role="button"

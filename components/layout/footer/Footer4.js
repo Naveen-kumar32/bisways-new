@@ -73,10 +73,10 @@ export default function Footer4() {
 									</p>
 
 									<ul className="social-list" style={{ marginLeft: "15px" }}>
-										<li><Link href="https://www.facebook.com/profile.php?id=100081860504520"><i className="icon-facebook" /></Link></li>
-										<li><Link href="https://x.com/BiswaysG"><i className="icon-twitter" /></Link></li>
-										<li><Link href="https://www.instagram.com/biswaysconsultinggroup/"><i className="fab fa-instagram" /></Link></li>
-										<li><Link href="https://www.youtube.com/channel/UCU7bc30DWlFt-stqjuUCGWA"><i className="icon-youtube" /></Link></li>
+										<li><Link href="https://www.facebook.com/profile.php?id=100081860504520" target="_blank" rel="noopener noreferrer"><i className="icon-facebook" /></Link></li>
+										<li><Link href="https://x.com/BiswaysG" target="_blank" rel="noopener noreferrer"><i className="icon-twitter" /></Link></li>
+										<li><Link href="https://www.instagram.com/biswaysconsultinggroup/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram" /></Link></li>
+										<li><Link href="https://www.youtube.com/channel/UCU7bc30DWlFt-stqjuUCGWA" target="_blank" rel="noopener noreferrer"><i className="icon-youtube" /></Link></li>
 									</ul>
 								</div>
 
@@ -115,8 +115,12 @@ export default function Footer4() {
 										<h5 className="footer-title footer-title-mobile" onClick={() => handleAccordion2(1)}>Contact Us</h5>
 
 										<p className="text tf-collapse-content" style={{ display: getDisplayStyle2(1) }}>
-											info@bisways.com <br />
-											+91 99403 44774
+											<Link style={{fontWeight:"500" }} href="mailto:info@bisways.com" className="infor">
+												info@bisways.com
+											</Link> 
+											<Link style={{fontWeight:"500" }} href="tel:+919940344774" className="infor">
+												+91 99403 44774
+											</Link>
 										</p>
 									</div>
 								</div>
@@ -151,6 +155,9 @@ export default function Footer4() {
 										</button>
 										
 									</form>
+									<p className="text mb-70" style={{fontSize:"14px"}}>
+											Note : By subscribing, you consent to receive tax updates, product news, service offers, and exclusive promotions from Bisways.
+										</p>
 								</div>
 
 							</div>

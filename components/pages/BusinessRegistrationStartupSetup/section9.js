@@ -56,7 +56,7 @@ export default function Section9() {
 										<div className="top">
 											<div className="author-wrap">
 												<div className="infor">
-													<Link href="/#" className="name fw-7"> Mr. Padmanaban </Link>
+													<p style={{color:"#0b1972",fontSize:"20px"}} className="name fw-7"> Mr. Padmanaban </p>
 													<p className="duty">CEO of Vendolite India Pvt Ltd</p>
 												</div>
 											</div>
@@ -77,7 +77,7 @@ export default function Section9() {
 										<div className="top">
 											<div className="author-wrap">
 												<div className="infor">
-													<Link href="/#" className="name fw-7"> Mr. Barnabass </Link>
+													<p style={{color:"#0b1972",fontSize:"20px"}} className="name fw-7"> Mr. Barnabass </p>
 													<p className="duty">CEO & Founder of Riota Media Pvt Ltd</p>
 												</div>
 											</div>
@@ -98,7 +98,7 @@ export default function Section9() {
 										<div className="top">
 											<div className="author-wrap">
 												<div className="infor">
-													<Link href="/#" className="name fw-7"> Mr. Nityanand Naidu </Link>
+													<p style={{color:"#0b1972",fontSize:"20px"}} className="name fw-7"> Mr. Nityanand Naidu </p>
 													<p className="duty">Founder & Trustee of Swarnam Charities</p>
 												</div>
 											</div>
@@ -119,7 +119,7 @@ export default function Section9() {
 										<div className="top">
 											<div className="author-wrap">
 												<div className="infor">
-													<Link href="/#" className="name fw-7"> Mr. Naveen Vishal </Link>
+													<p style={{color:"#0b1972",fontSize:"20px"}} className="name fw-7"> Mr. Naveen Vishal </p>
 													<p className="duty">COO of Raavi Infotech Pvt Ltd</p>
 												</div>
 											</div>
